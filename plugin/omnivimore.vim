@@ -15,7 +15,6 @@ function! BuildSignatureCache()
     else
       let l = line
     endif
-    " if exists('g:ovm_debug')|PP l|endif
     let mlist = matchlist(l, 
           \ '^\(\(\K\k\+\)([^)]*)\)'.
           \ '\%('.
@@ -33,8 +32,7 @@ function! BuildSignatureCache()
         endif
         continue
       endif
-      " if exists('g:ovm_debug')|PP mlist|endif
-      let d = {'word': name.'(',
+      let d = {'word': name.((sig =~ '()$') ? '()' : '('),
             \  'kind': 'f',
             \  'info': sig.' '.ret,
             \  'menu': desc,
@@ -59,7 +57,7 @@ function! GetBuiltinFuncInfo(...)
 endfun
 
 
-function! CompleteVimL(findstart, base)
+function! CompleteOmnivimore(findstart, base)
   if a:findstart
     let line = getline('.')
     let start = col('.') - 1
