@@ -18,7 +18,7 @@ function! s:buildCache(exestr)
   return [cache, lines]
 endfun
 
-function! BuildFunctionCache()
+function! BuildFuncCache()
   let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_func_json.awk",
         \ $VIMRUNTIME.'/doc/eval.txt')
   let [cache, lines] = s:buildCache(exestr)
@@ -30,7 +30,7 @@ endfun
 " Get builtin Vim function signatures {{{2
 function! GetFuncInfo(...)
   if !exists('g:ovm_func_cache')
-    call BuildFunctionCache()
+    call BuildFuncCache()
   endif
   let name = substitute(a:1, '()\?', '', '')
   return get(g:ovm_func_cache, name, [{'word': a:1, 'kind': 'f'}])
@@ -38,7 +38,7 @@ endfun
 
 
 " Build command cache {{{2
-function! BuildCommandCache()
+function! BuildComCache()
   let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_cmd_json.awk",
         \ $VIMRUNTIME.'/doc/index.txt')
   let [cache, lines] = s:buildCache(exestr)
@@ -48,9 +48,9 @@ endfun
 
 
 " Get builtin Vim function signatures {{{2
-function! GetCommandInfo(...)
+function! GetComInfo(...)
   if !exists('g:ovm_cmd_cache')
-    call BuildCommandCache()
+    call BuildComCache()
   endif
   let name = substitute(a:1, '()\?', '', '')
   return get(g:ovm_cmd_cache, name, [{'word': a:1}])
@@ -123,7 +123,7 @@ function! CompleteOmnivimore(findstart, base)
           call add(res, vinfo)
         endfor
       elseif type == 'command'
-        let cinfos = GetCommandInfo(c)
+        let cinfos = GetComInfo(c)
         for cinfo in cinfos
           call add(res, cinfo)
         endfor
