@@ -19,7 +19,8 @@ function! s:buildCache(exestr)
 endfun
 
 function! BuildFunctionCache()
-  let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_func_json.awk", $VIMRUNTIME.'/doc/eval.txt')
+  let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_func_json.awk",
+        \ $VIMRUNTIME.'/doc/eval.txt')
   let [cache, lines] = s:buildCache(exestr)
   call writefile(lines, s:plugdir."/funccache.json", "b")
   let g:ovm_func_cache = cache
@@ -38,7 +39,8 @@ endfun
 
 " Build command cache {{{2
 function! BuildCommandCache()
-  let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_cmd_json.awk", $VIMRUNTIME.'/doc/eval.txt')
+  let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_cmd_json.awk",
+        \ $VIMRUNTIME.'/doc/index.txt')
   let [cache, lines] = s:buildCache(exestr)
   call writefile(lines, s:plugdir."/cmdcache.json", "b")
   let g:ovm_cmd_cache = cache
@@ -57,7 +59,8 @@ endfun
 
 " Build internal variables cache {{{2
 function! BuildVarCache()
-  let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_var_json.awk", $VIMRUNTIME.'/doc/eval.txt')
+  let exestr = printf('gawk -f "%s" "%s"', s:plugdir."/build_var_json.awk",
+        \ $VIMRUNTIME.'/doc/eval.txt')
   let [cache, lines] = s:buildCache(exestr)
   call writefile(lines, s:plugdir."/varcache.json", "b")
   let g:ovm_var_cache = cache
@@ -109,15 +112,20 @@ function! CompleteOmnivimore(findstart, base)
     endif
     let comp = getcompletion(word, type)
     for c in comp
-      if c =~ '()\?$'
+      if c =~ '()\?$' || type == 'function'
         let finfos = GetFuncInfo(c)
         for finfo in finfos
           call add(res, finfo)
         endfor
-      elseif c =~ '^v:'
+      elseif c =~ '^v:' || type == 'option'
         let vinfos = GetVarInfo(c)
         for vinfo in vinfos
           call add(res, vinfo)
+        endfor
+      elseif type == 'command'
+        let cinfos = GetCommandInfo(c)
+        for cinfo in cinfos
+          call add(res, cinfo)
         endfor
       else
         call add(res, c)

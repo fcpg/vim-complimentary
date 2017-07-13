@@ -28,11 +28,13 @@ seen {
   gsub(/\s*$/, "", fl);
   gsub(/\s+(Only|See)\s*$/, "", fl);
   gsub(/"/, "\\\"", fl);
+  gsub(/\s+/, " ", fl);
   print "\"kind\": \"v\",";
   printf("\"menu\": \"%s\",\n", fl);
   gsub(/"/, "\\\"");
   sub(/^\s+/, "");
   gsub(/\s+/, " ");
+  gsub(/=*$/, "");
   printf("\"info\": \"%s\"\n", $0);
   print "},";
 } 
