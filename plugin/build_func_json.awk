@@ -10,6 +10,7 @@ funcsect && /\*\S+\*/ { funcsect=0; }
   if (ip) {
     gsub(/"/, "\\\"", d);
     printf("\"menu\": \"%s\",\n", d);
+    printf("\"info\": \"%s %s\n\n%s\",\n", s, r, d);
     print "},";
     w=s=r=d="";
     if (!funcsect) { nextfile; }
@@ -22,8 +23,6 @@ funcsect && /\*\S+\*/ { funcsect=0; }
   d=a[7];
   print "{\"word\": \"" w (match(s, /\(\)$/) ? "()" : "(") "\",";
   print "\"kind\": \"f\",";
-  if (r == "") { next; }
-  printf("\"info\": \"%s %s\",\n", s, r);
   next;
 } 
 
@@ -33,7 +32,6 @@ ip && /^\s+\S/ {
     match($0, /^(\S+(\s+or\s+\S+)?)(\s+(.*)$)?/, a);
     r=a[1];
     d=a[4];
-    printf("\"info\": \"%s %s\",\n", s, r);
     next;
   }
   d=d $0
