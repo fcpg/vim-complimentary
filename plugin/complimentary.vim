@@ -33,6 +33,7 @@ let s:plugdir    = expand('<sfile>:p:h')
 let s:funcscript = s:plugdir."/build_func_json.awk"
 let s:cmdscript  = s:plugdir."/build_cmd_json.awk"
 let s:varscript  = s:plugdir."/build_var_json.awk"
+let s:optscript  = s:plugdir."/build_opt_json.awk"
 
 let s:cpty_cache_dir = get(g:, 'cpty_cache_dir', s:plugdir)
 
@@ -40,17 +41,20 @@ let s:cpty_use_default_cache = get(g:, 'cpty_use_default_cache', 0)
 let s:cpty_use_file_cache    = get(g:, 'cpty_use_file_cache', 1)
 let s:cpty_sigil             = get(g:, 'cpty_sigil', 1)
 let s:cpty_autocmd           = get(g:, 'cpty_autocmd', 1)
+let s:cpty_awk_cmd           = get(g:, 'cpty_awk_cmd', 'gawk -f')
 
 let s:cachefile = {
       \ 'func': s:cpty_cache_dir."/funccache.json",
       \ 'cmd':  s:cpty_cache_dir."/cmdcache.json",
       \ 'var':  s:cpty_cache_dir."/varcache.json",
+      \ 'opt':  s:cpty_cache_dir."/optcache.json",
       \}
 
 let s:defcachefile = {
       \ 'func': s:plugdir."/def_funccache.json",
       \ 'cmd':  s:plugdir."/def_cmdcache.json",
       \ 'var':  s:plugdir."/def_varcache.json",
+      \ 'opt':  s:plugdir."/def_optcache.json",
       \}
 
 
@@ -103,7 +107,9 @@ endfun
 " BuildFuncCache() {{{2
 " Build signature cache
 function! BuildFuncCache() abort
-  let exestr = printf('gawk -f "%s" "%s"', s:funcscript,
+  let exestr = printf('%s "%s" "%s"',
+        \ s:cpty_awk_cmd,
+        \ s:funcscript,
         \ $VIMRUNTIME.'/doc/eval.txt')
   let g:cpty_func_cache = <Sid>BuildCache(exestr, 'func')
 endfun
@@ -124,7 +130,9 @@ endfun
 " BuildCmdCache() {{{2
 " Build command cache
 function! BuildCmdCache() abort
-  let exestr = printf('gawk -f "%s" "%s"', s:cmdscript,
+  let exestr = printf('%s "%s" "%s"',
+        \ s:cpty_awk_cmd,
+        \ s:cmdscript,
         \ $VIMRUNTIME.'/doc/index.txt')
   let g:cpty_cmd_cache = <Sid>BuildCache(exestr, 'cmd')
 endfun
@@ -145,7 +153,9 @@ endfun
 " BuildVarCache() {{{2
 " Build internal variables cache
 function! BuildVarCache() abort
-  let exestr = printf('gawk -f "%s" "%s"', s:varscript,
+  let exestr = printf('%s "%s" "%s"',
+        \ s:cpty_awk_cmd,
+        \ s:varscript,
         \ $VIMRUNTIME.'/doc/eval.txt')
   let g:cpty_var_cache = <Sid>BuildCache(exestr, 'var')
 endfun
@@ -159,6 +169,28 @@ function! GetVarInfo(pfx) abort
     call BuildVarCache()
   endif
   return get(g:cpty_var_cache, a:pfx, [{'word': a:pfx, 'kind': 'v'}])
+endfun
+
+
+" BuildOptCache() {{{2
+" Build options cache
+function! BuildOptCache() abort
+  let exestr = printf('%s "%s" "%s"',
+        \ s:cpty_awk_cmd,
+        \ s:optscript,
+        \ $VIMRUNTIME.'/doc/quickref.txt')
+  let g:cpty_opt_cache = <Sid>BuildCache(exestr, 'opt')
+endfun
+
+
+" GetOptInfo() {{{2
+" Get builtin vim optiable
+" Arg: pfx  the prefix to complete
+function! GetOptInfo(pfx) abort
+  if !exists('g:cpty_opt_cache')
+    call BuildOptCache()
+  endif
+  return get(g:cpty_opt_cache, a:pfx, [{'word': a:pfx, 'kind': 'v'}])
 endfun
 
 
@@ -180,6 +212,9 @@ function! CompleteCpty(findstart, base) abort
       let word = strpart(a:base,1)
       let type = 'function'
     elseif s:cpty_sigil && strpart(a:base,0,1) == '+'
+      let word = strpart(a:base,1)
+      let type = 'option'
+    elseif s:cpty_sigil && strpart(a:base,0,1) == '&'
       let word = strpart(a:base,1)
       let type = 'option'
     elseif s:cpty_sigil && strpart(a:base,0,1) == ':'
@@ -204,10 +239,15 @@ function! CompleteCpty(findstart, base) abort
         for finfo in finfos
           call add(res, finfo)
         endfor
-      elseif c =~ '^v:' || type == 'option'
+      elseif c =~ '^v:'
         let vinfos = GetVarInfo(c)
         for vinfo in vinfos
           call add(res, vinfo)
+        endfor
+      elseif type == 'option'
+        let oinfos = GetOptInfo(c)
+        for oinfo in oinfos
+          call add(res, oinfo)
         endfor
       elseif type == 'command'
         let cinfos = GetCmdInfo(c)

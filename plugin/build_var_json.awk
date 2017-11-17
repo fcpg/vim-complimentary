@@ -9,7 +9,7 @@ RT ~ /\*v:var\*/ { varsect=1; }
 
 { seen=0; }
 
-oldrt ~ /\n^v:/ {
+oldrt ~ /\nv:/ {
   match(oldrt, /([^\n\t ]+)/, a);
   print "{\"word\": \"" a[1] "\",";
   seen=1;
