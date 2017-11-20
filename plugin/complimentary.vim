@@ -34,6 +34,7 @@ let s:funcscript = s:plugdir."/build_func_json.awk"
 let s:cmdscript  = s:plugdir."/build_cmd_json.awk"
 let s:varscript  = s:plugdir."/build_var_json.awk"
 let s:optscript  = s:plugdir."/build_opt_json.awk"
+let s:soptscript = s:plugdir."/build_shortopt_json.awk"
 
 let s:cpty_cache_dir = get(g:, 'cpty_cache_dir', s:plugdir)
 
@@ -48,6 +49,7 @@ let s:cachefile = {
       \ 'cmd':  s:cpty_cache_dir."/cmdcache.json",
       \ 'var':  s:cpty_cache_dir."/varcache.json",
       \ 'opt':  s:cpty_cache_dir."/optcache.json",
+      \ 'sopt': s:cpty_cache_dir."/soptcache.json",
       \}
 
 let s:defcachefile = {
@@ -55,6 +57,7 @@ let s:defcachefile = {
       \ 'cmd':  s:plugdir."/def_cmdcache.json",
       \ 'var':  s:plugdir."/def_varcache.json",
       \ 'opt':  s:plugdir."/def_optcache.json",
+      \ 'sopt': s:plugdir."/def_soptcache.json",
       \}
 
 
@@ -65,6 +68,9 @@ let s:defcachefile = {
 " s:Obj2Cache() {{{2
 " Convert an obj from doc parsing into a cache dict
 function! s:Obj2Cache(obj)
+  if type(a:obj) == type({})
+    return a:obj
+  endif
   let cache = {}
   for entry in a:obj
     let name = substitute(entry['word'], '()\?$', '', '')
@@ -194,6 +200,16 @@ function! GetOptInfo(pfx) abort
 endfun
 
 
+" BuildShortoptCache() {{{2
+" Build short options cache
+function! BuildShortoptCache() abort
+  let exestr = printf('%s "%s" "%s"',
+        \ s:cpty_awk_cmd,
+        \ s:soptscript,
+        \ $VIMRUNTIME.'/doc/quickref.txt')
+  let g:cpty_shortopt_cache = <Sid>BuildCache(exestr, 'sopt')
+endfun
+
 " CompleteCpty() {{{2
 " Main completion function
 function! CompleteCpty(findstart, base) abort
@@ -203,23 +219,23 @@ function! CompleteCpty(findstart, base) abort
     while start > 0 && line[start - 1] =~ '\k\|:'
       let start -= 1
     endwhile
-    if start > 0 && line[start - 1] =~ '+\|&\|:'
+    if start > 0 && line[start - 1] =~ '+\|&\|*'
       let start -= 1
     endif
     return start
   else
-    if s:cpty_sigil && strpart(a:base,0,1) == '*'
+    if s:cpty_sigil && a:base[0] == '*'
       let word = strpart(a:base,1)
       let type = 'function'
-    elseif s:cpty_sigil && strpart(a:base,0,1) == '+'
+    elseif s:cpty_sigil && a:base[0] == '+'
       let word = strpart(a:base,1)
       let type = 'option'
-    elseif s:cpty_sigil && strpart(a:base,0,1) == '&'
-      let word = strpart(a:base,1)
-      let type = 'option'
-    elseif s:cpty_sigil && strpart(a:base,0,1) == ':'
+    elseif s:cpty_sigil && a:base[0] == ':'
       let word = strpart(a:base,1)
       let type = 'command'
+    elseif a:base[0] == '&'
+      let word = strpart(a:base,1)
+      let type = 'option'
     else
       let word = a:base
       let type = 'expression'
@@ -235,25 +251,20 @@ function! CompleteCpty(findstart, base) abort
     let comp = getcompletion(word, type)
     for c in comp
       if c =~ '()\?$' || type == 'function'
-        let finfos = GetFuncInfo(c)
-        for finfo in finfos
-          call add(res, finfo)
-        endfor
+        call extend(res, GetFuncInfo(c))
       elseif c =~ '^v:'
-        let vinfos = GetVarInfo(c)
-        for vinfo in vinfos
-          call add(res, vinfo)
-        endfor
+        call extend(res, GetVarInfo(c))
       elseif type == 'option'
-        let oinfos = GetOptInfo(c)
-        for oinfo in oinfos
-          call add(res, oinfo)
-        endfor
+        let r = GetOptInfo(c)
+        if a:base[0] == '&'
+          " prepend the & to results
+          let r = deepcopy(r)
+          call map(r, 'extend(v:val, {"word":"&".v:val["word"],'
+                \ . '"abbr":v:val["word"]})')
+        endif
+        call extend(res, r)
       elseif type == 'command'
-        let cinfos = GetCmdInfo(c)
-        for cinfo in cinfos
-          call add(res, cinfo)
-        endfor
+        call extend(res, GetCmdInfo(c))
       else
         call add(res, c)
       endif
@@ -275,11 +286,38 @@ function! s:Dbg(msg, ...) abort
 endfun
 
 
+" CompleteOpt {{{2
+" Completion func for :Set
+function! CompleteOpt(arg, line, pos) abort
+  if !exists('g:cpty_shortopt_cache')
+    call BuildShortoptCache()
+  endif
+  let a = stridx('*+', a:arg[0]) !=-1 ? strpart(a:arg,1) : a:arg
+  let pfx = a:arg[0]
+  let sfx = ''
+  if a[-1:] == '*'
+    let sfx = a[-1:]
+    let a = a[0:-2]
+  endif
+  let res = {}
+  for [k, v] in items(g:cpty_shortopt_cache)
+    let w = pfx=='+' ? v : k
+    if w =~ (pfx=='*'?'':'^').a
+      let res[w] = 1
+      if sfx=='*'
+        let res[v] = 1
+      endif
+    endif
+  endfor
+  return keys(res)
+endfun
+
+
 "---------------
 " Autocmds {{{1
 "---------------
 
-if s:cpty_autocmd && exists('+completefunc')
+if s:cpty_autocmd && exists('+omnifunc')
   augroup Complimentary
     au!
     autocmd Filetype vim
@@ -287,6 +325,13 @@ if s:cpty_autocmd && exists('+completefunc')
   augroup END
 endif
 
+
+"---------------
+" Commands {{{1
+"---------------
+
+command! -nargs=+ -bar -complete=customlist,CompleteOpt Set
+      \ set <args>
 
 let &cpo = s:save_cpo
 

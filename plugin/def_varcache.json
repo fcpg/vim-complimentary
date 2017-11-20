@@ -1,0 +1,427 @@
+[
+{"word": "v:beval_col",
+"kind": "v",
+"menu": "The number of the column, over which the mouse pointer is.",
+"info": "The number of the column, over which the mouse pointer is. This is the byte index in the |v:beval_lnum| line. Only valid while evaluating the 'balloonexpr' option. "
+},
+{"word": "v:beval_bufnr",
+"kind": "v",
+"menu": "The number of the buffer, over which the mouse pointer is.",
+"info": "The number of the buffer, over which the mouse pointer is. Only valid while evaluating the 'balloonexpr' option. "
+},
+{"word": "v:beval_lnum",
+"kind": "v",
+"menu": "The number of the line, over which the mouse pointer is.",
+"info": "The number of the line, over which the mouse pointer is. Only valid while evaluating the 'balloonexpr' option. "
+},
+{"word": "v:beval_text",
+"kind": "v",
+"menu": "The text under or after the mouse pointer. Usually a word as",
+"info": "The text under or after the mouse pointer. Usually a word as it is useful for debugging a C program. 'iskeyword' applies, but a dot and \"->\" before the position is included. When on a ']' the text before it is used, including the matching '[' and word before it. When on a Visual area within one line the highlighted text is used. Also see |<cexpr>|. Only valid while evaluating the 'balloonexpr' option. "
+},
+{"word": "v:beval_winnr",
+"kind": "v",
+"menu": "The number of the window, over which the mouse pointer is.",
+"info": "The number of the window, over which the mouse pointer is. Only valid while evaluating the 'balloonexpr' option. The first window has number zero (unlike most other places where a window gets a number). "
+},
+{"word": "v:beval_winid",
+"kind": "v",
+"menu": "The |window-ID| of the window, over which the mouse pointer",
+"info": "The |window-ID| of the window, over which the mouse pointer is. Otherwise like v:beval_winnr. "
+},
+{"word": "v:char",
+"kind": "v",
+"menu": "Argument for evaluating 'formatexpr' and used for the typed",
+"info": "Argument for evaluating 'formatexpr' and used for the typed character when using <expr> in an abbreviation |:map-<expr>|. It is also used by the |InsertCharPre| and |InsertEnter| events. "
+},
+{"word": "v:charconvert_from",
+"kind": "v",
+"menu": "The name of the character encoding of a file to be converted.",
+"info": "The name of the character encoding of a file to be converted. Only valid while evaluating the 'charconvert' option. "
+},
+{"word": "v:charconvert_to",
+"kind": "v",
+"menu": "The name of the character encoding of a file after conversion.",
+"info": "The name of the character encoding of a file after conversion. Only valid while evaluating the 'charconvert' option. "
+},
+{"word": "v:cmdarg",
+"kind": "v",
+"menu": "This variable is used for two purposes:",
+"info": "This variable is used for two purposes: 1. The extra arguments given to a file read/write command. Currently these are \"++enc=\" and \"++ff=\". This variable is set before an autocommand event for a file read/write command is triggered. There is a leading space to make it possible to append this variable directly after the read/write command. Note: The \"+cmd\" argument isn't included here, because it will be executed anyway. 2. When printing a PostScript file with \":hardcopy\" this is the argument for the \":hardcopy\" command. This can be used in 'printexpr'. "
+},
+{"word": "v:cmdbang",
+"kind": "v",
+"menu": "Set like v:cmdarg for a file read/write command. When a \"!\"",
+"info": "Set like v:cmdarg for a file read/write command. When a \"!\" was used the value is 1, otherwise it is 0. Note that this can only be used in autocommands. For user commands |<bang>| can be used. "
+},
+{"word": "v:completed_item",
+"kind": "v",
+"menu": "|Dictionary| containing the |complete-items| for the most",
+"info": "|Dictionary| containing the |complete-items| for the most recently completed word after |CompleteDone|. The |Dictionary| is empty if the completion failed. "
+},
+{"word": "v:count",
+"kind": "v",
+"menu": "The count given for the last Normal mode command. Can be used",
+"info": "The count given for the last Normal mode command. Can be used to get the count before a mapping. Read-only. Example: > :map _x :<C-U>echo \"the count is \" . v:count<CR> < Note: The <C-U> is required to remove the line range that you get when typing ':' after a count. When there are two counts, as in \"3d2w\", they are multiplied, just like what happens in the command, \"d6w\" for the example. Also used for evaluating the 'formatexpr' option. \"count\" also works, for backwards compatibility. "
+},
+{"word": "v:count1",
+"kind": "v",
+"menu": "Just like \"v:count\", but defaults to one when no count is",
+"info": "Just like \"v:count\", but defaults to one when no count is used. "
+},
+{"word": "v:ctype",
+"kind": "v",
+"menu": "The current locale setting for characters of the runtime",
+"info": "The current locale setting for characters of the runtime environment. This allows Vim scripts to be aware of the current locale encoding. Technical: it's the value of LC_CTYPE. When not using a locale the value is \"C\". This variable can not be set directly, use the |:language| command. See |multi-lang|. "
+},
+{"word": "v:dying",
+"kind": "v",
+"menu": "Normally zero. When a deadly signal is caught it's set to",
+"info": "Normally zero. When a deadly signal is caught it's set to one. When multiple signals are caught the number increases. Can be used in an autocommand to check if Vim didn't terminate normally. {only works on Unix} Example: > :au VimLeave * if v:dying | echo \"\nAAAAaaaarrrggghhhh!!!\n\" | endif < Note: if another deadly signal is caught when v:dying is one, VimLeave autocommands will not be executed. "
+},
+{"word": "v:errmsg",
+"kind": "v",
+"menu": "Last given error message. It's allowed to set this variable.",
+"info": "Last given error message. It's allowed to set this variable. Example: > :let v:errmsg = \"\" :silent! next :if v:errmsg != \"\" : ... handle error < \"errmsg\" also works, for backwards compatibility. "
+},
+{"word": "v:errors",
+"kind": "v",
+"menu": "Errors found by assert functions, such as |assert_true()|.",
+"info": "Errors found by assert functions, such as |assert_true()|. This is a list of strings. The assert functions append an item when an assert fails. To remove old results make it empty: > :let v:errors = [] < If v:errors is set to anything but a list it is made an empty list by the assert function. "
+},
+{"word": "v:exception",
+"kind": "v",
+"menu": "The value of the exception most recently caught and not",
+"info": "The value of the exception most recently caught and not finished. See also |v:throwpoint| and |throw-variables|. Example: > :try : throw \"oops\" :catch /.*/ : echo \"caught\" v:exception :endtry < Output: \"caught oops\". "
+},
+{"word": "v:false",
+"kind": "v",
+"menu": "A Number with value zero. Used to put \"false\" in JSON.",
+"info": "A Number with value zero. Used to put \"false\" in JSON. See |json_encode()|. When used as a string this evaluates to \"v:false\". > echo v:false < v:false ~ That is so that eval() can parse the string back to the same value. Read-only. "
+},
+{"word": "v:fcs_reason",
+"kind": "v",
+"menu": "The reason why the |FileChangedShell| event was triggered.",
+"info": "The reason why the |FileChangedShell| event was triggered. Can be used in an autocommand to decide what to do and/or what to set v:fcs_choice to. Possible values: deleted file no longer exists conflict file contents, mode or timestamp was changed and buffer is modified changed file contents has changed mode mode of file changed time only file timestamp changed "
+},
+{"word": "v:fcs_choice",
+"kind": "v",
+"menu": "What should happen after a |FileChangedShell| event was",
+"info": "What should happen after a |FileChangedShell| event was triggered. Can be used in an autocommand to tell Vim what to do with the affected buffer: reload Reload the buffer (does not work if the file was deleted). ask Ask the user what to do, as if there was no autocommand. Except that when only the timestamp changed nothing will happen. <empty> Nothing, the autocommand should do everything that needs to be done. The default is empty. If another (invalid) value is used then Vim behaves like it is empty, there is no warning message. "
+},
+{"word": "v:fname_in",
+"kind": "v",
+"menu": "The name of the input file. Valid while evaluating:",
+"info": "The name of the input file. Valid while evaluating: option used for ~ 'charconvert' file to be converted 'diffexpr' original file 'patchexpr' original file 'printexpr' file to be printed And set to the swap file name for |SwapExists|. "
+},
+{"word": "v:fname_out",
+"kind": "v",
+"menu": "The name of the output file. Only valid while",
+"info": "The name of the output file. Only valid while evaluating: option used for ~ 'charconvert' resulting converted file (*) 'diffexpr' output of diff 'patchexpr' resulting patched file (*) When doing conversion for a write command (e.g., \":w file\") it will be equal to v:fname_in. When doing conversion for a read command (e.g., \":e file\") it will be a temporary file and different from v:fname_in. "
+},
+{"word": "v:fname_new",
+"kind": "v",
+"menu": "The name of the new version of the file. Only valid while",
+"info": "The name of the new version of the file. Only valid while evaluating 'diffexpr'. "
+},
+{"word": "v:fname_diff",
+"kind": "v",
+"menu": "The name of the diff (patch) file. Only valid while",
+"info": "The name of the diff (patch) file. Only valid while evaluating 'patchexpr'. "
+},
+{"word": "v:folddashes",
+"kind": "v",
+"menu": "Used for 'foldtext': dashes representing foldlevel of a closed",
+"info": "Used for 'foldtext': dashes representing foldlevel of a closed fold. Read-only in the |sandbox|. |fold-foldtext| "
+},
+{"word": "v:foldlevel",
+"kind": "v",
+"menu": "Used for 'foldtext': foldlevel of closed fold.",
+"info": "Used for 'foldtext': foldlevel of closed fold. Read-only in the |sandbox|. |fold-foldtext| "
+},
+{"word": "v:foldend",
+"kind": "v",
+"menu": "Used for 'foldtext': last line of closed fold.",
+"info": "Used for 'foldtext': last line of closed fold. Read-only in the |sandbox|. |fold-foldtext| "
+},
+{"word": "v:foldstart",
+"kind": "v",
+"menu": "Used for 'foldtext': first line of closed fold.",
+"info": "Used for 'foldtext': first line of closed fold. Read-only in the |sandbox|. |fold-foldtext| "
+},
+{"word": "v:hlsearch",
+"kind": "v",
+"menu": "Variable that indicates whether search highlighting is on.",
+"info": "Variable that indicates whether search highlighting is on. Setting it makes sense only if 'hlsearch' is enabled which requires |+extra_search|. Setting this variable to zero acts like the |:nohlsearch| command, setting it to one acts like > let &hlsearch = &hlsearch < Note that the value is restored when returning from a function. |function-search-undo|. "
+},
+{"word": "v:insertmode",
+"kind": "v",
+"menu": "Used for the |InsertEnter| and |InsertChange| autocommand",
+"info": "Used for the |InsertEnter| and |InsertChange| autocommand events. Values: i Insert mode r Replace mode v Virtual Replace mode "
+},
+{"word": "v:key",
+"kind": "v",
+"menu": "Key of the current item of a |Dictionary|. Only valid while",
+"info": "Key of the current item of a |Dictionary|. Only valid while evaluating the expression used with |map()| and |filter()|. Read-only. "
+},
+{"word": "v:lang",
+"kind": "v",
+"menu": "The current locale setting for messages of the runtime",
+"info": "The current locale setting for messages of the runtime environment. This allows Vim scripts to be aware of the current language. Technical: it's the value of LC_MESSAGES. The value is system dependent. This variable can not be set directly, use the |:language| command. It can be different from |v:ctype| when messages are desired in a different language than what is used for character encoding. See |multi-lang|. "
+},
+{"word": "v:lc_time",
+"kind": "v",
+"menu": "The current locale setting for time messages of the runtime",
+"info": "The current locale setting for time messages of the runtime environment. This allows Vim scripts to be aware of the current language. Technical: it's the value of LC_TIME. This variable can not be set directly, use the |:language| command. See |multi-lang|. "
+},
+{"word": "v:lnum",
+"kind": "v",
+"menu": "Line number for the 'foldexpr' |fold-expr|, 'formatexpr' and",
+"info": "Line number for the 'foldexpr' |fold-expr|, 'formatexpr' and 'indentexpr' expressions, tab page number for 'guitablabel' and 'guitabtooltip'. Only valid while one of these expressions is being evaluated. Read-only when in the |sandbox|. "
+},
+{"word": "v:mouse_win",
+"kind": "v",
+"menu": "Window number for a mouse click obtained with |getchar()|.",
+"info": "Window number for a mouse click obtained with |getchar()|. First window has number 1, like with |winnr()|. The value is zero when there was no mouse button click. "
+},
+{"word": "v:mouse_winid",
+"kind": "v",
+"menu": "Window ID for a mouse click obtained with |getchar()|.",
+"info": "Window ID for a mouse click obtained with |getchar()|. The value is zero when there was no mouse button click. "
+},
+{"word": "v:mouse_lnum",
+"kind": "v",
+"menu": "Line number for a mouse click obtained with |getchar()|.",
+"info": "Line number for a mouse click obtained with |getchar()|. This is the text line number, not the screen line number. The value is zero when there was no mouse button click. "
+},
+{"word": "v:mouse_col",
+"kind": "v",
+"menu": "Column number for a mouse click obtained with |getchar()|.",
+"info": "Column number for a mouse click obtained with |getchar()|. This is the screen column number, like with |virtcol()|. The value is zero when there was no mouse button click. "
+},
+{"word": "v:none",
+"kind": "v",
+"menu": "An empty String. Used to put an empty item in JSON.",
+"info": "An empty String. Used to put an empty item in JSON. See |json_encode()|. When used as a number this evaluates to zero. When used as a string this evaluates to \"v:none\". > echo v:none < v:none ~ That is so that eval() can parse the string back to the same value. Read-only. "
+},
+{"word": "v:null",
+"kind": "v",
+"menu": "An empty String. Used to put \"null\" in JSON.",
+"info": "An empty String. Used to put \"null\" in JSON. See |json_encode()|. When used as a number this evaluates to zero. When used as a string this evaluates to \"v:null\". > echo v:null < v:null ~ That is so that eval() can parse the string back to the same value. Read-only. "
+},
+{"word": "v:oldfiles",
+"kind": "v",
+"menu": "List of file names that is loaded from the |viminfo| file on",
+"info": "List of file names that is loaded from the |viminfo| file on startup. These are the files that Vim remembers marks for. The length of the List is limited by the ' argument of the 'viminfo' option (default is 100). When the |viminfo| file is not used the List is empty. Also see |:oldfiles| and |c_#<|. The List can be modified, but this has no effect on what is stored in the |viminfo| file later. If you use values other than String this will cause trouble. {only when compiled with the |+viminfo| feature} "
+},
+{"word": "v:option_new",
+"kind": "v",
+"menu": "New value of the option. Valid while executing an |OptionSet|",
+"info": "New value of the option. Valid while executing an |OptionSet| autocommand."
+},
+{"word": "v:option_old",
+"kind": "v",
+"menu": "Old value of the option. Valid while executing an |OptionSet|",
+"info": "Old value of the option. Valid while executing an |OptionSet| autocommand."
+},
+{"word": "v:option_type",
+"kind": "v",
+"menu": "Scope of the set command. Valid while executing an",
+"info": "Scope of the set command. Valid while executing an |OptionSet| autocommand. Can be either \"global\" or \"local\""
+},
+{"word": "v:operator",
+"kind": "v",
+"menu": "The last operator given in Normal mode. This is a single",
+"info": "The last operator given in Normal mode. This is a single character except for commands starting with <g> or <z>, in which case it is two characters. Best used alongside |v:prevcount| and |v:register|. Useful if you want to cancel Operator-pending mode and then use the operator, e.g.: > :omap O <Esc>:call MyMotion(v:operator)<CR> < The value remains set until another operator is entered, thus don't expect it to be empty. v:operator is not set for |:delete|, |:yank| or other Ex commands. Read-only. "
+},
+{"word": "v:prevcount",
+"kind": "v",
+"menu": "The count given for the last but one Normal mode command.",
+"info": "The count given for the last but one Normal mode command. This is the v:count value of the previous command. Useful if you want to cancel Visual or Operator-pending mode and then use the count, e.g.: > :vmap % <Esc>:call MyFilter(v:prevcount)<CR> < Read-only. "
+},
+{"word": "v:profiling",
+"kind": "v",
+"menu": "Normally zero. Set to one after using \":profile start\".",
+"info": "Normally zero. Set to one after using \":profile start\". See |profiling|. "
+},
+{"word": "v:progname",
+"kind": "v",
+"menu": "Contains the name (with path removed) with which Vim was",
+"info": "Contains the name (with path removed) with which Vim was invoked. Allows you to do special initialisations for |view|, |evim| etc., or any other name you might symlink to Vim. Read-only. "
+},
+{"word": "v:progpath",
+"kind": "v",
+"menu": "Contains the command with which Vim was invoked, including the",
+"info": "Contains the command with which Vim was invoked, including the path. Useful if you want to message a Vim server using a |--remote-expr|. To get the full path use: > echo exepath(v:progpath) < If the path is relative it will be expanded to the full path, so that it still works after `:cd`. Thus starting \"./vim\" results in \"/home/user/path/to/vim/src/vim\". On MS-Windows the executable may be called \"vim.exe\", but the \".exe\" is not added to v:progpath. Read-only. "
+},
+{"word": "v:register",
+"kind": "v",
+"menu": "The name of the register in effect for the current normal mode",
+"info": "The name of the register in effect for the current normal mode command (regardless of whether that command actually used a register). Or for the currently executing normal mode mapping (use this in custom commands that take a register). If none is supplied it is the default register '\"', unless 'clipboard' contains \"unnamed\" or \"unnamedplus\", then it is '*' or '+'. Also see |getreg()| and |setreg()| "
+},
+{"word": "v:scrollstart",
+"kind": "v",
+"menu": "String describing the script or function that caused the",
+"info": "String describing the script or function that caused the screen to scroll up. It's only set when it is empty, thus the first reason is remembered. It is set to \"Unknown\" for a typed command. This can be used to find out why your script causes the hit-enter prompt. "
+},
+{"word": "v:servername",
+"kind": "v",
+"menu": "The resulting registered |client-server-name| if any.",
+"info": "The resulting registered |client-server-name| if any. Read-only. "
+},
+{"word": "v:searchforward",
+"kind": "v",
+"menu": "Search direction: 1 after a forward search, 0 after a",
+"info": "Search direction: 1 after a forward search, 0 after a backward search. It is reset to forward when directly setting the last search pattern, see |quote/|. Note that the value is restored when returning from a function. |function-search-undo|. Read-write. "
+},
+{"word": "v:shell_error",
+"kind": "v",
+"menu": "Result of the last shell command. When non-zero, the last",
+"info": "Result of the last shell command. When non-zero, the last shell command had an error. When zero, there was no problem. This only works when the shell returns the error code to Vim. The value -1 is often used when the command could not be executed. Read-only. Example: > :!mv foo bar :if v:shell_error : echo 'could not rename \"foo\" to \"bar\"!' :endif < \"shell_error\" also works, for backwards compatibility. "
+},
+{"word": "v:statusmsg",
+"kind": "v",
+"menu": "Last given status message. It's allowed to set this variable.",
+"info": "Last given status message. It's allowed to set this variable. "
+},
+{"word": "v:swapname",
+"kind": "v",
+"menu": "Only valid when executing |SwapExists| autocommands: Name of",
+"info": "Only valid when executing |SwapExists| autocommands: Name of the swap file found. Read-only. "
+},
+{"word": "v:swapchoice",
+"kind": "v",
+"menu": "|SwapExists| autocommands can set this to the selected choice",
+"info": "|SwapExists| autocommands can set this to the selected choice for handling an existing swap file: 'o' Open read-only 'e' Edit anyway 'r' Recover 'd' Delete swapfile 'q' Quit 'a' Abort The value should be a single-character string. An empty value results in the user being asked, as would happen when there is no SwapExists autocommand. The default is empty. "
+},
+{"word": "v:swapcommand",
+"kind": "v",
+"menu": "Normal mode command to be executed after a file has been",
+"info": "Normal mode command to be executed after a file has been opened. Can be used for a |SwapExists| autocommand to have another Vim open the file and jump to the right place. For example, when jumping to a tag the value is \":tag tagname\r\". For \":edit +cmd file\" the value is \":cmd\r\". "
+},
+{"word": "v:t_bool",
+"kind": "v",
+"menu": "Value of Boolean type. Read-only. See: |type()|",
+"info": "Value of Boolean type. Read-only. See: |type()|"
+},
+{"word": "v:t_channel",
+"kind": "v",
+"menu": "Value of Channel type. Read-only. See: |type()|",
+"info": "Value of Channel type. Read-only. See: |type()|"
+},
+{"word": "v:t_dict",
+"kind": "v",
+"menu": "Value of Dictionary type. Read-only. See: |type()|",
+"info": "Value of Dictionary type. Read-only. See: |type()|"
+},
+{"word": "v:t_float",
+"kind": "v",
+"menu": "Value of Float type. Read-only. See: |type()|",
+"info": "Value of Float type. Read-only. See: |type()|"
+},
+{"word": "v:t_func",
+"kind": "v",
+"menu": "Value of Funcref type. Read-only. See: |type()|",
+"info": "Value of Funcref type. Read-only. See: |type()|"
+},
+{"word": "v:t_job",
+"kind": "v",
+"menu": "Value of Job type. Read-only. See: |type()|",
+"info": "Value of Job type. Read-only. See: |type()|"
+},
+{"word": "v:t_list",
+"kind": "v",
+"menu": "Value of List type. Read-only. See: |type()|",
+"info": "Value of List type. Read-only. See: |type()|"
+},
+{"word": "v:t_none",
+"kind": "v",
+"menu": "Value of None type. Read-only. See: |type()|",
+"info": "Value of None type. Read-only. See: |type()|"
+},
+{"word": "v:t_number",
+"kind": "v",
+"menu": "Value of Number type. Read-only. See: |type()|",
+"info": "Value of Number type. Read-only. See: |type()|"
+},
+{"word": "v:t_string",
+"kind": "v",
+"menu": "Value of String type. Read-only. See: |type()|",
+"info": "Value of String type. Read-only. See: |type()| "
+},
+{"word": "v:termresponse",
+"kind": "v",
+"menu": "The escape sequence returned by the terminal for the |t_RV|",
+"info": "The escape sequence returned by the terminal for the |t_RV| termcap entry. It is set when Vim receives an escape sequence that starts with ESC [ or CSI and ends in a 'c', with only digits, ';' and '.' in between. When this option is set, the TermResponse autocommand event is fired, so that you can react to the response from the terminal. The response from a new xterm is: \"<Esc>[ Pp ; Pv ; Pc c\". Pp is the terminal type: 0 for vt100 and 1 for vt220. Pv is the patch level (since this was introduced in patch 95, it's always 95 or bigger). Pc is always zero. {only when compiled with |+termresponse| feature} "
+},
+{"word": "v:termblinkresp",
+"kind": "v",
+"menu": "The escape sequence returned by the terminal for the |t_RC|",
+"info": "The escape sequence returned by the terminal for the |t_RC| termcap entry. This is used to find out whether the terminal cursor is blinking. This is used by |term_getcursor()|. "
+},
+{"word": "v:termstyleresp",
+"kind": "v",
+"menu": "The escape sequence returned by the terminal for the |t_RS|",
+"info": "The escape sequence returned by the terminal for the |t_RS| termcap entry. This is used to find out what the shape of the cursor is. This is used by |term_getcursor()|. "
+},
+{"word": "v:termrbgresp",
+"kind": "v",
+"menu": "The escape sequence returned by the terminal for the |t_RB|",
+"info": "The escape sequence returned by the terminal for the |t_RB| termcap entry. This is used to find out what the terminal background color is, see 'background'. "
+},
+{"word": "v:termrfgresp",
+"kind": "v",
+"menu": "The escape sequence returned by the terminal for the |t_RF|",
+"info": "The escape sequence returned by the terminal for the |t_RF| termcap entry. This is used to find out what the terminal foreground color is. "
+},
+{"word": "v:termu7resp",
+"kind": "v",
+"menu": "The escape sequence returned by the terminal for the |t_u7|",
+"info": "The escape sequence returned by the terminal for the |t_u7| termcap entry. This is used to find out what the terminal does with ambiguous width characters, see 'ambiwidth'. "
+},
+{"word": "v:testing",
+"kind": "v",
+"menu": "Must be set before using `test_garbagecollect_now()`.",
+"info": "Must be set before using `test_garbagecollect_now()`. Also, when set certain error messages won't be shown for 2 seconds. (e.g. \"'dictionary' option is empty\") "
+},
+{"word": "v:this_session",
+"kind": "v",
+"menu": "Full filename of the last loaded or saved session file.",
+"info": "Full filename of the last loaded or saved session file. See |:mksession|. It is allowed to set this variable. When no session file has been saved, this variable is empty. \"this_session\" also works, for backwards compatibility. "
+},
+{"word": "v:throwpoint",
+"kind": "v",
+"menu": "The point where the exception most recently caught and not",
+"info": "The point where the exception most recently caught and not finished was thrown. Not set when commands are typed. See also |v:exception| and |throw-variables|. Example: > :try : throw \"oops\" :catch /.*/ : echo \"Exception from\" v:throwpoint :endtry < Output: \"Exception from test.vim, line 2\" "
+},
+{"word": "v:true",
+"kind": "v",
+"menu": "A Number with value one. Used to put \"true\" in JSON.",
+"info": "A Number with value one. Used to put \"true\" in JSON. See |json_encode()|. When used as a string this evaluates to \"v:true\". > echo v:true < v:true ~ That is so that eval() can parse the string back to the same value. Read-only."
+},
+{"word": "v:val",
+"kind": "v",
+"menu": "Value of the current item of a |List| or |Dictionary|.",
+"info": "Value of the current item of a |List| or |Dictionary|. Only valid while evaluating the expression used with |map()| and |filter()|. Read-only. "
+},
+{"word": "v:version",
+"kind": "v",
+"menu": "Version number of Vim: Major version number times 100 plus",
+"info": "Version number of Vim: Major version number times 100 plus minor version number. Version 5.0 is 500. Version 5.1 (5.01) is 501. Read-only. \"version\" also works, for backwards compatibility. Use |has()| to check if a certain patch was included, e.g.: > if has(\"patch-7.4.123\") < Note that patch numbers are specific to the version, thus both version 5.0 and 5.1 may have a patch 123, but these are completely different. "
+},
+{"word": "v:vim_did_enter",
+"kind": "v",
+"menu": "Zero until most of startup is done. It is set to one just",
+"info": "Zero until most of startup is done. It is set to one just before |VimEnter| autocommands are triggered. "
+},
+{"word": "v:warningmsg",
+"kind": "v",
+"menu": "Last given warning message. It's allowed to set this variable.",
+"info": "Last given warning message. It's allowed to set this variable. "
+},
+{"word": "v:windowid",
+"kind": "v",
+"menu": "When any X11 based GUI is running or when running in a",
+"info": "When any X11 based GUI is running or when running in a terminal and Vim connects to the X server (|-X|) this will be set to the window ID. When an MS-Windows GUI is running this will be set to the window handle. Otherwise the value is zero. Note: for windows inside Vim use |winnr()| or |win_getid()|, see |window-ID|. "
+},
+]
