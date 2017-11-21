@@ -219,7 +219,7 @@ function! CompleteCpty(findstart, base) abort
     while start > 0 && line[start - 1] =~ '\k\|:'
       let start -= 1
     endwhile
-    if start > 0 && line[start - 1] =~ '+\|&\|*'
+    if start > 0 && line[start - 1] =~ '+\|&\|*\|#'
       let start -= 1
     endif
     return start
@@ -233,6 +233,9 @@ function! CompleteCpty(findstart, base) abort
     elseif s:cpty_sigil && a:base[0] == ':'
       let word = strpart(a:base,1)
       let type = 'command'
+    elseif s:cpty_sigil && a:base[0] == '#'
+      let word = strpart(a:base,1)
+      let type = 'event'
     elseif a:base[0] == '&'
       let word = strpart(a:base,1)
       let type = 'option'
@@ -292,19 +295,38 @@ function! CompleteOpt(arg, line, pos) abort
   if !exists('g:cpty_shortopt_cache')
     call BuildShortoptCache()
   endif
-  let a = stridx('*+', a:arg[0]) !=-1 ? strpart(a:arg,1) : a:arg
-  let pfx = a:arg[0]
+  let a = a:arg
+  " look for +/* prefix
+  let pfx = a[0]
+  if stridx('*+', pfx) != -1
+    let a = strpart(a,1)
+  endif
+  " look for % glob
+  let glob = 0
+  if stridx('%', a[0]) != -1
+    let a = strpart(a,1)
+    let glob = 1
+  endif
+  " look for * suffix
   let sfx = ''
   if a[-1:] == '*'
     let sfx = a[-1:]
-    let a = a[0:-2]
+    let a   = a[0:-2]
   endif
   let res = {}
   for [k, v] in items(g:cpty_shortopt_cache)
-    let w = pfx=='+' ? v : k
-    if w =~ (pfx=='*'?'':'^').a
-      let res[w] = 1
-      if sfx=='*'
+    " search in long name
+    if pfx != '+'
+      if k =~ (glob?'':'^').a
+        let res[k] = 1
+        if sfx == '*'
+          let res[v] = 1
+        endif
+      endif
+    endif
+    " search in short name
+    if stridx('*+', pfx) != -1
+      if v =~ (glob?'':'^').a
         let res[v] = 1
       endif
     endif
@@ -332,6 +354,12 @@ endif
 
 command! -nargs=+ -bar -complete=customlist,CompleteOpt Set
       \ set <args>
+
+command! -nargs=+ -bar -complete=customlist,CompleteOpt Setl
+      \ setl <args>
+
+command! -nargs=+ -bar -complete=customlist,CompleteOpt Setg
+      \ setg <args>
 
 let &cpo = s:save_cpo
 

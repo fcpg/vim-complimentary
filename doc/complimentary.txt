@@ -1,0 +1,130 @@
+*complimentary.txt*     Better completion for Vim builtins        *complimentary*
+
+                            complimentary MANUAL
+
+1. About complimentary                             |complimentary-about|
+2. Quick Start                                     |complimentary-quickstart|
+3. Commands                                        |complimentary-commands|
+4. Options                                         |complimentary-options|
+5. Changelog                                       |complimentary-changelog|
+6. Contribute                                      |complimentary-contribute|
+7. License                                         |complimentary-license|
+
+=============================================================================
+ABOUT complimentary                                       *complimentary-about*
+
+Complimentary provides a completion function (bound to omnifunc by default)
+for VimL scripts. It completes Vim expressions and extend builtin elements
+(functions, commands, variables and options) with a signature and/or
+description.
+
+=============================================================================
+QUICK START                                          *complimentary-quickstart*
+
+1. Install the plugin Eg. with Pathogen:
+>
+   cd ~/.vim/bundle && git clone https://github.com/fcpg/vim-complimentary
+<
+2. Open a buffer with Vim content (filtype=vim), and hit `<C-x><C-o>` to
+   complete from insert mode.
+
+3. You can force the type of some completions by prepending a "sigil", ie. a
+   special character that won't be part of the actual completion.
+   Eg.
+>
+   let foo = *str<C-x><C-o>
+<
+   will complete "str" with builtin functions only. The leading star won't be
+   part of the final text.
+   Valid sigils:
+   - `*` for functions
+   - `+` for options
+   - `:` for commands
+   - `#` for events
+
+   This feature can be turned off with the `g:cpty_sigil` option.
+
+=============================================================================
+COMMANDS                                               *complimentary-commands*
+
+:Set                                                        *complimentary-set*
+  Like the builtin |:set| command, with some extra completion features:
+  - prepend a `+` to complete short names only;
+    Eg. 
+>
+    :Set +cp<Tab>
+<
+    will complete with `cp`, `cpo` and `cpt`.
+  - prepend a `*` to complete with both short and long names;
+  - add a `%` in front of pattern to complete with any option name containing
+    the pattern;
+    Eg.
+>
+    :Set %dir<Tab>
+<
+    will complete with all options containing `dir` in their name (`directory`, 
+    `viewdir`, `shellredir` etc.)
+  - append a `*` to include short names of returned options; this won't add
+    more options to the result set, just include both short and long names
+    for the selected options.
+    Eg.
+>
+    :Set cp*
+<
+    will complete with `cpoptions` (the only option long name matching the
+    pattern) and will add the short name, ie. `cpo`, due to the trailing `*`
+
+
+:Setl
+:Setg
+  Same as `:Set`, for local and global variants of `:set`
+
+=============================================================================
+OPTIONS                                                 *complimentary-options*
+
+g:cpty_cache_dir                                             *g:cpty_cache_dir*
+  Full path to the location where cached data will be stored.
+  Default: 'plugin/' subdir of this plugin
+
+g:cpty_use_default_cache                             *g:cpty_use_default_cache*
+  Set to 1 to use only the cached data provided with the plugin.
+  No script will be run to retrieve/update data (useful it it doesn't work
+  on your box).
+  Default: 0
+
+g:cpty_use_file_cache                                   *g:cpty_use_file_cache*
+  Set to 0 to prevent caching data in the filesystem; scripts will always be
+  run on the first completion (so data will always be up to date).
+  Default: 1
+
+g:cpty_sigil                                                     *g:cpty_sigil*
+  Set to 0 to disable 'sigil completions'
+  Default: 1
+
+g:cpty_autocmd                                                 *g:cpty_autocmd*
+  Set to 0 to disable the plugin autocommands.
+  Used to automatically set |'omnifunc'| to the plugin completion function
+  for Vim filetype.
+  Default: 1
+
+g:cpty_awk_cmd                                                 *g:cpty_awk_cmd*
+  Shell command used to run GNU Awk scripts.
+  Default: `gawk -f`
+
+=============================================================================
+CHANGELOG                                             *complimentary-changelog*
+
+[1.0] - 2017-11-21
+  - Initial release
+
+=============================================================================
+CONTRIBUTE                                           *complimentary-contribute*
+
+Contribute on [Github](https://github.com/fcpg/vim-complimentary)
+
+=============================================================================
+LICENSE                                                 *complimentary-license*
+
+[Attribution-ShareAlike 4.0 Int.](https://creativecommons.org/licenses/by-sa/4.0/)
+
+ vim: set expandtab sts=2 ts=2 sw=2 tw=78 ft=help norl:
