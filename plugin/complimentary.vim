@@ -249,7 +249,7 @@ function! CompleteCpty(findstart, base) abort
         let type = 'command'
       elseif line =~ '\%(^\||\)\s*se\%(t\?\|tl\%[ocal]\|tg\%[lobal]\)\s\+$'
         let type = 'option'
-      elseif line =~ '\%(^\||\)\s*au\%[tocomd]\%(\s\+\S\+\)\?\s\+\%(\S\+,\)\?$'
+      elseif line =~ '\%(^\||\)\s*au\%[tocmd]\%(\s\+\S\+\)\?\s\+\%(\S\+,\)\?$'
         let type = 'event'
       endif
     endif

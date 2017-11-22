@@ -3,7 +3,7 @@ Vim-Complimentary
 
 Complimentary improves the completion of VimL builtin functions, commands, variables and options.
 
-[![asciicast](https://asciinema.org/a/dcFbyEBaHTUNUCX3ZEmYoz4mh.png)](https://asciinema.org/a/dcFbyEBaHTUNUCX3ZEmYoz4mh)
+[![asciicast](https://asciinema.org/a/A2pVI7xZeqhFzQEvtaOBBQPJL.png)](https://asciinema.org/a/A2pVI7xZeqhFzQEvtaOBBQPJL)
 
 A useful companion is the [echodoc](https://github.com/Shougo/echodoc) plugin from Shougo.
 
