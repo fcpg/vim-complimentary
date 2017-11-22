@@ -245,10 +245,12 @@ function! CompleteCpty(findstart, base) abort
     endif
     let res = []
     if type == 'expression'
-      if line =~ '^\s*\(\K\k*\)\?$'
+      if line =~ '\%(^\||\)\s*\(\K\k*\)\?$'
         let type = 'command'
-      elseif line =~ '^\s*se\%(t\?\|tl\%[ocal]\|tg\%[lobal]\)\s\+$'
+      elseif line =~ '\%(^\||\)\s*se\%(t\?\|tl\%[ocal]\|tg\%[lobal]\)\s\+$'
         let type = 'option'
+      elseif line =~ '\%(^\||\)\s*au\%[tocomd]\%(\s\+\S\+\)\?\s\+\%(\S\+,\)\?$'
+        let type = 'event'
       endif
     endif
     let comp = getcompletion(word, type)
