@@ -42,10 +42,14 @@ QUICK START                                          *complimentary-quickstart*
    - `:` for commands
    - `#` for events
 
-   This feature can be turned off with the `g:cpty_sigil` option.
+   This feature can be turned on with the `g:cpty_sigil` option.
 
 =============================================================================
 COMMANDS                                               *complimentary-commands*
+
+:ComplimentaryRebuild                                    *ComplimentaryRebuild*
+  Rebuild the user data caches. Make sure |g:cpty_use_default_cache| is off
+  if you want to use them.
 
 :Set                                                        *complimentary-set*
   Like the builtin |:set| command, with some extra completion features:
@@ -90,7 +94,7 @@ g:cpty_use_default_cache                             *g:cpty_use_default_cache*
   Set to 1 to use only the cached data provided with the plugin.
   No script will be run to retrieve/update data (useful it it doesn't work
   on your box).
-  Default: 0
+  Default: 1
 
 g:cpty_use_file_cache                                   *g:cpty_use_file_cache*
   Set to 0 to prevent caching data in the filesystem; scripts will always be
@@ -98,14 +102,8 @@ g:cpty_use_file_cache                                   *g:cpty_use_file_cache*
   Default: 1
 
 g:cpty_sigil                                                     *g:cpty_sigil*
-  Set to 0 to disable 'sigil completions'
-  Default: 1
-
-g:cpty_autocmd                                                 *g:cpty_autocmd*
-  Set to 0 to disable the plugin autocommands.
-  Used to automatically set |'omnifunc'| to the plugin completion function
-  for Vim filetype.
-  Default: 1
+  Set to 1 to enable 'sigil completions'
+  Default: 0
 
 g:cpty_awk_cmd                                                 *g:cpty_awk_cmd*
   Shell command used to run GNU Awk scripts.

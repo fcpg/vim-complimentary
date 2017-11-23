@@ -11,6 +11,8 @@ Requirements
 -------------
 This plugin requires the `getcompletion()` function (Vim8 or late 7.4 patches).
 
+`gawk` is needed if you want to rebuild the completion data yourself.
+
 Installation
 -------------
 Use your favorite method:
