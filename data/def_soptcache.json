@@ -1,4 +1,5 @@
 {
+
 "aleph": "al",
 "allowrevins": "ari",
 "altkeymap": "akm",
@@ -347,5 +348,4 @@
 "wrapscan": "ws",
 "writeany": "wa",
 "writebackup": "wb",
-"writedelay": "wd",
-}
+"writedelay": "wd"}

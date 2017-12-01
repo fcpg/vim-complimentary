@@ -1,33 +1,44 @@
+# build_cmd_json.awk
+# Parse Vim doc/index.txt to create a JSON with builtin cmd info
+# Author: fcpg
+
 BEGIN {
   print "[";
+  first=1;
 }
 
 /\*:index\*/ { cmdsect=1; next; }
 !cmdsect { next; }
 cmdsect && /\*\S+\*/ { cmdsect=0; }
-ip && /^\s*$/ { cmdsect=0; }
+inprogress && /^\s*$/ { cmdsect=0; }
 
 /^\|\S+\|/ || !cmdsect {
-  if (ip) {
-    gsub(/"/, "\\\"", d);
-    printf("\"menu\": \"%s\",\n", d);
-    printf("\"info\": \"%s\",\n", d);
-    print "},";
-    w=d="";
+  if (inprogress) {
+    gsub(/"/, "\\\"", data);
+    printf("\"menu\": \"%s\",\n", data);
+    printf("\"info\": \"%s\",\n", data);
+    printf("}");
+    word=data="";
     if (!cmdsect) { nextfile; }
   }
-  ip=1;
+  inprogress=1;
   match($0, /^\|\S+\|\s+:(\S+)\s+(\S.*)$/, a);
-  w=a[1];
-  d=a[2];
-  gsub(/[][]/, "", w);
-  print "{\"word\": \"" w "\",";
+  word=a[1];
+  data=a[2];
+  gsub(/[][]/, "", word);
+  if (!first) {
+    print ",";
+  }
+  else {
+    first=0
+  }
+  print "{\"word\": \"" word "\",";
   next;
 } 
 
-ip && /^\s+\S/ {
+inprogress && /^\s+\S/ {
   gsub(/^\s+/, "");
-  d=d $0
+  data=data $0
 }
 
 END {

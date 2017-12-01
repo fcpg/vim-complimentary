@@ -1542,5 +1542,4 @@
 {"word": "writedelay",
 "menu": "'wd'	    delay this many msec for each char (for debug)",
 "info": "'wd'	    delay this many msec for each char (for debug)",
-},
-]
+}]

@@ -423,5 +423,4 @@
 "kind": "v",
 "menu": "When any X11 based GUI is running or when running in a",
 "info": "When any X11 based GUI is running or when running in a terminal and Vim connects to the X server (|-X|) this will be set to the window ID. When an MS-Windows GUI is running this will be set to the window handle. Otherwise the value is zero. Note: for windows inside Vim use |winnr()| or |win_getid()|, see |window-ID|. "
-},
-]
+}]

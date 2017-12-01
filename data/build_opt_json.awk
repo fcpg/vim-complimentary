@@ -1,33 +1,44 @@
+# build_opt_json.awk
+# Parse Vim doc/quickref.txt to create a JSON with opt info
+# Author: fcpg
+
 BEGIN {
   print "[";
+  first=1;
 }
 
 /\*option-list\*/ { optsect=1; next; }
 !optsect { next; }
 optsect && /\*\S+\*/ { optsect=0; }
-ip && /^\s*$/ { optsect=0; }
+inprogress && /^\s*$/ { optsect=0; }
 
 /^'\S+'/ || !optsect {
-  if (ip) {
-    gsub(/"/, "\\\"", d);
-    printf("\"menu\": \"%s\",\n", d);
-    printf("\"info\": \"%s\",\n", d);
-    print "},";
-    w=d="";
+  if (inprogress) {
+    gsub(/"/, "\\\"", data);
+    printf("\"menu\": \"%s\",\n", data);
+    printf("\"info\": \"%s\",\n", data);
+    printf("}");
+    word=data="";
     if (!optsect) { nextfile; }
   }
-  ip=1;
+  inprogress=1;
   match($0, /^'(\S+)'\s+(\S.*)$/, a);
-  w=a[1];
-  d=a[2];
-  gsub(/[][]/, "", w);
-  print "{\"word\": \"" w "\",";
+  word=a[1];
+  data=a[2];
+  gsub(/[][]/, "", word);
+  if (!first) {
+    print ",";
+  }
+  else {
+    first=0
+  }
+  print "{\"word\": \"" word "\",";
   next;
 } 
 
-ip && /^\s+\S/ {
+inprogress && /^\s+\S/ {
   gsub(/^\s+/, "");
-  d=d $0
+  data=data $0
 }
 
 END {

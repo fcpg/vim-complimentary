@@ -35,7 +35,6 @@ let s:cpty_cache_dir = get(g:, 'cpty_cache_dir', s:datadir)
 
 let s:cpty_use_default_cache = get(g:, 'cpty_use_default_cache', 1)
 let s:cpty_use_file_cache    = get(g:, 'cpty_use_file_cache', 1)
-let s:cpty_sigil             = get(g:, 'cpty_sigil', 0)
 let s:cpty_awk_cmd           = get(g:, 'cpty_awk_cmd', 'gawk -f')
 
 let s:cachefile = {
@@ -218,16 +217,16 @@ function! complimentary#CompleteCpty(findstart, base) abort
     endif
     return start
   else
-    if s:cpty_sigil && a:base[0] == '*'
+    if get(g:, 'cpty_sigil', 0) && a:base[0] == '*'
       let word = strpart(a:base,1)
       let type = 'function'
-    elseif s:cpty_sigil && a:base[0] == '+'
+    elseif get(g:, 'cpty_sigil', 0) && a:base[0] == '+'
       let word = strpart(a:base,1)
       let type = 'option'
-    elseif s:cpty_sigil && a:base[0] == ':'
+    elseif get(g:, 'cpty_sigil', 0) && a:base[0] == ':'
       let word = strpart(a:base,1)
       let type = 'command'
-    elseif s:cpty_sigil && a:base[0] == '#'
+    elseif get(g:, 'cpty_sigil', 0) && a:base[0] == '#'
       let word = strpart(a:base,1)
       let type = 'event'
     elseif a:base[0] == '&'
