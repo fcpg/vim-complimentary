@@ -391,8 +391,8 @@
 },
 {"word": "escape(",
 "kind": "f",
-"menu": "escape {chars} in {string} with '\'",
-"info": "escape({string}, {chars}) String\n\nescape {chars} in {string} with '\'"
+"menu": "escape {chars} in {string} with '\\'",
+"info": "escape({string}, {chars}) String\n\nescape {chars} in {string} with '\\'"
 },
 {"word": "eval(",
 "kind": "f",
@@ -1471,8 +1471,8 @@
 },
 {"word": "submatch(",
 "kind": "f",
-"menu": "or Listspecific match in \":s\" or substitute()",
-"info": "submatch({nr}[, {list}]) String\n\nor Listspecific match in \":s\" or substitute()"
+"menu": "specific match in \":s\" or substitute()",
+"info": "submatch({nr}[, {list}]) String or List\n\nspecific match in \":s\" or substitute()"
 },
 {"word": "substitute(",
 "kind": "f",

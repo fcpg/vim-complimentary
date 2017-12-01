@@ -13,6 +13,7 @@ funcsect && /\*\S+\*/ { funcsect=0; }
 
 /^\S+\([^)]*\)/ || !funcsect {
   if (inprogress) {
+    gsub(/\\/, "\\\\", data);
     gsub(/"/, "\\\"", data);
     printf("\"menu\": \"%s\",\n", data);
     printf("\"info\": \"%s %s\\n\\n%s\"\n", sig, ret, data);
@@ -21,11 +22,11 @@ funcsect && /\*\S+\*/ { funcsect=0; }
     if (!funcsect) { nextfile; }
   }
   inprogress=1;
-  match($0, /^((\S+)\([^)]*\))((\s+(\S+(\s+or\s+\S+)?))\s+(.*))?$/, a);
+  match($0, /^((\S+)\([^)]*\))((\s+(\S+(\s+or\s+\S+)?))(\s+(.*))?)?$/, a);
   word=a[2];
   sig=a[1];
   ret=a[5];
-  data=a[7];
+  data=a[8];
   if (!first) {
     print ",";
   }
