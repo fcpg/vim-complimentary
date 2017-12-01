@@ -1,7 +1,7 @@
 [
 {"word": "aleph",
-"menu": "'al'	    ASCII code of the letter Aleph (Hebrew)",
-"info": "'al'	    ASCII code of the letter Aleph (Hebrew)"
+"menu": "'al'      ASCII code of the letter Aleph (Hebrew)",
+"info": "'al'      ASCII code of the letter Aleph (Hebrew)"
 },
 {"word": "allowrevins",
 "menu": "'ari'     allow CTRL-_ in Insert and Command-line mode",
@@ -32,32 +32,32 @@
 "info": "'arshape' do shaping for Arabic characters"
 },
 {"word": "autoindent",
-"menu": "'ai'	    take indent for new line from previous line",
-"info": "'ai'	    take indent for new line from previous line"
+"menu": "'ai'      take indent for new line from previous line",
+"info": "'ai'      take indent for new line from previous line"
 },
 {"word": "autoread",
-"menu": "'ar'	    autom. read file when changed outside of Vim",
-"info": "'ar'	    autom. read file when changed outside of Vim"
+"menu": "'ar'      autom. read file when changed outside of Vim",
+"info": "'ar'      autom. read file when changed outside of Vim"
 },
 {"word": "autowrite",
-"menu": "'aw'	    automatically write file if changed",
-"info": "'aw'	    automatically write file if changed"
+"menu": "'aw'      automatically write file if changed",
+"info": "'aw'      automatically write file if changed"
 },
 {"word": "autowriteall",
 "menu": "'awa'     as 'autowrite', but works with more commands",
 "info": "'awa'     as 'autowrite', but works with more commands"
 },
 {"word": "background",
-"menu": "'bg'	    \"dark\" or \"light\", used for highlight colors",
-"info": "'bg'	    \"dark\" or \"light\", used for highlight colors"
+"menu": "'bg'      \"dark\" or \"light\", used for highlight colors",
+"info": "'bg'      \"dark\" or \"light\", used for highlight colors"
 },
 {"word": "backspace",
-"menu": "'bs'	    how backspace works at start of line",
-"info": "'bs'	    how backspace works at start of line"
+"menu": "'bs'      how backspace works at start of line",
+"info": "'bs'      how backspace works at start of line"
 },
 {"word": "backup",
-"menu": "'bk'	    keep backup file after overwriting a file",
-"info": "'bk'	    keep backup file after overwriting a file"
+"menu": "'bk'      keep backup file after overwriting a file",
+"info": "'bk'      keep backup file after overwriting a file"
 },
 {"word": "backupcopy",
 "menu": "'bkc'     make backup as a copy, don't rename the file",
@@ -88,8 +88,8 @@
 "info": "'bexpr'   expression to show in balloon"
 },
 {"word": "belloff",
-"menu": "'bo'	    do not ring the bell for these reasons",
-"info": "'bo'	    do not ring the bell for these reasons"
+"menu": "'bo'      do not ring the bell for these reasons",
+"info": "'bo'      do not ring the bell for these reasons"
 },
 {"word": "binary",
 "menu": "'bin'     read/write/edit file in binary mode",
@@ -120,24 +120,24 @@
 "info": "'bsdir'   which directory to start browsing in"
 },
 {"word": "bufhidden",
-"menu": "'bh'	    what to do when buffer is no longer in window",
-"info": "'bh'	    what to do when buffer is no longer in window"
+"menu": "'bh'      what to do when buffer is no longer in window",
+"info": "'bh'      what to do when buffer is no longer in window"
 },
 {"word": "buflisted",
-"menu": "'bl'	    whether the buffer shows up in the buffer list",
-"info": "'bl'	    whether the buffer shows up in the buffer list"
+"menu": "'bl'      whether the buffer shows up in the buffer list",
+"info": "'bl'      whether the buffer shows up in the buffer list"
 },
 {"word": "buftype",
-"menu": "'bt'	    special type of buffer",
-"info": "'bt'	    special type of buffer"
+"menu": "'bt'      special type of buffer",
+"info": "'bt'      special type of buffer"
 },
 {"word": "casemap",
 "menu": "'cmp'     specifies how case of letters is changed",
 "info": "'cmp'     specifies how case of letters is changed"
 },
 {"word": "cdpath",
-"menu": "'cd'	    list of directories searched with \":cd\"",
-"info": "'cd'	    list of directories searched with \":cd\""
+"menu": "'cd'      list of directories searched with \":cd\"",
+"info": "'cd'      list of directories searched with \":cd\""
 },
 {"word": "cedit",
 "menu": "key used to open the command-line window",
@@ -164,24 +164,24 @@
 "info": "'cinw'    words where 'si' and 'cin' add an indent"
 },
 {"word": "clipboard",
-"menu": "'cb'	    use the clipboard as the unnamed register",
-"info": "'cb'	    use the clipboard as the unnamed register"
+"menu": "'cb'      use the clipboard as the unnamed register",
+"info": "'cb'      use the clipboard as the unnamed register"
 },
 {"word": "cmdheight",
-"menu": "'ch'	    number of lines to use for the command-line",
-"info": "'ch'	    number of lines to use for the command-line"
+"menu": "'ch'      number of lines to use for the command-line",
+"info": "'ch'      number of lines to use for the command-line"
 },
 {"word": "cmdwinheight",
 "menu": "'cwh'     height of the command-line window",
 "info": "'cwh'     height of the command-line window"
 },
 {"word": "colorcolumn",
-"menu": "'cc'	    columns to highlight",
-"info": "'cc'	    columns to highlight"
+"menu": "'cc'      columns to highlight",
+"info": "'cc'      columns to highlight"
 },
 {"word": "columns",
-"menu": "'co'	    number of columns in the display",
-"info": "'co'	    number of columns in the display"
+"menu": "'co'      number of columns in the display",
+"info": "'co'      number of columns in the display"
 },
 {"word": "comments",
 "menu": "'com'     patterns that can start a comment line",
@@ -192,8 +192,8 @@
 "info": "'cms'     template for comments; used for fold marker"
 },
 {"word": "compatible",
-"menu": "'cp'	    behave Vi-compatible as much as possible",
-"info": "'cp'	    behave Vi-compatible as much as possible"
+"menu": "'cp'      behave Vi-compatible as much as possible",
+"info": "'cp'      behave Vi-compatible as much as possible"
 },
 {"word": "complete",
 "menu": "'cpt'     specify how Insert mode completion works",
@@ -216,24 +216,24 @@
 "info": "'cole'    whether concealable text is shown or hidden"
 },
 {"word": "confirm",
-"menu": "'cf'	    ask what to do about unsaved/read-only files",
-"info": "'cf'	    ask what to do about unsaved/read-only files"
+"menu": "'cf'      ask what to do about unsaved/read-only files",
+"info": "'cf'      ask what to do about unsaved/read-only files"
 },
 {"word": "conskey",
 "menu": "'consk'   get keys directly from console (MS-DOS only)",
 "info": "'consk'   get keys directly from console (MS-DOS only)"
 },
 {"word": "copyindent",
-"menu": "'ci'	    make 'autoindent' use existing indent structure",
-"info": "'ci'	    make 'autoindent' use existing indent structure"
+"menu": "'ci'      make 'autoindent' use existing indent structure",
+"info": "'ci'      make 'autoindent' use existing indent structure"
 },
 {"word": "cpoptions",
 "menu": "'cpo'     flags for Vi-compatible behavior",
 "info": "'cpo'     flags for Vi-compatible behavior"
 },
 {"word": "cryptmethod",
-"menu": "'cm'	    type of encryption to use for file writing",
-"info": "'cm'	    type of encryption to use for file writing"
+"menu": "'cm'      type of encryption to use for file writing",
+"info": "'cm'      type of encryption to use for file writing"
 },
 {"word": "cscopepathcomp",
 "menu": "'cspc'    how many components of the path to show",
@@ -268,12 +268,12 @@
 "info": "'crb'     move cursor in window as it moves in other windows"
 },
 {"word": "cursorcolumn",
-"menu": "'cuc'	    highlight the screen column of the cursor",
-"info": "'cuc'	    highlight the screen column of the cursor"
+"menu": "'cuc'      highlight the screen column of the cursor",
+"info": "'cuc'      highlight the screen column of the cursor"
 },
 {"word": "cursorline",
-"menu": "'cul'	    highlight the screen line of the cursor",
-"info": "'cul'	    highlight the screen line of the cursor"
+"menu": "'cul'      highlight the screen line of the cursor",
+"info": "'cul'      highlight the screen line of the cursor"
 },
 {"word": "debug",
 "menu": "set to \"msg\" to see all error messages",
@@ -304,28 +304,28 @@
 "info": "'dip'     options for using diff mode"
 },
 {"word": "digraph",
-"menu": "'dg'	    enable the entering of digraphs in Insert mode",
-"info": "'dg'	    enable the entering of digraphs in Insert mode"
+"menu": "'dg'      enable the entering of digraphs in Insert mode",
+"info": "'dg'      enable the entering of digraphs in Insert mode"
 },
 {"word": "directory",
 "menu": "'dir'     list of directory names for the swap file",
 "info": "'dir'     list of directory names for the swap file"
 },
 {"word": "display",
-"menu": "'dy'	    list of flags for how to display text",
-"info": "'dy'	    list of flags for how to display text"
+"menu": "'dy'      list of flags for how to display text",
+"info": "'dy'      list of flags for how to display text"
 },
 {"word": "eadirection",
 "menu": "'ead'     in which direction 'equalalways' works",
 "info": "'ead'     in which direction 'equalalways' works"
 },
 {"word": "edcompatible",
-"menu": "'ed'	    toggle flags of \":substitute\" command",
-"info": "'ed'	    toggle flags of \":substitute\" command"
+"menu": "'ed'      toggle flags of \":substitute\" command",
+"info": "'ed'      toggle flags of \":substitute\" command"
 },
 {"word": "emoji",
-"menu": "'emo'	    emoji characters are considered full width",
-"info": "'emo'	    emoji characters are considered full width"
+"menu": "'emo'      emoji characters are considered full width",
+"info": "'emo'      emoji characters are considered full width"
 },
 {"word": "encoding",
 "menu": "'enc'     encoding used internally",
@@ -336,40 +336,40 @@
 "info": "'eol'     write <EOL> for last line in file"
 },
 {"word": "equalalways",
-"menu": "'ea'	    windows are automatically made the same size",
-"info": "'ea'	    windows are automatically made the same size"
+"menu": "'ea'      windows are automatically made the same size",
+"info": "'ea'      windows are automatically made the same size"
 },
 {"word": "equalprg",
-"menu": "'ep'	    external program to use for \"=\" command",
-"info": "'ep'	    external program to use for \"=\" command"
+"menu": "'ep'      external program to use for \"=\" command",
+"info": "'ep'      external program to use for \"=\" command"
 },
 {"word": "errorbells",
-"menu": "'eb'	    ring the bell for error messages",
-"info": "'eb'	    ring the bell for error messages"
+"menu": "'eb'      ring the bell for error messages",
+"info": "'eb'      ring the bell for error messages"
 },
 {"word": "errorfile",
-"menu": "'ef'	    name of the errorfile for the QuickFix mode",
-"info": "'ef'	    name of the errorfile for the QuickFix mode"
+"menu": "'ef'      name of the errorfile for the QuickFix mode",
+"info": "'ef'      name of the errorfile for the QuickFix mode"
 },
 {"word": "errorformat",
 "menu": "'efm'     description of the lines in the error file",
 "info": "'efm'     description of the lines in the error file"
 },
 {"word": "esckeys",
-"menu": "'ek'	    recognize function keys in Insert mode",
-"info": "'ek'	    recognize function keys in Insert mode"
+"menu": "'ek'      recognize function keys in Insert mode",
+"info": "'ek'      recognize function keys in Insert mode"
 },
 {"word": "eventignore",
-"menu": "'ei'	    autocommand events that are ignored",
-"info": "'ei'	    autocommand events that are ignored"
+"menu": "'ei'      autocommand events that are ignored",
+"info": "'ei'      autocommand events that are ignored"
 },
 {"word": "expandtab",
-"menu": "'et'	    use spaces when <Tab> is inserted",
-"info": "'et'	    use spaces when <Tab> is inserted"
+"menu": "'et'      use spaces when <Tab> is inserted",
+"info": "'et'      use spaces when <Tab> is inserted"
 },
 {"word": "exrc",
-"menu": "'ex'	    read .vimrc and .exrc in the current directory",
-"info": "'ex'	    read .vimrc and .exrc in the current directory"
+"menu": "'ex'      read .vimrc and .exrc in the current directory",
+"info": "'ex'      read .vimrc and .exrc in the current directory"
 },
 {"word": "fileencoding",
 "menu": "'fenc'    file encoding for multi-byte text",
@@ -380,8 +380,8 @@
 "info": "'fencs'   automatically detected character encodings"
 },
 {"word": "fileformat",
-"menu": "'ff'	    file format used for file I/O",
-"info": "'ff'	    file format used for file I/O"
+"menu": "'ff'      file format used for file I/O",
+"info": "'ff'      file format used for file I/O"
 },
 {"word": "fileformats",
 "menu": "'ffs'     automatically detected values for 'fileformat'",
@@ -392,8 +392,8 @@
 "info": "'fic'     ignore case when using file names"
 },
 {"word": "filetype",
-"menu": "'ft'	    type of file, used for autocommands",
-"info": "'ft'	    type of file, used for autocommands"
+"menu": "'ft'      type of file, used for autocommands",
+"info": "'ft'      type of file, used for autocommands"
 },
 {"word": "fillchars",
 "menu": "'fcs'     characters to use for displaying special items",
@@ -404,8 +404,8 @@
 "info": "'fixeol'  make sure last line in file has <EOL>"
 },
 {"word": "fkmap",
-"menu": "'fk'	    Farsi keyboard mapping",
-"info": "'fk'	    Farsi keyboard mapping"
+"menu": "'fk'      Farsi keyboard mapping",
+"info": "'fk'      Farsi keyboard mapping"
 },
 {"word": "foldclose",
 "menu": "'fcl'     close a fold when the cursor leaves it",
@@ -468,28 +468,28 @@
 "info": "'flp'     pattern used to recognize a list header"
 },
 {"word": "formatoptions",
-"menu": "'fo'	    how automatic formatting is to be done",
-"info": "'fo'	    how automatic formatting is to be done"
+"menu": "'fo'      how automatic formatting is to be done",
+"info": "'fo'      how automatic formatting is to be done"
 },
 {"word": "formatprg",
-"menu": "'fp'	    name of external program used with \"gq\" command",
-"info": "'fp'	    name of external program used with \"gq\" command"
+"menu": "'fp'      name of external program used with \"gq\" command",
+"info": "'fp'      name of external program used with \"gq\" command"
 },
 {"word": "fsync",
-"menu": "'fs'	    whether to invoke fsync() after file write",
-"info": "'fs'	    whether to invoke fsync() after file write"
+"menu": "'fs'      whether to invoke fsync() after file write",
+"info": "'fs'      whether to invoke fsync() after file write"
 },
 {"word": "gdefault",
-"menu": "'gd'	    the \":substitute\" flag 'g' is default on",
-"info": "'gd'	    the \":substitute\" flag 'g' is default on"
+"menu": "'gd'      the \":substitute\" flag 'g' is default on",
+"info": "'gd'      the \":substitute\" flag 'g' is default on"
 },
 {"word": "grepformat",
 "menu": "'gfm'     format of 'grepprg' output",
 "info": "'gfm'     format of 'grepprg' output"
 },
 {"word": "grepprg",
-"menu": "'gp'	    program to use for \":grep\"",
-"info": "'gp'	    program to use for \":grep\""
+"menu": "'gp'      program to use for \":grep\"",
+"info": "'gp'      program to use for \":grep\""
 },
 {"word": "guicursor",
 "menu": "'gcr'     GUI: settings for cursor shape and blinking",
@@ -512,8 +512,8 @@
 "info": "'ghr'     GUI: pixels room for window decorations"
 },
 {"word": "guioptions",
-"menu": "'go'	    GUI: Which components and options are used",
-"info": "'go'	    GUI: Which components and options are used"
+"menu": "'go'      GUI: Which components and options are used",
+"info": "'go'      GUI: Which components and options are used"
 },
 {"word": "guipty",
 "menu": "GUI: try to use a pseudo-tty for \":!\" commands",
@@ -528,12 +528,12 @@
 "info": "'gtt'     GUI: custom tooltip for a tab page"
 },
 {"word": "helpfile",
-"menu": "'hf'	    full path name of the main help file",
-"info": "'hf'	    full path name of the main help file"
+"menu": "'hf'      full path name of the main help file",
+"info": "'hf'      full path name of the main help file"
 },
 {"word": "helpheight",
-"menu": "'hh'	    minimum height of a new help window",
-"info": "'hh'	    minimum height of a new help window"
+"menu": "'hh'      minimum height of a new help window",
+"info": "'hh'      minimum height of a new help window"
 },
 {"word": "helplang",
 "menu": "'hlg'     preferred help languages",
@@ -544,16 +544,16 @@
 "info": "'hid'     don't unload buffer when it is |abandon|ed"
 },
 {"word": "highlight",
-"menu": "'hl'	    sets highlighting mode for various occasions",
-"info": "'hl'	    sets highlighting mode for various occasions"
+"menu": "'hl'      sets highlighting mode for various occasions",
+"info": "'hl'      sets highlighting mode for various occasions"
 },
 {"word": "history",
-"menu": "'hi'	    number of command-lines that are remembered",
-"info": "'hi'	    number of command-lines that are remembered"
+"menu": "'hi'      number of command-lines that are remembered",
+"info": "'hi'      number of command-lines that are remembered"
 },
 {"word": "hkmap",
-"menu": "'hk'	    Hebrew keyboard mapping",
-"info": "'hk'	    Hebrew keyboard mapping"
+"menu": "'hk'      Hebrew keyboard mapping",
+"info": "'hk'      Hebrew keyboard mapping"
 },
 {"word": "hkmapp",
 "menu": "'hkp'     phonetic Hebrew keyboard mapping",
@@ -572,8 +572,8 @@
 "info": "string to use for the Vim icon text"
 },
 {"word": "ignorecase",
-"menu": "'ic'	    ignore case in search patterns",
-"info": "'ic'	    ignore case in search patterns"
+"menu": "'ic'      ignore case in search patterns",
+"info": "'ic'      ignore case in search patterns"
 },
 {"word": "imactivatefunc",
 "menu": "'imaf'    function to enable/disable the X input method",
@@ -616,8 +616,8 @@
 "info": "'inex'    expression used to process an include line"
 },
 {"word": "incsearch",
-"menu": "'is'	    highlight match while typing search pattern",
-"info": "'is'	    highlight match while typing search pattern"
+"menu": "'is'      highlight match while typing search pattern",
+"info": "'is'      highlight match while typing search pattern"
 },
 {"word": "indentexpr",
 "menu": "'inde'    expression used to obtain the indent of a line",
@@ -632,8 +632,8 @@
 "info": "'inf'     adjust case of match for keyword completion"
 },
 {"word": "insertmode",
-"menu": "'im'	    start the edit of a file in Insert mode",
-"info": "'im'	    start the edit of a file in Insert mode"
+"menu": "'im'      start the edit of a file in Insert mode",
+"info": "'im'      start the edit of a file in Insert mode"
 },
 {"word": "isfname",
 "menu": "'isf'     characters included in file names and pathnames",
@@ -652,8 +652,8 @@
 "info": "'isp'     printable characters"
 },
 {"word": "joinspaces",
-"menu": "'js'	    two spaces after a period with a join command",
-"info": "'js'	    two spaces after a period with a join command"
+"menu": "'js'      two spaces after a period with a join command",
+"info": "'js'      two spaces after a period with a join command"
 },
 {"word": "key",
 "menu": "encryption key",
@@ -664,32 +664,32 @@
 "info": "'kmp'     name of a keyboard mapping"
 },
 {"word": "keymodel",
-"menu": "'km'	    enable starting/stopping selection with keys",
-"info": "'km'	    enable starting/stopping selection with keys"
+"menu": "'km'      enable starting/stopping selection with keys",
+"info": "'km'      enable starting/stopping selection with keys"
 },
 {"word": "keywordprg",
-"menu": "'kp'	    program to use for the \"K\" command",
-"info": "'kp'	    program to use for the \"K\" command"
+"menu": "'kp'      program to use for the \"K\" command",
+"info": "'kp'      program to use for the \"K\" command"
 },
 {"word": "langmap",
 "menu": "'lmap'    alphabetic characters for other language mode",
 "info": "'lmap'    alphabetic characters for other language mode"
 },
 {"word": "langmenu",
-"menu": "'lm'	    language to be used for the menus",
-"info": "'lm'	    language to be used for the menus"
+"menu": "'lm'      language to be used for the menus",
+"info": "'lm'      language to be used for the menus"
 },
 {"word": "langremap",
-"menu": "'lrm'	    do apply 'langmap' to mapped characters",
-"info": "'lrm'	    do apply 'langmap' to mapped characters"
+"menu": "'lrm'      do apply 'langmap' to mapped characters",
+"info": "'lrm'      do apply 'langmap' to mapped characters"
 },
 {"word": "laststatus",
-"menu": "'ls'	    tells when last window has status lines",
-"info": "'ls'	    tells when last window has status lines"
+"menu": "'ls'      tells when last window has status lines",
+"info": "'ls'      tells when last window has status lines"
 },
 {"word": "lazyredraw",
-"menu": "'lz'	    don't redraw while executing macros",
-"info": "'lz'	    don't redraw while executing macros"
+"menu": "'lz'      don't redraw while executing macros",
+"info": "'lz'      don't redraw while executing macros"
 },
 {"word": "linebreak",
 "menu": "'lbr'     wrap long lines at a blank",
@@ -708,8 +708,8 @@
 "info": "automatic indenting for Lisp"
 },
 {"word": "lispwords",
-"menu": "'lw'	    words that change how lisp indenting works",
-"info": "'lw'	    words that change how lisp indenting works"
+"menu": "'lw'      words that change how lisp indenting works",
+"info": "'lw'      words that change how lisp indenting works"
 },
 {"word": "list",
 "menu": "show <Tab> and <EOL>",
@@ -744,8 +744,8 @@
 "info": "'menc'    encoding of external make/grep commands"
 },
 {"word": "makeprg",
-"menu": "'mp'	    program to use for the \":make\" command",
-"info": "'mp'	    program to use for the \":make\" command"
+"menu": "'mp'      program to use for the \":make\" command",
+"info": "'mp'      program to use for the \":make\" command"
 },
 {"word": "matchpairs",
 "menu": "'mps'     pairs of characters that \"%\" can match",
@@ -768,8 +768,8 @@
 "info": "'mmd'     maximum recursive depth for mapping"
 },
 {"word": "maxmem",
-"menu": "'mm'	    maximum memory (in Kbyte) used for one buffer",
-"info": "'mm'	    maximum memory (in Kbyte) used for one buffer"
+"menu": "'mm'      maximum memory (in Kbyte) used for one buffer",
+"info": "'mm'      maximum memory (in Kbyte) used for one buffer"
 },
 {"word": "maxmempattern",
 "menu": "'mmp'     maximum memory (in Kbyte) used for pattern search",
@@ -788,16 +788,16 @@
 "info": "'msm'     memory used before |:mkspell| compresses the tree"
 },
 {"word": "modeline",
-"menu": "'ml'	    recognize modelines at start or end of file",
-"info": "'ml'	    recognize modelines at start or end of file"
+"menu": "'ml'      recognize modelines at start or end of file",
+"info": "'ml'      recognize modelines at start or end of file"
 },
 {"word": "modelines",
 "menu": "'mls'     number of lines checked for modelines",
 "info": "'mls'     number of lines checked for modelines"
 },
 {"word": "modifiable",
-"menu": "'ma'	    changes to the text are not possible",
-"info": "'ma'	    changes to the text are not possible"
+"menu": "'ma'      changes to the text are not possible",
+"info": "'ma'      changes to the text are not possible"
 },
 {"word": "modified",
 "menu": "'mod'     buffer has been modified",
@@ -816,8 +816,8 @@
 "info": "'mousef'  keyboard focus follows the mouse"
 },
 {"word": "mousehide",
-"menu": "'mh'	    hide mouse pointer while typing",
-"info": "'mh'	    hide mouse pointer while typing"
+"menu": "'mh'      hide mouse pointer while typing",
+"info": "'mh'      hide mouse pointer while typing"
 },
 {"word": "mousemodel",
 "menu": "'mousem'  changes meaning of mouse buttons",
@@ -836,12 +836,12 @@
 "info": "'mzq'     the interval between polls for MzScheme threads"
 },
 {"word": "nrformats",
-"menu": "'nf'	    number formats recognized for CTRL-A command",
-"info": "'nf'	    number formats recognized for CTRL-A command"
+"menu": "'nf'      number formats recognized for CTRL-A command",
+"info": "'nf'      number formats recognized for CTRL-A command"
 },
 {"word": "number",
-"menu": "'nu'	    print the line number in front of each line",
-"info": "'nu'	    print the line number in front of each line"
+"menu": "'nu'      print the line number in front of each line",
+"info": "'nu'      print the line number in front of each line"
 },
 {"word": "numberwidth",
 "menu": "'nuw'     number of columns used for the line number",
@@ -876,28 +876,28 @@
 "info": "allow pasting text"
 },
 {"word": "pastetoggle",
-"menu": "'pt'	    key code that causes 'paste' to toggle",
-"info": "'pt'	    key code that causes 'paste' to toggle"
+"menu": "'pt'      key code that causes 'paste' to toggle",
+"info": "'pt'      key code that causes 'paste' to toggle"
 },
 {"word": "patchexpr",
 "menu": "'pex'     expression used to patch a file",
 "info": "'pex'     expression used to patch a file"
 },
 {"word": "patchmode",
-"menu": "'pm'	    keep the oldest version of a file",
-"info": "'pm'	    keep the oldest version of a file"
+"menu": "'pm'      keep the oldest version of a file",
+"info": "'pm'      keep the oldest version of a file"
 },
 {"word": "path",
-"menu": "'pa'	    list of directories searched with \"gf\" et.al.",
-"info": "'pa'	    list of directories searched with \"gf\" et.al."
+"menu": "'pa'      list of directories searched with \"gf\" et.al.",
+"info": "'pa'      list of directories searched with \"gf\" et.al."
 },
 {"word": "perldll",
 "menu": "name of the Perl dynamic library",
 "info": "name of the Perl dynamic library"
 },
 {"word": "preserveindent",
-"menu": "'pi'	    preserve the indent structure when reindenting",
-"info": "'pi'	    preserve the indent structure when reindenting"
+"menu": "'pi'      preserve the indent structure when reindenting",
+"info": "'pi'      preserve the indent structure when reindenting"
 },
 {"word": "previewheight",
 "menu": "'pvh'     height of the preview window",
@@ -944,8 +944,8 @@
 "info": "'prompt'  enable prompt in Ex mode"
 },
 {"word": "pumheight",
-"menu": "'ph'	    maximum height of the popup menu",
-"info": "'ph'	    maximum height of the popup menu"
+"menu": "'ph'      maximum height of the popup menu",
+"info": "'ph'      maximum height of the popup menu"
 },
 {"word": "pythondll",
 "menu": "name of the Python 2 dynamic library",
@@ -956,52 +956,52 @@
 "info": "name of the Python 3 dynamic library"
 },
 {"word": "pyxversion",
-"menu": "'pyx'	    Python version used for pyx* commands",
-"info": "'pyx'	    Python version used for pyx* commands"
+"menu": "'pyx'      Python version used for pyx* commands",
+"info": "'pyx'      Python version used for pyx* commands"
 },
 {"word": "quoteescape",
-"menu": "'qe'	    escape characters used in a string",
-"info": "'qe'	    escape characters used in a string"
+"menu": "'qe'      escape characters used in a string",
+"info": "'qe'      escape characters used in a string"
 },
 {"word": "readonly",
-"menu": "'ro'	    disallow writing the buffer",
-"info": "'ro'	    disallow writing the buffer"
+"menu": "'ro'      disallow writing the buffer",
+"info": "'ro'      disallow writing the buffer"
 },
 {"word": "redrawtime",
 "menu": "'rdt'     timeout for 'hlsearch' and |:match| highlighting",
 "info": "'rdt'     timeout for 'hlsearch' and |:match| highlighting"
 },
 {"word": "regexpengine",
-"menu": "'re'	    default regexp engine to use",
-"info": "'re'	    default regexp engine to use"
+"menu": "'re'      default regexp engine to use",
+"info": "'re'      default regexp engine to use"
 },
 {"word": "relativenumber",
-"menu": "'rnu'	    show relative line number in front of each line",
-"info": "'rnu'	    show relative line number in front of each line"
+"menu": "'rnu'      show relative line number in front of each line",
+"info": "'rnu'      show relative line number in front of each line"
 },
 {"word": "remap",
 "menu": "allow mappings to work recursively",
 "info": "allow mappings to work recursively"
 },
 {"word": "renderoptions",
-"menu": "'rop'	    options for text rendering on Windows",
-"info": "'rop'	    options for text rendering on Windows"
+"menu": "'rop'      options for text rendering on Windows",
+"info": "'rop'      options for text rendering on Windows"
 },
 {"word": "report",
 "menu": "threshold for reporting nr. of lines changed",
 "info": "threshold for reporting nr. of lines changed"
 },
 {"word": "restorescreen",
-"menu": "'rs'	    Win32: restore screen when exiting",
-"info": "'rs'	    Win32: restore screen when exiting"
+"menu": "'rs'      Win32: restore screen when exiting",
+"info": "'rs'      Win32: restore screen when exiting"
 },
 {"word": "revins",
-"menu": "'ri'	    inserting characters will work backwards",
-"info": "'ri'	    inserting characters will work backwards"
+"menu": "'ri'      inserting characters will work backwards",
+"info": "'ri'      inserting characters will work backwards"
 },
 {"word": "rightleft",
-"menu": "'rl'	    window is right-to-left oriented",
-"info": "'rl'	    window is right-to-left oriented"
+"menu": "'rl'      window is right-to-left oriented",
+"info": "'rl'      window is right-to-left oriented"
 },
 {"word": "rightleftcmd",
 "menu": "'rlc'     commands for which editing works right-to-left",
@@ -1012,8 +1012,8 @@
 "info": "name of the Ruby dynamic library"
 },
 {"word": "ruler",
-"menu": "'ru'	    show cursor line and column in the status line",
-"info": "'ru'	    show cursor line and column in the status line"
+"menu": "'ru'      show cursor line and column in the status line",
+"info": "'ru'      show cursor line and column in the status line"
 },
 {"word": "rulerformat",
 "menu": "'ruf'     custom format for the ruler",
@@ -1032,12 +1032,12 @@
 "info": "'scb'     scroll in window as other windows scroll"
 },
 {"word": "scrolljump",
-"menu": "'sj'	    minimum number of lines to scroll",
-"info": "'sj'	    minimum number of lines to scroll"
+"menu": "'sj'      minimum number of lines to scroll",
+"info": "'sj'      minimum number of lines to scroll"
 },
 {"word": "scrolloff",
-"menu": "'so'	    minimum nr. of lines above and below cursor",
-"info": "'so'	    minimum nr. of lines above and below cursor"
+"menu": "'so'      minimum nr. of lines above and below cursor",
+"info": "'so'      minimum nr. of lines above and below cursor"
 },
 {"word": "scrollopt",
 "menu": "'sbo'     how 'scrollbind' should behave",
@@ -1064,16 +1064,16 @@
 "info": "'ssop'    options for |:mksession|"
 },
 {"word": "shell",
-"menu": "'sh'	    name of shell to use for external commands",
-"info": "'sh'	    name of shell to use for external commands"
+"menu": "'sh'      name of shell to use for external commands",
+"info": "'sh'      name of shell to use for external commands"
 },
 {"word": "shellcmdflag",
 "menu": "'shcf'    flag to shell to execute one command",
 "info": "'shcf'    flag to shell to execute one command"
 },
 {"word": "shellpipe",
-"menu": "'sp'	    string to put output of \":make\" in error file",
-"info": "'sp'	    string to put output of \":make\" in error file"
+"menu": "'sp'      string to put output of \":make\" in error file",
+"info": "'sp'      string to put output of \":make\" in error file"
 },
 {"word": "shellquote",
 "menu": "'shq'     quote character(s) for around shell command",
@@ -1092,8 +1092,8 @@
 "info": "'stmp'    whether to use a temp file for shell commands"
 },
 {"word": "shelltype",
-"menu": "'st'	    Amiga: influences how to use a shell",
-"info": "'st'	    Amiga: influences how to use a shell"
+"menu": "'st'      Amiga: influences how to use a shell",
+"info": "'st'      Amiga: influences how to use a shell"
 },
 {"word": "shellxescape",
 "menu": "'sxe'     characters to escape when 'shellxquote' is (",
@@ -1104,36 +1104,36 @@
 "info": "'sxq'     like 'shellquote', but include redirection"
 },
 {"word": "shiftround",
-"menu": "'sr'	    round indent to multiple of shiftwidth",
-"info": "'sr'	    round indent to multiple of shiftwidth"
+"menu": "'sr'      round indent to multiple of shiftwidth",
+"info": "'sr'      round indent to multiple of shiftwidth"
 },
 {"word": "shiftwidth",
-"menu": "'sw'	    number of spaces to use for (auto)indent step",
-"info": "'sw'	    number of spaces to use for (auto)indent step"
+"menu": "'sw'      number of spaces to use for (auto)indent step",
+"info": "'sw'      number of spaces to use for (auto)indent step"
 },
 {"word": "shortmess",
 "menu": "'shm'     list of flags, reduce length of messages",
 "info": "'shm'     list of flags, reduce length of messages"
 },
 {"word": "shortname",
-"menu": "'sn'	    non-MS-DOS: Filenames assumed to be 8.3 chars",
-"info": "'sn'	    non-MS-DOS: Filenames assumed to be 8.3 chars"
+"menu": "'sn'      non-MS-DOS: Filenames assumed to be 8.3 chars",
+"info": "'sn'      non-MS-DOS: Filenames assumed to be 8.3 chars"
 },
 {"word": "showbreak",
 "menu": "'sbr'     string to use at the start of wrapped lines",
 "info": "'sbr'     string to use at the start of wrapped lines"
 },
 {"word": "showcmd",
-"menu": "'sc'	    show (partial) command in status line",
-"info": "'sc'	    show (partial) command in status line"
+"menu": "'sc'      show (partial) command in status line",
+"info": "'sc'      show (partial) command in status line"
 },
 {"word": "showfulltag",
 "menu": "'sft'     show full tag pattern when completing tag",
 "info": "'sft'     show full tag pattern when completing tag"
 },
 {"word": "showmatch",
-"menu": "'sm'	    briefly jump to matching bracket if insert one",
-"info": "'sm'	    briefly jump to matching bracket if insert one"
+"menu": "'sm'      briefly jump to matching bracket if insert one",
+"info": "'sm'      briefly jump to matching bracket if insert one"
 },
 {"word": "showmode",
 "menu": "'smd'     message on status line to show current mode",
@@ -1144,24 +1144,24 @@
 "info": "'stal'    tells when the tab pages line is displayed"
 },
 {"word": "sidescroll",
-"menu": "'ss'	    minimum number of columns to scroll horizontal",
-"info": "'ss'	    minimum number of columns to scroll horizontal"
+"menu": "'ss'      minimum number of columns to scroll horizontal",
+"info": "'ss'      minimum number of columns to scroll horizontal"
 },
 {"word": "sidescrolloff",
 "menu": "'siso'    min. nr. of columns to left and right of cursor",
 "info": "'siso'    min. nr. of columns to left and right of cursor"
 },
 {"word": "signcolumn",
-"menu": "'scl'	    when to display the sign column",
-"info": "'scl'	    when to display the sign column"
+"menu": "'scl'      when to display the sign column",
+"info": "'scl'      when to display the sign column"
 },
 {"word": "smartcase",
 "menu": "'scs'     no ignore case when pattern has uppercase",
 "info": "'scs'     no ignore case when pattern has uppercase"
 },
 {"word": "smartindent",
-"menu": "'si'	    smart autoindenting for C programs",
-"info": "'si'	    smart autoindenting for C programs"
+"menu": "'si'      smart autoindenting for C programs",
+"info": "'si'      smart autoindenting for C programs"
 },
 {"word": "smarttab",
 "menu": "'sta'     use 'shiftwidth' when inserting <Tab>",
@@ -1192,8 +1192,8 @@
 "info": "'sps'     method(s) used to suggest spelling corrections"
 },
 {"word": "splitbelow",
-"menu": "'sb'	    new window from split is below the current one",
-"info": "'sb'	    new window from split is below the current one"
+"menu": "'sb'      new window from split is below the current one",
+"info": "'sb'      new window from split is below the current one"
 },
 {"word": "splitright",
 "menu": "'spr'     new window is put right of the current one",
@@ -1208,8 +1208,8 @@
 "info": "'stl'     custom format for the status line"
 },
 {"word": "suffixes",
-"menu": "'su'	    suffixes that are ignored with multiple match",
-"info": "'su'	    suffixes that are ignored with multiple match"
+"menu": "'su'      suffixes that are ignored with multiple match",
+"info": "'su'      suffixes that are ignored with multiple match"
 },
 {"word": "suffixesadd",
 "menu": "'sua'     suffixes added when searching for a file",
@@ -1244,8 +1244,8 @@
 "info": "'tpm'     maximum number of tab pages for |-p| and \"tab all\""
 },
 {"word": "tabstop",
-"menu": "'ts'	    number of spaces that <Tab> in file uses",
-"info": "'ts'	    number of spaces that <Tab> in file uses"
+"menu": "'ts'      number of spaces that <Tab> in file uses",
+"info": "'ts'      number of spaces that <Tab> in file uses"
 },
 {"word": "tagbsearch",
 "menu": "'tbs'     use binary searching in tags files",
@@ -1256,12 +1256,12 @@
 "info": "'tc'      how to handle case when searching in tags files"
 },
 {"word": "taglength",
-"menu": "'tl'	    number of significant characters for a tag",
-"info": "'tl'	    number of significant characters for a tag"
+"menu": "'tl'      number of significant characters for a tag",
+"info": "'tl'      number of significant characters for a tag"
 },
 {"word": "tagrelative",
-"menu": "'tr'	    file names in tag file are relative",
-"info": "'tr'	    file names in tag file are relative"
+"menu": "'tr'      file names in tag file are relative",
+"info": "'tr'      file names in tag file are relative"
 },
 {"word": "tags",
 "menu": "'tag'     list of file names used by the tag command",
@@ -1292,28 +1292,28 @@
 "info": "'tgc'     use GUI colors for the terminal"
 },
 {"word": "termkey",
-"menu": "'tk'	    key that precedes a Vim command in a terminal",
-"info": "'tk'	    key that precedes a Vim command in a terminal"
+"menu": "'tk'      key that precedes a Vim command in a terminal",
+"info": "'tk'      key that precedes a Vim command in a terminal"
 },
 {"word": "termsize",
-"menu": "'tms'	    size of a terminal window",
-"info": "'tms'	    size of a terminal window"
+"menu": "'tms'      size of a terminal window",
+"info": "'tms'      size of a terminal window"
 },
 {"word": "terse",
 "menu": "shorten some messages",
 "info": "shorten some messages"
 },
 {"word": "textauto",
-"menu": "'ta'	    obsolete, use 'fileformats'",
-"info": "'ta'	    obsolete, use 'fileformats'"
+"menu": "'ta'      obsolete, use 'fileformats'",
+"info": "'ta'      obsolete, use 'fileformats'"
 },
 {"word": "textmode",
-"menu": "'tx'	    obsolete, use 'fileformat'",
-"info": "'tx'	    obsolete, use 'fileformat'"
+"menu": "'tx'      obsolete, use 'fileformat'",
+"info": "'tx'      obsolete, use 'fileformat'"
 },
 {"word": "textwidth",
-"menu": "'tw'	    maximum width of text that is being inserted",
-"info": "'tw'	    maximum width of text that is being inserted"
+"menu": "'tw'      maximum width of text that is being inserted",
+"info": "'tw'      maximum width of text that is being inserted"
 },
 {"word": "thesaurus",
 "menu": "'tsr'     list of thesaurus files for keyword completion",
@@ -1324,12 +1324,12 @@
 "info": "'top'     tilde command \"~\" behaves like an operator"
 },
 {"word": "timeout",
-"menu": "'to'	    time out on mappings and key codes",
-"info": "'to'	    time out on mappings and key codes"
+"menu": "'to'      time out on mappings and key codes",
+"info": "'to'      time out on mappings and key codes"
 },
 {"word": "timeoutlen",
-"menu": "'tm'	    time out time in milliseconds",
-"info": "'tm'	    time out time in milliseconds"
+"menu": "'tm'      time out time in milliseconds",
+"info": "'tm'      time out time in milliseconds"
 },
 {"word": "title",
 "menu": "let Vim set the title of the window",
@@ -1348,8 +1348,8 @@
 "info": "string to use for the Vim window title"
 },
 {"word": "toolbar",
-"menu": "'tb'	    GUI: which items to show in the toolbar",
-"info": "'tb'	    GUI: which items to show in the toolbar"
+"menu": "'tb'      GUI: which items to show in the toolbar",
+"info": "'tb'      GUI: which items to show in the toolbar"
 },
 {"word": "toolbariconsize",
 "menu": "'tbis'    size of the toolbar icons (for GTK 2 only)",
@@ -1368,8 +1368,8 @@
 "info": "'tbi'     use built-in termcap before external termcap"
 },
 {"word": "ttyfast",
-"menu": "'tf'	    indicates a fast terminal connection",
-"info": "'tf'	    indicates a fast terminal connection"
+"menu": "'tf'      indicates a fast terminal connection",
+"info": "'tf'      indicates a fast terminal connection"
 },
 {"word": "ttymouse",
 "menu": "'ttym'    type of mouse codes generated",
@@ -1388,24 +1388,24 @@
 "info": "'udir'    where to store undo files"
 },
 {"word": "undofile",
-"menu": "'udf'	    save undo information in a file",
-"info": "'udf'	    save undo information in a file"
+"menu": "'udf'      save undo information in a file",
+"info": "'udf'      save undo information in a file"
 },
 {"word": "undolevels",
-"menu": "'ul'	    maximum number of changes that can be undone",
-"info": "'ul'	    maximum number of changes that can be undone"
+"menu": "'ul'      maximum number of changes that can be undone",
+"info": "'ul'      maximum number of changes that can be undone"
 },
 {"word": "undoreload",
-"menu": "'ur'	    max nr of lines to save for undo on a buffer reload",
-"info": "'ur'	    max nr of lines to save for undo on a buffer reload"
+"menu": "'ur'      max nr of lines to save for undo on a buffer reload",
+"info": "'ur'      max nr of lines to save for undo on a buffer reload"
 },
 {"word": "updatecount",
-"menu": "'uc'	    after this many characters flush swap file",
-"info": "'uc'	    after this many characters flush swap file"
+"menu": "'uc'      after this many characters flush swap file",
+"info": "'uc'      after this many characters flush swap file"
 },
 {"word": "updatetime",
-"menu": "'ut'	    after this many milliseconds flush swap file",
-"info": "'ut'	    after this many milliseconds flush swap file"
+"menu": "'ut'      after this many milliseconds flush swap file",
+"info": "'ut'      after this many milliseconds flush swap file"
 },
 {"word": "verbose",
 "menu": "'vbs'     give informative messages",
@@ -1424,36 +1424,36 @@
 "info": "'vop'     specifies what to save for :mkview"
 },
 {"word": "viminfo",
-"menu": "'vi'	    use .viminfo file upon startup and exiting",
-"info": "'vi'	    use .viminfo file upon startup and exiting"
+"menu": "'vi'      use .viminfo file upon startup and exiting",
+"info": "'vi'      use .viminfo file upon startup and exiting"
 },
 {"word": "viminfofile",
-"menu": "'vif'	    file name used for the viminfo file",
-"info": "'vif'	    file name used for the viminfo file"
+"menu": "'vif'      file name used for the viminfo file",
+"info": "'vif'      file name used for the viminfo file"
 },
 {"word": "virtualedit",
-"menu": "'ve'	    when to use virtual editing",
-"info": "'ve'	    when to use virtual editing"
+"menu": "'ve'      when to use virtual editing",
+"info": "'ve'      when to use virtual editing"
 },
 {"word": "visualbell",
-"menu": "'vb'	    use visual bell instead of beeping",
-"info": "'vb'	    use visual bell instead of beeping"
+"menu": "'vb'      use visual bell instead of beeping",
+"info": "'vb'      use visual bell instead of beeping"
 },
 {"word": "warn",
 "menu": "warn for shell command when buffer was changed",
 "info": "warn for shell command when buffer was changed"
 },
 {"word": "weirdinvert",
-"menu": "'wiv'	    for terminals that have weird inversion method",
-"info": "'wiv'	    for terminals that have weird inversion method"
+"menu": "'wiv'      for terminals that have weird inversion method",
+"info": "'wiv'      for terminals that have weird inversion method"
 },
 {"word": "whichwrap",
-"menu": "'ww'	    allow specified keys to cross line boundaries",
-"info": "'ww'	    allow specified keys to cross line boundaries"
+"menu": "'ww'      allow specified keys to cross line boundaries",
+"info": "'ww'      allow specified keys to cross line boundaries"
 },
 {"word": "wildchar",
-"menu": "'wc'	    command-line character for wildcard expansion",
-"info": "'wc'	    command-line character for wildcard expansion"
+"menu": "'wc'      command-line character for wildcard expansion",
+"info": "'wc'      command-line character for wildcard expansion"
 },
 {"word": "wildcharm",
 "menu": "'wcm'     like 'wildchar' but also works when mapped",
@@ -1484,12 +1484,12 @@
 "info": "'wak'     when the windows system handles ALT keys"
 },
 {"word": "window",
-"menu": "'wi'	    nr of lines to scroll for CTRL-F and CTRL-B",
-"info": "'wi'	    nr of lines to scroll for CTRL-F and CTRL-B"
+"menu": "'wi'      nr of lines to scroll for CTRL-F and CTRL-B",
+"info": "'wi'      nr of lines to scroll for CTRL-F and CTRL-B"
 },
 {"word": "winheight",
-"menu": "'wh'	    minimum number of lines for the current window",
-"info": "'wh'	    minimum number of lines for the current window"
+"menu": "'wh'      minimum number of lines for the current window",
+"info": "'wh'      minimum number of lines for the current window"
 },
 {"word": "winfixheight",
 "menu": "'wfh'     keep window height when opening/closing windows",
@@ -1520,26 +1520,26 @@
 "info": "long lines wrap and continue on the next line"
 },
 {"word": "wrapmargin",
-"menu": "'wm'	    chars from the right where wrapping starts",
-"info": "'wm'	    chars from the right where wrapping starts"
+"menu": "'wm'      chars from the right where wrapping starts",
+"info": "'wm'      chars from the right where wrapping starts"
 },
 {"word": "wrapscan",
-"menu": "'ws'	    searches wrap around the end of the file",
-"info": "'ws'	    searches wrap around the end of the file"
+"menu": "'ws'      searches wrap around the end of the file",
+"info": "'ws'      searches wrap around the end of the file"
 },
 {"word": "write",
 "menu": "writing to a file is allowed",
 "info": "writing to a file is allowed"
 },
 {"word": "writeany",
-"menu": "'wa'	    write to file with no need for \"!\" override",
-"info": "'wa'	    write to file with no need for \"!\" override"
+"menu": "'wa'      write to file with no need for \"!\" override",
+"info": "'wa'      write to file with no need for \"!\" override"
 },
 {"word": "writebackup",
-"menu": "'wb'	    make a backup before overwriting a file",
-"info": "'wb'	    make a backup before overwriting a file"
+"menu": "'wb'      make a backup before overwriting a file",
+"info": "'wb'      make a backup before overwriting a file"
 },
 {"word": "writedelay",
-"menu": "'wd'	    delay this many msec for each char (for debug)",
-"info": "'wd'	    delay this many msec for each char (for debug)"
+"menu": "'wd'      delay this many msec for each char (for debug)",
+"info": "'wd'      delay this many msec for each char (for debug)"
 }]

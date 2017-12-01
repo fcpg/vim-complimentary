@@ -15,6 +15,7 @@ inprogress && /^\s*$/ { optsect=0; }
 /^'\S+'/ || !optsect {
   if (inprogress) {
     gsub(/"/, "\\\"", data);
+    gsub(/\t/, "  ", data);
     printf("\"menu\": \"%s\",\n", data);
     printf("\"info\": \"%s\"\n", data);
     printf("}");
