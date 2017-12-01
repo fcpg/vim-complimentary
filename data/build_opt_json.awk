@@ -16,7 +16,7 @@ inprogress && /^\s*$/ { optsect=0; }
   if (inprogress) {
     gsub(/"/, "\\\"", data);
     printf("\"menu\": \"%s\",\n", data);
-    printf("\"info\": \"%s\",\n", data);
+    printf("\"info\": \"%s\"\n", data);
     printf("}");
     word=data="";
     if (!optsect) { nextfile; }

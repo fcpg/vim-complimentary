@@ -15,7 +15,7 @@ funcsect && /\*\S+\*/ { funcsect=0; }
   if (inprogress) {
     gsub(/"/, "\\\"", data);
     printf("\"menu\": \"%s\",\n", data);
-    printf("\"info\": \"%s %s\\n\\n%s\",\n", sig, ret, data);
+    printf("\"info\": \"%s %s\\n\\n%s\"\n", sig, ret, data);
     printf("}");
     word=sig=ret=data="";
     if (!funcsect) { nextfile; }

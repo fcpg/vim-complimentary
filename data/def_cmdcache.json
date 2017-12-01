@@ -1,2197 +1,2197 @@
 [
 {"word": "!",
 "menu": "filter lines or execute an external command",
-"info": "filter lines or execute an external command",
+"info": "filter lines or execute an external command"
 },
 {"word": "!!",
 "menu": "repeat last \":!\" command",
-"info": "repeat last \":!\" command",
+"info": "repeat last \":!\" command"
 },
 {"word": "#",
 "menu": "same as \":number\"",
-"info": "same as \":number\"",
+"info": "same as \":number\""
 },
 {"word": "&",
 "menu": "repeat last \":substitute\"",
-"info": "repeat last \":substitute\"",
+"info": "repeat last \":substitute\""
 },
 {"word": "*",
 "menu": "execute contents of a register",
-"info": "execute contents of a register",
+"info": "execute contents of a register"
 },
 {"word": "<",
 "menu": "shift lines one 'shiftwidth' left",
-"info": "shift lines one 'shiftwidth' left",
+"info": "shift lines one 'shiftwidth' left"
 },
 {"word": "=",
 "menu": "print the cursor line number",
-"info": "print the cursor line number",
+"info": "print the cursor line number"
 },
 {"word": ">",
 "menu": "shift lines one 'shiftwidth' right",
-"info": "shift lines one 'shiftwidth' right",
+"info": "shift lines one 'shiftwidth' right"
 },
 {"word": "@",
 "menu": "execute contents of a register",
-"info": "execute contents of a register",
+"info": "execute contents of a register"
 },
 {"word": "@@",
 "menu": "repeat the previous \":@\"",
-"info": "repeat the previous \":@\"",
+"info": "repeat the previous \":@\""
 },
 {"word": "Next",
 "menu": "go to previous file in the argument list",
-"info": "go to previous file in the argument list",
+"info": "go to previous file in the argument list"
 },
 {"word": "Print",
 "menu": "print lines",
-"info": "print lines",
+"info": "print lines"
 },
 {"word": "X",
 "menu": "ask for encryption key",
-"info": "ask for encryption key",
+"info": "ask for encryption key"
 },
 {"word": "append",
 "menu": "append text",
-"info": "append text",
+"info": "append text"
 },
 {"word": "abbreviate",
 "menu": "enter abbreviation",
-"info": "enter abbreviation",
+"info": "enter abbreviation"
 },
 {"word": "abclear",
 "menu": "remove all abbreviations",
-"info": "remove all abbreviations",
+"info": "remove all abbreviations"
 },
 {"word": "aboveleft",
 "menu": "make split window appear left or above",
-"info": "make split window appear left or above",
+"info": "make split window appear left or above"
 },
 {"word": "all",
 "menu": "open a window for each file in the argumentlist",
-"info": "open a window for each file in the argumentlist",
+"info": "open a window for each file in the argumentlist"
 },
 {"word": "amenu",
 "menu": "enter new menu item for all modes",
-"info": "enter new menu item for all modes",
+"info": "enter new menu item for all modes"
 },
 {"word": "anoremenu",
 "menu": "enter a new menu for all modes that will notbe remapped",
-"info": "enter a new menu for all modes that will notbe remapped",
+"info": "enter a new menu for all modes that will notbe remapped"
 },
 {"word": "args",
 "menu": "print the argument list",
-"info": "print the argument list",
+"info": "print the argument list"
 },
 {"word": "argadd",
 "menu": "add items to the argument list",
-"info": "add items to the argument list",
+"info": "add items to the argument list"
 },
 {"word": "argdelete",
 "menu": "delete items from the argument list",
-"info": "delete items from the argument list",
+"info": "delete items from the argument list"
 },
 {"word": "argedit",
 "menu": "add item to the argument list and edit it",
-"info": "add item to the argument list and edit it",
+"info": "add item to the argument list and edit it"
 },
 {"word": "argdo",
 "menu": "do a command on all items in the argument list",
-"info": "do a command on all items in the argument list",
+"info": "do a command on all items in the argument list"
 },
 {"word": "argglobal",
 "menu": "define the global argument list",
-"info": "define the global argument list",
+"info": "define the global argument list"
 },
 {"word": "arglocal",
 "menu": "define a local argument list",
-"info": "define a local argument list",
+"info": "define a local argument list"
 },
 {"word": "argument",
 "menu": "go to specific file in the argument list",
-"info": "go to specific file in the argument list",
+"info": "go to specific file in the argument list"
 },
 {"word": "ascii",
 "menu": "print ascii value of character under the cursor",
-"info": "print ascii value of character under the cursor",
+"info": "print ascii value of character under the cursor"
 },
 {"word": "autocmd",
 "menu": "enter or show autocommands",
-"info": "enter or show autocommands",
+"info": "enter or show autocommands"
 },
 {"word": "augroup",
 "menu": "select the autocommand group to use",
-"info": "select the autocommand group to use",
+"info": "select the autocommand group to use"
 },
 {"word": "aunmenu",
 "menu": "remove menu for all modes",
-"info": "remove menu for all modes",
+"info": "remove menu for all modes"
 },
 {"word": "buffer",
 "menu": "go to specific buffer in the buffer list",
-"info": "go to specific buffer in the buffer list",
+"info": "go to specific buffer in the buffer list"
 },
 {"word": "bNext",
 "menu": "go to previous buffer in the buffer list",
-"info": "go to previous buffer in the buffer list",
+"info": "go to previous buffer in the buffer list"
 },
 {"word": "ball",
 "menu": "open a window for each buffer in the buffer list",
-"info": "open a window for each buffer in the buffer list",
+"info": "open a window for each buffer in the buffer list"
 },
 {"word": "badd",
 "menu": "add buffer to the buffer list",
-"info": "add buffer to the buffer list",
+"info": "add buffer to the buffer list"
 },
 {"word": "bdelete",
 "menu": "remove a buffer from the buffer list",
-"info": "remove a buffer from the buffer list",
+"info": "remove a buffer from the buffer list"
 },
 {"word": "behave",
 "menu": "set mouse and selection behavior",
-"info": "set mouse and selection behavior",
+"info": "set mouse and selection behavior"
 },
 {"word": "belowright",
 "menu": "make split window appear right or below",
-"info": "make split window appear right or below",
+"info": "make split window appear right or below"
 },
 {"word": "bfirst",
 "menu": "go to first buffer in the buffer list",
-"info": "go to first buffer in the buffer list",
+"info": "go to first buffer in the buffer list"
 },
 {"word": "blast",
 "menu": "go to last buffer in the buffer list",
-"info": "go to last buffer in the buffer list",
+"info": "go to last buffer in the buffer list"
 },
 {"word": "bmodified",
 "menu": "go to next buffer in the buffer list that hasbeen modified",
-"info": "go to next buffer in the buffer list that hasbeen modified",
+"info": "go to next buffer in the buffer list that hasbeen modified"
 },
 {"word": "bnext",
 "menu": "go to next buffer in the buffer list",
-"info": "go to next buffer in the buffer list",
+"info": "go to next buffer in the buffer list"
 },
 {"word": "botright",
 "menu": "make split window appear at bottom or far right",
-"info": "make split window appear at bottom or far right",
+"info": "make split window appear at bottom or far right"
 },
 {"word": "bprevious",
 "menu": "go to previous buffer in the buffer list",
-"info": "go to previous buffer in the buffer list",
+"info": "go to previous buffer in the buffer list"
 },
 {"word": "brewind",
 "menu": "go to first buffer in the buffer list",
-"info": "go to first buffer in the buffer list",
+"info": "go to first buffer in the buffer list"
 },
 {"word": "break",
 "menu": "break out of while loop",
-"info": "break out of while loop",
+"info": "break out of while loop"
 },
 {"word": "breakadd",
 "menu": "add a debugger breakpoint",
-"info": "add a debugger breakpoint",
+"info": "add a debugger breakpoint"
 },
 {"word": "breakdel",
 "menu": "delete a debugger breakpoint",
-"info": "delete a debugger breakpoint",
+"info": "delete a debugger breakpoint"
 },
 {"word": "breaklist",
 "menu": "list debugger breakpoints",
-"info": "list debugger breakpoints",
+"info": "list debugger breakpoints"
 },
 {"word": "browse",
 "menu": "use file selection dialog",
-"info": "use file selection dialog",
+"info": "use file selection dialog"
 },
 {"word": "bufdo",
 "menu": "execute command in each listed buffer",
-"info": "execute command in each listed buffer",
+"info": "execute command in each listed buffer"
 },
 {"word": "buffers",
 "menu": "list all files in the buffer list",
-"info": "list all files in the buffer list",
+"info": "list all files in the buffer list"
 },
 {"word": "bunload",
 "menu": "unload a specific buffer",
-"info": "unload a specific buffer",
+"info": "unload a specific buffer"
 },
 {"word": "bwipeout",
 "menu": "really delete a buffer",
-"info": "really delete a buffer",
+"info": "really delete a buffer"
 },
 {"word": "change",
 "menu": "replace a line or series of lines",
-"info": "replace a line or series of lines",
+"info": "replace a line or series of lines"
 },
 {"word": "cNext",
 "menu": "go to previous error",
-"info": "go to previous error",
+"info": "go to previous error"
 },
 {"word": "cNfile",
 "menu": "go to last error in previous file",
-"info": "go to last error in previous file",
+"info": "go to last error in previous file"
 },
 {"word": "cabbrev",
 "menu": "like \":abbreviate\" but for Command-line mode",
-"info": "like \":abbreviate\" but for Command-line mode",
+"info": "like \":abbreviate\" but for Command-line mode"
 },
 {"word": "cabclear",
 "menu": "clear all abbreviations for Command-line mode",
-"info": "clear all abbreviations for Command-line mode",
+"info": "clear all abbreviations for Command-line mode"
 },
 {"word": "caddbuffer",
 "menu": "add errors from buffer",
-"info": "add errors from buffer",
+"info": "add errors from buffer"
 },
 {"word": "caddexpr",
 "menu": "add errors from expr",
-"info": "add errors from expr",
+"info": "add errors from expr"
 },
 {"word": "caddfile",
 "menu": "add error message to current quickfix list",
-"info": "add error message to current quickfix list",
+"info": "add error message to current quickfix list"
 },
 {"word": "call",
 "menu": "call a function",
-"info": "call a function",
+"info": "call a function"
 },
 {"word": "catch",
 "menu": "part of a :try command",
-"info": "part of a :try command",
+"info": "part of a :try command"
 },
 {"word": "cbottom",
 "menu": "scroll to the bottom of the quickfix window",
-"info": "scroll to the bottom of the quickfix window",
+"info": "scroll to the bottom of the quickfix window"
 },
 {"word": "cbuffer",
 "menu": "parse error messages and jump to first error",
-"info": "parse error messages and jump to first error",
+"info": "parse error messages and jump to first error"
 },
 {"word": "cc",
 "menu": "go to specific error",
-"info": "go to specific error",
+"info": "go to specific error"
 },
 {"word": "cclose",
 "menu": "close quickfix window",
-"info": "close quickfix window",
+"info": "close quickfix window"
 },
 {"word": "cd",
 "menu": "change directory",
-"info": "change directory",
+"info": "change directory"
 },
 {"word": "cdo",
 "menu": "execute command in each valid error list entry",
-"info": "execute command in each valid error list entry",
+"info": "execute command in each valid error list entry"
 },
 {"word": "cfdo",
 "menu": "execute command in each file in error list",
-"info": "execute command in each file in error list",
+"info": "execute command in each file in error list"
 },
 {"word": "center",
 "menu": "format lines at the center",
-"info": "format lines at the center",
+"info": "format lines at the center"
 },
 {"word": "cexpr",
 "menu": "read errors from expr and jump to first",
-"info": "read errors from expr and jump to first",
+"info": "read errors from expr and jump to first"
 },
 {"word": "cfile",
 "menu": "read file with error messages and jump to first",
-"info": "read file with error messages and jump to first",
+"info": "read file with error messages and jump to first"
 },
 {"word": "cfirst",
 "menu": "go to the specified error, default first one",
-"info": "go to the specified error, default first one",
+"info": "go to the specified error, default first one"
 },
 {"word": "cgetbuffer",
 "menu": "get errors from buffer",
-"info": "get errors from buffer",
+"info": "get errors from buffer"
 },
 {"word": "cgetexpr",
 "menu": "get errors from expr",
-"info": "get errors from expr",
+"info": "get errors from expr"
 },
 {"word": "cgetfile",
 "menu": "read file with error messages",
-"info": "read file with error messages",
+"info": "read file with error messages"
 },
 {"word": "changes",
 "menu": "print the change list",
-"info": "print the change list",
+"info": "print the change list"
 },
 {"word": "chdir",
 "menu": "change directory",
-"info": "change directory",
+"info": "change directory"
 },
 {"word": "checkpath",
 "menu": "list included files",
-"info": "list included files",
+"info": "list included files"
 },
 {"word": "checktime",
 "menu": "check timestamp of loaded buffers",
-"info": "check timestamp of loaded buffers",
+"info": "check timestamp of loaded buffers"
 },
 {"word": "chistory",
 "menu": "list the error lists",
-"info": "list the error lists",
+"info": "list the error lists"
 },
 {"word": "clast",
 "menu": "go to the specified error, default last one",
-"info": "go to the specified error, default last one",
+"info": "go to the specified error, default last one"
 },
 {"word": "clearjumps",
 "menu": "clear the jump list",
-"info": "clear the jump list",
+"info": "clear the jump list"
 },
 {"word": "clist",
 "menu": "list all errors",
-"info": "list all errors",
+"info": "list all errors"
 },
 {"word": "close",
 "menu": "close current window",
-"info": "close current window",
+"info": "close current window"
 },
 {"word": "cmap",
 "menu": "like \":map\" but for Command-line mode",
-"info": "like \":map\" but for Command-line mode",
+"info": "like \":map\" but for Command-line mode"
 },
 {"word": "cmapclear",
 "menu": "clear all mappings for Command-line mode",
-"info": "clear all mappings for Command-line mode",
+"info": "clear all mappings for Command-line mode"
 },
 {"word": "cmenu",
 "menu": "add menu for Command-line mode",
-"info": "add menu for Command-line mode",
+"info": "add menu for Command-line mode"
 },
 {"word": "cnext",
 "menu": "go to next error",
-"info": "go to next error",
+"info": "go to next error"
 },
 {"word": "cnewer",
 "menu": "go to newer error list",
-"info": "go to newer error list",
+"info": "go to newer error list"
 },
 {"word": "cnfile",
 "menu": "go to first error in next file",
-"info": "go to first error in next file",
+"info": "go to first error in next file"
 },
 {"word": "cnoremap",
 "menu": "like \":noremap\" but for Command-line mode",
-"info": "like \":noremap\" but for Command-line mode",
+"info": "like \":noremap\" but for Command-line mode"
 },
 {"word": "cnoreabbrev",
 "menu": "like \":noreabbrev\" but for Command-line mode",
-"info": "like \":noreabbrev\" but for Command-line mode",
+"info": "like \":noreabbrev\" but for Command-line mode"
 },
 {"word": "cnoremenu",
 "menu": "like \":noremenu\" but for Command-line mode",
-"info": "like \":noremenu\" but for Command-line mode",
+"info": "like \":noremenu\" but for Command-line mode"
 },
 {"word": "copy",
 "menu": "copy lines",
-"info": "copy lines",
+"info": "copy lines"
 },
 {"word": "colder",
 "menu": "go to older error list",
-"info": "go to older error list",
+"info": "go to older error list"
 },
 {"word": "colorscheme",
 "menu": "load a specific color scheme",
-"info": "load a specific color scheme",
+"info": "load a specific color scheme"
 },
 {"word": "command",
 "menu": "create user-defined command",
-"info": "create user-defined command",
+"info": "create user-defined command"
 },
 {"word": "comclear",
 "menu": "clear all user-defined commands",
-"info": "clear all user-defined commands",
+"info": "clear all user-defined commands"
 },
 {"word": "compiler",
 "menu": "do settings for a specific compiler",
-"info": "do settings for a specific compiler",
+"info": "do settings for a specific compiler"
 },
 {"word": "continue",
 "menu": "go back to :while",
-"info": "go back to :while",
+"info": "go back to :while"
 },
 {"word": "confirm",
 "menu": "prompt user when confirmation required",
-"info": "prompt user when confirmation required",
+"info": "prompt user when confirmation required"
 },
 {"word": "copen",
 "menu": "open quickfix window",
-"info": "open quickfix window",
+"info": "open quickfix window"
 },
 {"word": "cprevious",
 "menu": "go to previous error",
-"info": "go to previous error",
+"info": "go to previous error"
 },
 {"word": "cpfile",
 "menu": "go to last error in previous file",
-"info": "go to last error in previous file",
+"info": "go to last error in previous file"
 },
 {"word": "cquit",
 "menu": "quit Vim with an error code",
-"info": "quit Vim with an error code",
+"info": "quit Vim with an error code"
 },
 {"word": "crewind",
 "menu": "go to the specified error, default first one",
-"info": "go to the specified error, default first one",
+"info": "go to the specified error, default first one"
 },
 {"word": "cscope",
 "menu": "execute cscope command",
-"info": "execute cscope command",
+"info": "execute cscope command"
 },
 {"word": "cstag",
 "menu": "use cscope to jump to a tag",
-"info": "use cscope to jump to a tag",
+"info": "use cscope to jump to a tag"
 },
 {"word": "cunmap",
 "menu": "like \":unmap\" but for Command-line mode",
-"info": "like \":unmap\" but for Command-line mode",
+"info": "like \":unmap\" but for Command-line mode"
 },
 {"word": "cunabbrev",
 "menu": "like \":unabbrev\" but for Command-line mode",
-"info": "like \":unabbrev\" but for Command-line mode",
+"info": "like \":unabbrev\" but for Command-line mode"
 },
 {"word": "cunmenu",
 "menu": "remove menu for Command-line mode",
-"info": "remove menu for Command-line mode",
+"info": "remove menu for Command-line mode"
 },
 {"word": "cwindow",
 "menu": "open or close quickfix window",
-"info": "open or close quickfix window",
+"info": "open or close quickfix window"
 },
 {"word": "delete",
 "menu": "delete lines",
-"info": "delete lines",
+"info": "delete lines"
 },
 {"word": "delmarks",
 "menu": "delete marks",
-"info": "delete marks",
+"info": "delete marks"
 },
 {"word": "debug",
 "menu": "run a command in debugging mode",
-"info": "run a command in debugging mode",
+"info": "run a command in debugging mode"
 },
 {"word": "debuggreedy",
 "menu": "read debug mode commands from normal input",
-"info": "read debug mode commands from normal input",
+"info": "read debug mode commands from normal input"
 },
 {"word": "delcommand",
 "menu": "delete user-defined command",
-"info": "delete user-defined command",
+"info": "delete user-defined command"
 },
 {"word": "delfunction",
 "menu": "delete a user function",
-"info": "delete a user function",
+"info": "delete a user function"
 },
 {"word": "diffupdate",
 "menu": "update 'diff' buffers",
-"info": "update 'diff' buffers",
+"info": "update 'diff' buffers"
 },
 {"word": "diffget",
 "menu": "remove differences in current buffer",
-"info": "remove differences in current buffer",
+"info": "remove differences in current buffer"
 },
 {"word": "diffoff",
 "menu": "switch off diff mode",
-"info": "switch off diff mode",
+"info": "switch off diff mode"
 },
 {"word": "diffpatch",
 "menu": "apply a patch and show differences",
-"info": "apply a patch and show differences",
+"info": "apply a patch and show differences"
 },
 {"word": "diffput",
 "menu": "remove differences in other buffer",
-"info": "remove differences in other buffer",
+"info": "remove differences in other buffer"
 },
 {"word": "diffsplit",
 "menu": "show differences with another file",
-"info": "show differences with another file",
+"info": "show differences with another file"
 },
 {"word": "diffthis",
 "menu": "make current window a diff window",
-"info": "make current window a diff window",
+"info": "make current window a diff window"
 },
 {"word": "digraphs",
 "menu": "show or enter digraphs",
-"info": "show or enter digraphs",
+"info": "show or enter digraphs"
 },
 {"word": "display",
 "menu": "display registers",
-"info": "display registers",
+"info": "display registers"
 },
 {"word": "djump",
 "menu": "jump to #define",
-"info": "jump to #define",
+"info": "jump to #define"
 },
 {"word": "dl",
 "menu": "short for |:delete| with the 'l' flag",
-"info": "short for |:delete| with the 'l' flag",
+"info": "short for |:delete| with the 'l' flag"
 },
 {"word": "deletel",
 "menu": "short for |:delete| with the 'l' flag",
-"info": "short for |:delete| with the 'l' flag",
+"info": "short for |:delete| with the 'l' flag"
 },
 {"word": "dlist",
 "menu": "list #defines",
-"info": "list #defines",
+"info": "list #defines"
 },
 {"word": "doautocmd",
 "menu": "apply autocommands to current buffer",
-"info": "apply autocommands to current buffer",
+"info": "apply autocommands to current buffer"
 },
 {"word": "doautoall",
 "menu": "apply autocommands for all loaded buffers",
-"info": "apply autocommands for all loaded buffers",
+"info": "apply autocommands for all loaded buffers"
 },
 {"word": "deletep",
 "menu": "short for |:delete| with the 'p' flag",
-"info": "short for |:delete| with the 'p' flag",
+"info": "short for |:delete| with the 'p' flag"
 },
 {"word": "drop",
 "menu": "jump to window editing file or edit file incurrent window",
-"info": "jump to window editing file or edit file incurrent window",
+"info": "jump to window editing file or edit file incurrent window"
 },
 {"word": "dsearch",
 "menu": "list one #define",
-"info": "list one #define",
+"info": "list one #define"
 },
 {"word": "dsplit",
 "menu": "split window and jump to #define",
-"info": "split window and jump to #define",
+"info": "split window and jump to #define"
 },
 {"word": "edit",
 "menu": "edit a file",
-"info": "edit a file",
+"info": "edit a file"
 },
 {"word": "earlier",
 "menu": "go to older change, undo",
-"info": "go to older change, undo",
+"info": "go to older change, undo"
 },
 {"word": "echo",
 "menu": "echoes the result of expressions",
-"info": "echoes the result of expressions",
+"info": "echoes the result of expressions"
 },
 {"word": "echoerr",
 "menu": "like :echo, show like an error and use history",
-"info": "like :echo, show like an error and use history",
+"info": "like :echo, show like an error and use history"
 },
 {"word": "echohl",
 "menu": "set highlighting for echo commands",
-"info": "set highlighting for echo commands",
+"info": "set highlighting for echo commands"
 },
 {"word": "echomsg",
 "menu": "same as :echo, put message in history",
-"info": "same as :echo, put message in history",
+"info": "same as :echo, put message in history"
 },
 {"word": "echon",
 "menu": "same as :echo, but without <EOL>",
-"info": "same as :echo, but without <EOL>",
+"info": "same as :echo, but without <EOL>"
 },
 {"word": "else",
 "menu": "part of an :if command",
-"info": "part of an :if command",
+"info": "part of an :if command"
 },
 {"word": "elseif",
 "menu": "part of an :if command",
-"info": "part of an :if command",
+"info": "part of an :if command"
 },
 {"word": "emenu",
 "menu": "execute a menu by name",
-"info": "execute a menu by name",
+"info": "execute a menu by name"
 },
 {"word": "endif",
 "menu": "end previous :if",
-"info": "end previous :if",
+"info": "end previous :if"
 },
 {"word": "endfor",
 "menu": "end previous :for",
-"info": "end previous :for",
+"info": "end previous :for"
 },
 {"word": "endfunction",
 "menu": "end of a user function",
-"info": "end of a user function",
+"info": "end of a user function"
 },
 {"word": "endtry",
 "menu": "end previous :try",
-"info": "end previous :try",
+"info": "end previous :try"
 },
 {"word": "endwhile",
 "menu": "end previous :while",
-"info": "end previous :while",
+"info": "end previous :while"
 },
 {"word": "enew",
 "menu": "edit a new, unnamed buffer",
-"info": "edit a new, unnamed buffer",
+"info": "edit a new, unnamed buffer"
 },
 {"word": "ex",
 "menu": "same as \":edit\"",
-"info": "same as \":edit\"",
+"info": "same as \":edit\""
 },
 {"word": "execute",
 "menu": "execute result of expressions",
-"info": "execute result of expressions",
+"info": "execute result of expressions"
 },
 {"word": "exit",
 "menu": "same as \":xit\"",
-"info": "same as \":xit\"",
+"info": "same as \":xit\""
 },
 {"word": "exusage",
 "menu": "overview of Ex commands",
-"info": "overview of Ex commands",
+"info": "overview of Ex commands"
 },
 {"word": "file",
 "menu": "show or set the current file name",
-"info": "show or set the current file name",
+"info": "show or set the current file name"
 },
 {"word": "files",
 "menu": "list all files in the buffer list",
-"info": "list all files in the buffer list",
+"info": "list all files in the buffer list"
 },
 {"word": "filetype",
 "menu": "switch file type detection on/off",
-"info": "switch file type detection on/off",
+"info": "switch file type detection on/off"
 },
 {"word": "filter",
 "menu": "filter output of following command",
-"info": "filter output of following command",
+"info": "filter output of following command"
 },
 {"word": "find",
 "menu": "find file in 'path' and edit it",
-"info": "find file in 'path' and edit it",
+"info": "find file in 'path' and edit it"
 },
 {"word": "finally",
 "menu": "part of a :try command",
-"info": "part of a :try command",
+"info": "part of a :try command"
 },
 {"word": "finish",
 "menu": "quit sourcing a Vim script",
-"info": "quit sourcing a Vim script",
+"info": "quit sourcing a Vim script"
 },
 {"word": "first",
 "menu": "go to the first file in the argument list",
-"info": "go to the first file in the argument list",
+"info": "go to the first file in the argument list"
 },
 {"word": "fixdel",
 "menu": "set key code of <Del>",
-"info": "set key code of <Del>",
+"info": "set key code of <Del>"
 },
 {"word": "fold",
 "menu": "create a fold",
-"info": "create a fold",
+"info": "create a fold"
 },
 {"word": "foldclose",
 "menu": "close folds",
-"info": "close folds",
+"info": "close folds"
 },
 {"word": "folddoopen",
 "menu": "execute command on lines not in a closed fold",
-"info": "execute command on lines not in a closed fold",
+"info": "execute command on lines not in a closed fold"
 },
 {"word": "folddoclosed",
 "menu": "execute command on lines in a closed fold",
-"info": "execute command on lines in a closed fold",
+"info": "execute command on lines in a closed fold"
 },
 {"word": "foldopen",
 "menu": "open folds",
-"info": "open folds",
+"info": "open folds"
 },
 {"word": "for",
 "menu": "for loop",
-"info": "for loop",
+"info": "for loop"
 },
 {"word": "function",
 "menu": "define a user function",
-"info": "define a user function",
+"info": "define a user function"
 },
 {"word": "global",
 "menu": "execute commands for matching lines",
-"info": "execute commands for matching lines",
+"info": "execute commands for matching lines"
 },
 {"word": "goto",
 "menu": "go to byte in the buffer",
-"info": "go to byte in the buffer",
+"info": "go to byte in the buffer"
 },
 {"word": "grep",
 "menu": "run 'grepprg' and jump to first match",
-"info": "run 'grepprg' and jump to first match",
+"info": "run 'grepprg' and jump to first match"
 },
 {"word": "grepadd",
 "menu": "like :grep, but append to current list",
-"info": "like :grep, but append to current list",
+"info": "like :grep, but append to current list"
 },
 {"word": "gui",
 "menu": "start the GUI",
-"info": "start the GUI",
+"info": "start the GUI"
 },
 {"word": "gvim",
 "menu": "start the GUI",
-"info": "start the GUI",
+"info": "start the GUI"
 },
 {"word": "hardcopy",
 "menu": "send text to the printer",
-"info": "send text to the printer",
+"info": "send text to the printer"
 },
 {"word": "help",
 "menu": "open a help window",
-"info": "open a help window",
+"info": "open a help window"
 },
 {"word": "helpclose",
 "menu": "close one help window",
-"info": "close one help window",
+"info": "close one help window"
 },
 {"word": "helpfind",
 "menu": "dialog to open a help window",
-"info": "dialog to open a help window",
+"info": "dialog to open a help window"
 },
 {"word": "helpgrep",
 "menu": "like \":grep\" but searches help files",
-"info": "like \":grep\" but searches help files",
+"info": "like \":grep\" but searches help files"
 },
 {"word": "helptags",
 "menu": "generate help tags for a directory",
-"info": "generate help tags for a directory",
+"info": "generate help tags for a directory"
 },
 {"word": "highlight",
 "menu": "specify highlighting methods",
-"info": "specify highlighting methods",
+"info": "specify highlighting methods"
 },
 {"word": "hide",
 "menu": "hide current buffer for a command",
-"info": "hide current buffer for a command",
+"info": "hide current buffer for a command"
 },
 {"word": "history",
 "menu": "print a history list",
-"info": "print a history list",
+"info": "print a history list"
 },
 {"word": "insert",
 "menu": "insert text",
-"info": "insert text",
+"info": "insert text"
 },
 {"word": "iabbrev",
 "menu": "like \":abbrev\" but for Insert mode",
-"info": "like \":abbrev\" but for Insert mode",
+"info": "like \":abbrev\" but for Insert mode"
 },
 {"word": "iabclear",
 "menu": "like \":abclear\" but for Insert mode",
-"info": "like \":abclear\" but for Insert mode",
+"info": "like \":abclear\" but for Insert mode"
 },
 {"word": "if",
 "menu": "execute commands when condition met",
-"info": "execute commands when condition met",
+"info": "execute commands when condition met"
 },
 {"word": "ijump",
 "menu": "jump to definition of identifier",
-"info": "jump to definition of identifier",
+"info": "jump to definition of identifier"
 },
 {"word": "ilist",
 "menu": "list lines where identifier matches",
-"info": "list lines where identifier matches",
+"info": "list lines where identifier matches"
 },
 {"word": "imap",
 "menu": "like \":map\" but for Insert mode",
-"info": "like \":map\" but for Insert mode",
+"info": "like \":map\" but for Insert mode"
 },
 {"word": "imapclear",
 "menu": "like \":mapclear\" but for Insert mode",
-"info": "like \":mapclear\" but for Insert mode",
+"info": "like \":mapclear\" but for Insert mode"
 },
 {"word": "imenu",
 "menu": "add menu for Insert mode",
-"info": "add menu for Insert mode",
+"info": "add menu for Insert mode"
 },
 {"word": "inoremap",
 "menu": "like \":noremap\" but for Insert mode",
-"info": "like \":noremap\" but for Insert mode",
+"info": "like \":noremap\" but for Insert mode"
 },
 {"word": "inoreabbrev",
 "menu": "like \":noreabbrev\" but for Insert mode",
-"info": "like \":noreabbrev\" but for Insert mode",
+"info": "like \":noreabbrev\" but for Insert mode"
 },
 {"word": "inoremenu",
 "menu": "like \":noremenu\" but for Insert mode",
-"info": "like \":noremenu\" but for Insert mode",
+"info": "like \":noremenu\" but for Insert mode"
 },
 {"word": "intro",
 "menu": "print the introductory message",
-"info": "print the introductory message",
+"info": "print the introductory message"
 },
 {"word": "isearch",
 "menu": "list one line where identifier matches",
-"info": "list one line where identifier matches",
+"info": "list one line where identifier matches"
 },
 {"word": "isplit",
 "menu": "split window and jump to definition ofidentifier",
-"info": "split window and jump to definition ofidentifier",
+"info": "split window and jump to definition ofidentifier"
 },
 {"word": "iunmap",
 "menu": "like \":unmap\" but for Insert mode",
-"info": "like \":unmap\" but for Insert mode",
+"info": "like \":unmap\" but for Insert mode"
 },
 {"word": "iunabbrev",
 "menu": "like \":unabbrev\" but for Insert mode",
-"info": "like \":unabbrev\" but for Insert mode",
+"info": "like \":unabbrev\" but for Insert mode"
 },
 {"word": "iunmenu",
 "menu": "remove menu for Insert mode",
-"info": "remove menu for Insert mode",
+"info": "remove menu for Insert mode"
 },
 {"word": "join",
 "menu": "join lines",
-"info": "join lines",
+"info": "join lines"
 },
 {"word": "jumps",
 "menu": "print the jump list",
-"info": "print the jump list",
+"info": "print the jump list"
 },
 {"word": "k",
 "menu": "set a mark",
-"info": "set a mark",
+"info": "set a mark"
 },
 {"word": "keepalt",
 "menu": "following command keeps the alternate file",
-"info": "following command keeps the alternate file",
+"info": "following command keeps the alternate file"
 },
 {"word": "keepmarks",
 "menu": "following command keeps marks where they are",
-"info": "following command keeps marks where they are",
+"info": "following command keeps marks where they are"
 },
 {"word": "keepjumps",
 "menu": "following command keeps jumplist and marks",
-"info": "following command keeps jumplist and marks",
+"info": "following command keeps jumplist and marks"
 },
 {"word": "keeppatterns",
 "menu": "following command keeps search pattern history",
-"info": "following command keeps search pattern history",
+"info": "following command keeps search pattern history"
 },
 {"word": "lNext",
 "menu": "go to previous entry in location list",
-"info": "go to previous entry in location list",
+"info": "go to previous entry in location list"
 },
 {"word": "lNfile",
 "menu": "go to last entry in previous file",
-"info": "go to last entry in previous file",
+"info": "go to last entry in previous file"
 },
 {"word": "list",
 "menu": "print lines",
-"info": "print lines",
+"info": "print lines"
 },
 {"word": "laddexpr",
 "menu": "add locations from expr",
-"info": "add locations from expr",
+"info": "add locations from expr"
 },
 {"word": "laddbuffer",
 "menu": "add locations from buffer",
-"info": "add locations from buffer",
+"info": "add locations from buffer"
 },
 {"word": "laddfile",
 "menu": "add locations to current location list",
-"info": "add locations to current location list",
+"info": "add locations to current location list"
 },
 {"word": "last",
 "menu": "go to the last file in the argument list",
-"info": "go to the last file in the argument list",
+"info": "go to the last file in the argument list"
 },
 {"word": "language",
 "menu": "set the language (locale)",
-"info": "set the language (locale)",
+"info": "set the language (locale)"
 },
 {"word": "later",
 "menu": "go to newer change, redo",
-"info": "go to newer change, redo",
+"info": "go to newer change, redo"
 },
 {"word": "lbottom",
 "menu": "scroll to the bottom of the location window",
-"info": "scroll to the bottom of the location window",
+"info": "scroll to the bottom of the location window"
 },
 {"word": "lbuffer",
 "menu": "parse locations and jump to first location",
-"info": "parse locations and jump to first location",
+"info": "parse locations and jump to first location"
 },
 {"word": "lcd",
 "menu": "change directory locally",
-"info": "change directory locally",
+"info": "change directory locally"
 },
 {"word": "lchdir",
 "menu": "change directory locally",
-"info": "change directory locally",
+"info": "change directory locally"
 },
 {"word": "lclose",
 "menu": "close location window",
-"info": "close location window",
+"info": "close location window"
 },
 {"word": "lcscope",
 "menu": "like \":cscope\" but uses location list",
-"info": "like \":cscope\" but uses location list",
+"info": "like \":cscope\" but uses location list"
 },
 {"word": "ldo",
 "menu": "execute command in valid location list entries",
-"info": "execute command in valid location list entries",
+"info": "execute command in valid location list entries"
 },
 {"word": "lfdo",
 "menu": "execute command in each file in location list",
-"info": "execute command in each file in location list",
+"info": "execute command in each file in location list"
 },
 {"word": "left",
 "menu": "left align lines",
-"info": "left align lines",
+"info": "left align lines"
 },
 {"word": "leftabove",
 "menu": "make split window appear left or above",
-"info": "make split window appear left or above",
+"info": "make split window appear left or above"
 },
 {"word": "let",
 "menu": "assign a value to a variable or option",
-"info": "assign a value to a variable or option",
+"info": "assign a value to a variable or option"
 },
 {"word": "lexpr",
 "menu": "read locations from expr and jump to first",
-"info": "read locations from expr and jump to first",
+"info": "read locations from expr and jump to first"
 },
 {"word": "lfile",
 "menu": "read file with locations and jump to first",
-"info": "read file with locations and jump to first",
+"info": "read file with locations and jump to first"
 },
 {"word": "lfirst",
 "menu": "go to the specified location, default first one",
-"info": "go to the specified location, default first one",
+"info": "go to the specified location, default first one"
 },
 {"word": "lgetbuffer",
 "menu": "get locations from buffer",
-"info": "get locations from buffer",
+"info": "get locations from buffer"
 },
 {"word": "lgetexpr",
 "menu": "get locations from expr",
-"info": "get locations from expr",
+"info": "get locations from expr"
 },
 {"word": "lgetfile",
 "menu": "read file with locations",
-"info": "read file with locations",
+"info": "read file with locations"
 },
 {"word": "lgrep",
 "menu": "run 'grepprg' and jump to first match",
-"info": "run 'grepprg' and jump to first match",
+"info": "run 'grepprg' and jump to first match"
 },
 {"word": "lgrepadd",
 "menu": "like :grep, but append to current list",
-"info": "like :grep, but append to current list",
+"info": "like :grep, but append to current list"
 },
 {"word": "lhelpgrep",
 "menu": "like \":helpgrep\" but uses location list",
-"info": "like \":helpgrep\" but uses location list",
+"info": "like \":helpgrep\" but uses location list"
 },
 {"word": "lhistory",
 "menu": "list the location lists",
-"info": "list the location lists",
+"info": "list the location lists"
 },
 {"word": "ll",
 "menu": "go to specific location",
-"info": "go to specific location",
+"info": "go to specific location"
 },
 {"word": "llast",
 "menu": "go to the specified location, default last one",
-"info": "go to the specified location, default last one",
+"info": "go to the specified location, default last one"
 },
 {"word": "llist",
 "menu": "list all locations",
-"info": "list all locations",
+"info": "list all locations"
 },
 {"word": "lmake",
 "menu": "execute external command 'makeprg' and parseerror messages",
-"info": "execute external command 'makeprg' and parseerror messages",
+"info": "execute external command 'makeprg' and parseerror messages"
 },
 {"word": "lmap",
 "menu": "like \":map!\" but includes Lang-Arg mode",
-"info": "like \":map!\" but includes Lang-Arg mode",
+"info": "like \":map!\" but includes Lang-Arg mode"
 },
 {"word": "lmapclear",
 "menu": "like \":mapclear!\" but includes Lang-Arg mode",
-"info": "like \":mapclear!\" but includes Lang-Arg mode",
+"info": "like \":mapclear!\" but includes Lang-Arg mode"
 },
 {"word": "lnext",
 "menu": "go to next location",
-"info": "go to next location",
+"info": "go to next location"
 },
 {"word": "lnewer",
 "menu": "go to newer location list",
-"info": "go to newer location list",
+"info": "go to newer location list"
 },
 {"word": "lnfile",
 "menu": "go to first location in next file",
-"info": "go to first location in next file",
+"info": "go to first location in next file"
 },
 {"word": "lnoremap",
 "menu": "like \":noremap!\" but includes Lang-Arg mode",
-"info": "like \":noremap!\" but includes Lang-Arg mode",
+"info": "like \":noremap!\" but includes Lang-Arg mode"
 },
 {"word": "loadkeymap",
 "menu": "load the following keymaps until EOF",
-"info": "load the following keymaps until EOF",
+"info": "load the following keymaps until EOF"
 },
 {"word": "loadview",
 "menu": "load view for current window from a file",
-"info": "load view for current window from a file",
+"info": "load view for current window from a file"
 },
 {"word": "lockmarks",
 "menu": "following command keeps marks where they are",
-"info": "following command keeps marks where they are",
+"info": "following command keeps marks where they are"
 },
 {"word": "lockvar",
 "menu": "lock variables",
-"info": "lock variables",
+"info": "lock variables"
 },
 {"word": "lolder",
 "menu": "go to older location list",
-"info": "go to older location list",
+"info": "go to older location list"
 },
 {"word": "lopen",
 "menu": "open location window",
-"info": "open location window",
+"info": "open location window"
 },
 {"word": "lprevious",
 "menu": "go to previous location",
-"info": "go to previous location",
+"info": "go to previous location"
 },
 {"word": "lpfile",
 "menu": "go to last location in previous file",
-"info": "go to last location in previous file",
+"info": "go to last location in previous file"
 },
 {"word": "lrewind",
 "menu": "go to the specified location, default first one",
-"info": "go to the specified location, default first one",
+"info": "go to the specified location, default first one"
 },
 {"word": "ls",
 "menu": "list all buffers",
-"info": "list all buffers",
+"info": "list all buffers"
 },
 {"word": "ltag",
 "menu": "jump to tag and add matching tags to thelocation list",
-"info": "jump to tag and add matching tags to thelocation list",
+"info": "jump to tag and add matching tags to thelocation list"
 },
 {"word": "lunmap",
 "menu": "like \":unmap!\" but includes Lang-Arg mode",
-"info": "like \":unmap!\" but includes Lang-Arg mode",
+"info": "like \":unmap!\" but includes Lang-Arg mode"
 },
 {"word": "lua",
 "menu": "execute |Lua| command",
-"info": "execute |Lua| command",
+"info": "execute |Lua| command"
 },
 {"word": "luado",
 "menu": "execute Lua command for each line",
-"info": "execute Lua command for each line",
+"info": "execute Lua command for each line"
 },
 {"word": "luafile",
 "menu": "execute |Lua| script file",
-"info": "execute |Lua| script file",
+"info": "execute |Lua| script file"
 },
 {"word": "lvimgrep",
 "menu": "search for pattern in files",
-"info": "search for pattern in files",
+"info": "search for pattern in files"
 },
 {"word": "lvimgrepadd",
 "menu": "like :vimgrep, but append to current list",
-"info": "like :vimgrep, but append to current list",
+"info": "like :vimgrep, but append to current list"
 },
 {"word": "lwindow",
 "menu": "open or close location window",
-"info": "open or close location window",
+"info": "open or close location window"
 },
 {"word": "move",
 "menu": "move lines",
-"info": "move lines",
+"info": "move lines"
 },
 {"word": "mark",
 "menu": "set a mark",
-"info": "set a mark",
+"info": "set a mark"
 },
 {"word": "make",
 "menu": "execute external command 'makeprg' and parseerror messages",
-"info": "execute external command 'makeprg' and parseerror messages",
+"info": "execute external command 'makeprg' and parseerror messages"
 },
 {"word": "map",
 "menu": "show or enter a mapping",
-"info": "show or enter a mapping",
+"info": "show or enter a mapping"
 },
 {"word": "mapclear",
 "menu": "clear all mappings for Normal and Visual mode",
-"info": "clear all mappings for Normal and Visual mode",
+"info": "clear all mappings for Normal and Visual mode"
 },
 {"word": "marks",
 "menu": "list all marks",
-"info": "list all marks",
+"info": "list all marks"
 },
 {"word": "match",
 "menu": "define a match to highlight",
-"info": "define a match to highlight",
+"info": "define a match to highlight"
 },
 {"word": "menu",
 "menu": "enter a new menu item",
-"info": "enter a new menu item",
+"info": "enter a new menu item"
 },
 {"word": "menutranslate",
 "menu": "add a menu translation item",
-"info": "add a menu translation item",
+"info": "add a menu translation item"
 },
 {"word": "messages",
 "menu": "view previously displayed messages",
-"info": "view previously displayed messages",
+"info": "view previously displayed messages"
 },
 {"word": "mkexrc",
 "menu": "write current mappings and settings to a file",
-"info": "write current mappings and settings to a file",
+"info": "write current mappings and settings to a file"
 },
 {"word": "mksession",
 "menu": "write session info to a file",
-"info": "write session info to a file",
+"info": "write session info to a file"
 },
 {"word": "mkspell",
 "menu": "produce .spl spell file",
-"info": "produce .spl spell file",
+"info": "produce .spl spell file"
 },
 {"word": "mkvimrc",
 "menu": "write current mappings and settings to a file",
-"info": "write current mappings and settings to a file",
+"info": "write current mappings and settings to a file"
 },
 {"word": "mkview",
 "menu": "write view of current window to a file",
-"info": "write view of current window to a file",
+"info": "write view of current window to a file"
 },
 {"word": "mode",
 "menu": "show or change the screen mode",
-"info": "show or change the screen mode",
+"info": "show or change the screen mode"
 },
 {"word": "mzscheme",
 "menu": "execute MzScheme command",
-"info": "execute MzScheme command",
+"info": "execute MzScheme command"
 },
 {"word": "mzfile",
 "menu": "execute MzScheme script file",
-"info": "execute MzScheme script file",
+"info": "execute MzScheme script file"
 },
 {"word": "nbclose",
 "menu": "close the current Netbeans session",
-"info": "close the current Netbeans session",
+"info": "close the current Netbeans session"
 },
 {"word": "nbkey",
 "menu": "pass a key to Netbeans",
-"info": "pass a key to Netbeans",
+"info": "pass a key to Netbeans"
 },
 {"word": "nbsart",
 "menu": "start a new Netbeans session",
-"info": "start a new Netbeans session",
+"info": "start a new Netbeans session"
 },
 {"word": "next",
 "menu": "go to next file in the argument list",
-"info": "go to next file in the argument list",
+"info": "go to next file in the argument list"
 },
 {"word": "new",
 "menu": "create a new empty window",
-"info": "create a new empty window",
+"info": "create a new empty window"
 },
 {"word": "nmap",
 "menu": "like \":map\" but for Normal mode",
-"info": "like \":map\" but for Normal mode",
+"info": "like \":map\" but for Normal mode"
 },
 {"word": "nmapclear",
 "menu": "clear all mappings for Normal mode",
-"info": "clear all mappings for Normal mode",
+"info": "clear all mappings for Normal mode"
 },
 {"word": "nmenu",
 "menu": "add menu for Normal mode",
-"info": "add menu for Normal mode",
+"info": "add menu for Normal mode"
 },
 {"word": "nnoremap",
 "menu": "like \":noremap\" but for Normal mode",
-"info": "like \":noremap\" but for Normal mode",
+"info": "like \":noremap\" but for Normal mode"
 },
 {"word": "nnoremenu",
 "menu": "like \":noremenu\" but for Normal mode",
-"info": "like \":noremenu\" but for Normal mode",
+"info": "like \":noremenu\" but for Normal mode"
 },
 {"word": "noautocmd",
 "menu": "following commands don't trigger autocommands",
-"info": "following commands don't trigger autocommands",
+"info": "following commands don't trigger autocommands"
 },
 {"word": "noremap",
 "menu": "enter a mapping that will not be remapped",
-"info": "enter a mapping that will not be remapped",
+"info": "enter a mapping that will not be remapped"
 },
 {"word": "nohlsearch",
 "menu": "suspend 'hlsearch' highlighting",
-"info": "suspend 'hlsearch' highlighting",
+"info": "suspend 'hlsearch' highlighting"
 },
 {"word": "noreabbrev",
 "menu": "enter an abbreviation that will not beremapped",
-"info": "enter an abbreviation that will not beremapped",
+"info": "enter an abbreviation that will not beremapped"
 },
 {"word": "noremenu",
 "menu": "enter a menu that will not be remapped",
-"info": "enter a menu that will not be remapped",
+"info": "enter a menu that will not be remapped"
 },
 {"word": "normal",
 "menu": "execute Normal mode commands",
-"info": "execute Normal mode commands",
+"info": "execute Normal mode commands"
 },
 {"word": "noswapfile",
 "menu": "following commands don't create a swap file",
-"info": "following commands don't create a swap file",
+"info": "following commands don't create a swap file"
 },
 {"word": "number",
 "menu": "print lines with line number",
-"info": "print lines with line number",
+"info": "print lines with line number"
 },
 {"word": "nunmap",
 "menu": "like \":unmap\" but for Normal mode",
-"info": "like \":unmap\" but for Normal mode",
+"info": "like \":unmap\" but for Normal mode"
 },
 {"word": "nunmenu",
 "menu": "remove menu for Normal mode",
-"info": "remove menu for Normal mode",
+"info": "remove menu for Normal mode"
 },
 {"word": "oldfiles",
 "menu": "list files that have marks in the viminfo file",
-"info": "list files that have marks in the viminfo file",
+"info": "list files that have marks in the viminfo file"
 },
 {"word": "open",
 "menu": "start open mode (not implemented)",
-"info": "start open mode (not implemented)",
+"info": "start open mode (not implemented)"
 },
 {"word": "omap",
 "menu": "like \":map\" but for Operator-pending mode",
-"info": "like \":map\" but for Operator-pending mode",
+"info": "like \":map\" but for Operator-pending mode"
 },
 {"word": "omapclear",
 "menu": "remove all mappings for Operator-pending mode",
-"info": "remove all mappings for Operator-pending mode",
+"info": "remove all mappings for Operator-pending mode"
 },
 {"word": "omenu",
 "menu": "add menu for Operator-pending mode",
-"info": "add menu for Operator-pending mode",
+"info": "add menu for Operator-pending mode"
 },
 {"word": "only",
 "menu": "close all windows except the current one",
-"info": "close all windows except the current one",
+"info": "close all windows except the current one"
 },
 {"word": "onoremap",
 "menu": "like \":noremap\" but for Operator-pending mode",
-"info": "like \":noremap\" but for Operator-pending mode",
+"info": "like \":noremap\" but for Operator-pending mode"
 },
 {"word": "onoremenu",
 "menu": "like \":noremenu\" but for Operator-pending mode",
-"info": "like \":noremenu\" but for Operator-pending mode",
+"info": "like \":noremenu\" but for Operator-pending mode"
 },
 {"word": "options",
 "menu": "open the options-window",
-"info": "open the options-window",
+"info": "open the options-window"
 },
 {"word": "ounmap",
 "menu": "like \":unmap\" but for Operator-pending mode",
-"info": "like \":unmap\" but for Operator-pending mode",
+"info": "like \":unmap\" but for Operator-pending mode"
 },
 {"word": "ounmenu",
 "menu": "remove menu for Operator-pending mode",
-"info": "remove menu for Operator-pending mode",
+"info": "remove menu for Operator-pending mode"
 },
 {"word": "ownsyntax",
 "menu": "set new local syntax highlight for this window",
-"info": "set new local syntax highlight for this window",
+"info": "set new local syntax highlight for this window"
 },
 {"word": "packadd",
 "menu": "add a plugin from 'packpath'",
-"info": "add a plugin from 'packpath'",
+"info": "add a plugin from 'packpath'"
 },
 {"word": "packloadall",
 "menu": "load all packages under 'packpath'",
-"info": "load all packages under 'packpath'",
+"info": "load all packages under 'packpath'"
 },
 {"word": "pclose",
 "menu": "close preview window",
-"info": "close preview window",
+"info": "close preview window"
 },
 {"word": "pedit",
 "menu": "edit file in the preview window",
-"info": "edit file in the preview window",
+"info": "edit file in the preview window"
 },
 {"word": "perl",
 "menu": "execute Perl command",
-"info": "execute Perl command",
+"info": "execute Perl command"
 },
 {"word": "print",
 "menu": "print lines",
-"info": "print lines",
+"info": "print lines"
 },
 {"word": "profdel",
 "menu": "stop profiling a function or script",
-"info": "stop profiling a function or script",
+"info": "stop profiling a function or script"
 },
 {"word": "profile",
 "menu": "profiling functions and scripts",
-"info": "profiling functions and scripts",
+"info": "profiling functions and scripts"
 },
 {"word": "promptfind",
 "menu": "open GUI dialog for searching",
-"info": "open GUI dialog for searching",
+"info": "open GUI dialog for searching"
 },
 {"word": "promptrepl",
 "menu": "open GUI dialog for search/replace",
-"info": "open GUI dialog for search/replace",
+"info": "open GUI dialog for search/replace"
 },
 {"word": "perldo",
 "menu": "execute Perl command for each line",
-"info": "execute Perl command for each line",
+"info": "execute Perl command for each line"
 },
 {"word": "pop",
 "menu": "jump to older entry in tag stack",
-"info": "jump to older entry in tag stack",
+"info": "jump to older entry in tag stack"
 },
 {"word": "popup",
 "menu": "popup a menu by name",
-"info": "popup a menu by name",
+"info": "popup a menu by name"
 },
 {"word": "ppop",
 "menu": "\":pop\" in preview window",
-"info": "\":pop\" in preview window",
+"info": "\":pop\" in preview window"
 },
 {"word": "preserve",
 "menu": "write all text to swap file",
-"info": "write all text to swap file",
+"info": "write all text to swap file"
 },
 {"word": "previous",
 "menu": "go to previous file in argument list",
-"info": "go to previous file in argument list",
+"info": "go to previous file in argument list"
 },
 {"word": "psearch",
 "menu": "like \":ijump\" but shows match in preview window",
-"info": "like \":ijump\" but shows match in preview window",
+"info": "like \":ijump\" but shows match in preview window"
 },
 {"word": "ptag",
 "menu": "show tag in preview window",
-"info": "show tag in preview window",
+"info": "show tag in preview window"
 },
 {"word": "ptNext",
 "menu": "|:tNext| in preview window",
-"info": "|:tNext| in preview window",
+"info": "|:tNext| in preview window"
 },
 {"word": "ptfirst",
 "menu": "|:trewind| in preview window",
-"info": "|:trewind| in preview window",
+"info": "|:trewind| in preview window"
 },
 {"word": "ptjump",
 "menu": "|:tjump| and show tag in preview window",
-"info": "|:tjump| and show tag in preview window",
+"info": "|:tjump| and show tag in preview window"
 },
 {"word": "ptlast",
 "menu": "|:tlast| in preview window",
-"info": "|:tlast| in preview window",
+"info": "|:tlast| in preview window"
 },
 {"word": "ptnext",
 "menu": "|:tnext| in preview window",
-"info": "|:tnext| in preview window",
+"info": "|:tnext| in preview window"
 },
 {"word": "ptprevious",
 "menu": "|:tprevious| in preview window",
-"info": "|:tprevious| in preview window",
+"info": "|:tprevious| in preview window"
 },
 {"word": "ptrewind",
 "menu": "|:trewind| in preview window",
-"info": "|:trewind| in preview window",
+"info": "|:trewind| in preview window"
 },
 {"word": "ptselect",
 "menu": "|:tselect| and show tag in preview window",
-"info": "|:tselect| and show tag in preview window",
+"info": "|:tselect| and show tag in preview window"
 },
 {"word": "put",
 "menu": "insert contents of register in the text",
-"info": "insert contents of register in the text",
+"info": "insert contents of register in the text"
 },
 {"word": "pwd",
 "menu": "print current directory",
-"info": "print current directory",
+"info": "print current directory"
 },
 {"word": "py3",
 "menu": "execute Python 3 command",
-"info": "execute Python 3 command",
+"info": "execute Python 3 command"
 },
 {"word": "python3",
 "menu": "same as :py3",
-"info": "same as :py3",
+"info": "same as :py3"
 },
 {"word": "py3do",
 "menu": "execute Python 3 command for each line",
-"info": "execute Python 3 command for each line",
+"info": "execute Python 3 command for each line"
 },
 {"word": "py3file",
 "menu": "execute Python 3 script file",
-"info": "execute Python 3 script file",
+"info": "execute Python 3 script file"
 },
 {"word": "python",
 "menu": "execute Python command",
-"info": "execute Python command",
+"info": "execute Python command"
 },
 {"word": "pydo",
 "menu": "execute Python command for each line",
-"info": "execute Python command for each line",
+"info": "execute Python command for each line"
 },
 {"word": "pyfile",
 "menu": "execute Python script file",
-"info": "execute Python script file",
+"info": "execute Python script file"
 },
 {"word": "pyx",
 "menu": "execute |python_x| command",
-"info": "execute |python_x| command",
+"info": "execute |python_x| command"
 },
 {"word": "pythonx",
 "menu": "same as :pyx",
-"info": "same as :pyx",
+"info": "same as :pyx"
 },
 {"word": "pyxdo",
 "menu": "execute |python_x| command for each line",
-"info": "execute |python_x| command for each line",
+"info": "execute |python_x| command for each line"
 },
 {"word": "pyxfile",
 "menu": "execute |python_x| script file",
-"info": "execute |python_x| script file",
+"info": "execute |python_x| script file"
 },
 {"word": "quit",
 "menu": "quit current window (when one window quit Vim)",
-"info": "quit current window (when one window quit Vim)",
+"info": "quit current window (when one window quit Vim)"
 },
 {"word": "quitall",
 "menu": "quit Vim",
-"info": "quit Vim",
+"info": "quit Vim"
 },
 {"word": "qall",
 "menu": "quit Vim",
-"info": "quit Vim",
+"info": "quit Vim"
 },
 {"word": "read",
 "menu": "read file into the text",
-"info": "read file into the text",
+"info": "read file into the text"
 },
 {"word": "recover",
 "menu": "recover a file from a swap file",
-"info": "recover a file from a swap file",
+"info": "recover a file from a swap file"
 },
 {"word": "redo",
 "menu": "redo one undone change",
-"info": "redo one undone change",
+"info": "redo one undone change"
 },
 {"word": "redir",
 "menu": "redirect messages to a file or register",
-"info": "redirect messages to a file or register",
+"info": "redirect messages to a file or register"
 },
 {"word": "redraw",
 "menu": "force a redraw of the display",
-"info": "force a redraw of the display",
+"info": "force a redraw of the display"
 },
 {"word": "redrawstatus",
 "menu": "force a redraw of the status line(s)",
-"info": "force a redraw of the status line(s)",
+"info": "force a redraw of the status line(s)"
 },
 {"word": "registers",
 "menu": "display the contents of registers",
-"info": "display the contents of registers",
+"info": "display the contents of registers"
 },
 {"word": "resize",
 "menu": "change current window height",
-"info": "change current window height",
+"info": "change current window height"
 },
 {"word": "retab",
 "menu": "change tab size",
-"info": "change tab size",
+"info": "change tab size"
 },
 {"word": "return",
 "menu": "return from a user function",
-"info": "return from a user function",
+"info": "return from a user function"
 },
 {"word": "rewind",
 "menu": "go to the first file in the argument list",
-"info": "go to the first file in the argument list",
+"info": "go to the first file in the argument list"
 },
 {"word": "right",
 "menu": "right align text",
-"info": "right align text",
+"info": "right align text"
 },
 {"word": "rightbelow",
 "menu": "make split window appear right or below",
-"info": "make split window appear right or below",
+"info": "make split window appear right or below"
 },
 {"word": "ruby",
 "menu": "execute Ruby command",
-"info": "execute Ruby command",
+"info": "execute Ruby command"
 },
 {"word": "rubydo",
 "menu": "execute Ruby command for each line",
-"info": "execute Ruby command for each line",
+"info": "execute Ruby command for each line"
 },
 {"word": "rubyfile",
 "menu": "execute Ruby script file",
-"info": "execute Ruby script file",
+"info": "execute Ruby script file"
 },
 {"word": "rundo",
 "menu": "read undo information from a file",
-"info": "read undo information from a file",
+"info": "read undo information from a file"
 },
 {"word": "runtime",
 "menu": "source vim scripts in 'runtimepath'",
-"info": "source vim scripts in 'runtimepath'",
+"info": "source vim scripts in 'runtimepath'"
 },
 {"word": "rviminfo",
 "menu": "read from viminfo file",
-"info": "read from viminfo file",
+"info": "read from viminfo file"
 },
 {"word": "substitute",
 "menu": "find and replace text",
-"info": "find and replace text",
+"info": "find and replace text"
 },
 {"word": "sNext",
 "menu": "split window and go to previous file inargument list",
-"info": "split window and go to previous file inargument list",
+"info": "split window and go to previous file inargument list"
 },
 {"word": "sandbox",
 "menu": "execute a command in the sandbox",
-"info": "execute a command in the sandbox",
+"info": "execute a command in the sandbox"
 },
 {"word": "sargument",
 "menu": "split window and go to specific file inargument list",
-"info": "split window and go to specific file inargument list",
+"info": "split window and go to specific file inargument list"
 },
 {"word": "sall",
 "menu": "open a window for each file in argument list",
-"info": "open a window for each file in argument list",
+"info": "open a window for each file in argument list"
 },
 {"word": "saveas",
 "menu": "save file under another name.",
-"info": "save file under another name.",
+"info": "save file under another name."
 },
 {"word": "sbuffer",
 "menu": "split window and go to specific file in thebuffer list",
-"info": "split window and go to specific file in thebuffer list",
+"info": "split window and go to specific file in thebuffer list"
 },
 {"word": "sbNext",
 "menu": "split window and go to previous file in thebuffer list",
-"info": "split window and go to previous file in thebuffer list",
+"info": "split window and go to previous file in thebuffer list"
 },
 {"word": "sball",
 "menu": "open a window for each file in the buffer list",
-"info": "open a window for each file in the buffer list",
+"info": "open a window for each file in the buffer list"
 },
 {"word": "sbfirst",
 "menu": "split window and go to first file in thebuffer list",
-"info": "split window and go to first file in thebuffer list",
+"info": "split window and go to first file in thebuffer list"
 },
 {"word": "sblast",
 "menu": "split window and go to last file in bufferlist",
-"info": "split window and go to last file in bufferlist",
+"info": "split window and go to last file in bufferlist"
 },
 {"word": "sbmodified",
 "menu": "split window and go to modified file in thebuffer list",
-"info": "split window and go to modified file in thebuffer list",
+"info": "split window and go to modified file in thebuffer list"
 },
 {"word": "sbnext",
 "menu": "split window and go to next file in the bufferlist",
-"info": "split window and go to next file in the bufferlist",
+"info": "split window and go to next file in the bufferlist"
 },
 {"word": "sbprevious",
 "menu": "split window and go to previous file in thebuffer list",
-"info": "split window and go to previous file in thebuffer list",
+"info": "split window and go to previous file in thebuffer list"
 },
 {"word": "sbrewind",
 "menu": "split window and go to first file in thebuffer list",
-"info": "split window and go to first file in thebuffer list",
+"info": "split window and go to first file in thebuffer list"
 },
 {"word": "scriptnames",
 "menu": "list names of all sourced Vim scripts",
-"info": "list names of all sourced Vim scripts",
+"info": "list names of all sourced Vim scripts"
 },
 {"word": "scriptencoding",
 "menu": "encoding used in sourced Vim script",
-"info": "encoding used in sourced Vim script",
+"info": "encoding used in sourced Vim script"
 },
 {"word": "scscope",
 "menu": "split window and execute cscope command",
-"info": "split window and execute cscope command",
+"info": "split window and execute cscope command"
 },
 {"word": "set",
 "menu": "show or set options",
-"info": "show or set options",
+"info": "show or set options"
 },
 {"word": "setfiletype",
 "menu": "set 'filetype', unless it was set already",
-"info": "set 'filetype', unless it was set already",
+"info": "set 'filetype', unless it was set already"
 },
 {"word": "setglobal",
 "menu": "show global values of options",
-"info": "show global values of options",
+"info": "show global values of options"
 },
 {"word": "setlocal",
 "menu": "show or set options locally",
-"info": "show or set options locally",
+"info": "show or set options locally"
 },
 {"word": "sfind",
 "menu": "split current window and edit file in 'path'",
-"info": "split current window and edit file in 'path'",
+"info": "split current window and edit file in 'path'"
 },
 {"word": "sfirst",
 "menu": "split window and go to first file in theargument list",
-"info": "split window and go to first file in theargument list",
+"info": "split window and go to first file in theargument list"
 },
 {"word": "shell",
 "menu": "escape to a shell",
-"info": "escape to a shell",
+"info": "escape to a shell"
 },
 {"word": "simalt",
 "menu": "Win32 GUI: simulate Windows ALT key",
-"info": "Win32 GUI: simulate Windows ALT key",
+"info": "Win32 GUI: simulate Windows ALT key"
 },
 {"word": "sign",
 "menu": "manipulate signs",
-"info": "manipulate signs",
+"info": "manipulate signs"
 },
 {"word": "silent",
 "menu": "run a command silently",
-"info": "run a command silently",
+"info": "run a command silently"
 },
 {"word": "sleep",
 "menu": "do nothing for a few seconds",
-"info": "do nothing for a few seconds",
+"info": "do nothing for a few seconds"
 },
 {"word": "slast",
 "menu": "split window and go to last file in theargument list",
-"info": "split window and go to last file in theargument list",
+"info": "split window and go to last file in theargument list"
 },
 {"word": "smagic",
 "menu": ":substitute with 'magic'",
-"info": ":substitute with 'magic'",
+"info": ":substitute with 'magic'"
 },
 {"word": "smap",
 "menu": "like \":map\" but for Select mode",
-"info": "like \":map\" but for Select mode",
+"info": "like \":map\" but for Select mode"
 },
 {"word": "smapclear",
 "menu": "remove all mappings for Select mode",
-"info": "remove all mappings for Select mode",
+"info": "remove all mappings for Select mode"
 },
 {"word": "smenu",
 "menu": "add menu for Select mode",
-"info": "add menu for Select mode",
+"info": "add menu for Select mode"
 },
 {"word": "smile",
 "menu": "make the user happy",
-"info": "make the user happy",
+"info": "make the user happy"
 },
 {"word": "snext",
 "menu": "split window and go to next file in theargument list",
-"info": "split window and go to next file in theargument list",
+"info": "split window and go to next file in theargument list"
 },
 {"word": "snomagic",
 "menu": ":substitute with 'nomagic'",
-"info": ":substitute with 'nomagic'",
+"info": ":substitute with 'nomagic'"
 },
 {"word": "snoremap",
 "menu": "like \":noremap\" but for Select mode",
-"info": "like \":noremap\" but for Select mode",
+"info": "like \":noremap\" but for Select mode"
 },
 {"word": "snoremenu",
 "menu": "like \":noremenu\" but for Select mode",
-"info": "like \":noremenu\" but for Select mode",
+"info": "like \":noremenu\" but for Select mode"
 },
 {"word": "sort",
 "menu": "sort lines",
-"info": "sort lines",
+"info": "sort lines"
 },
 {"word": "source",
 "menu": "read Vim or Ex commands from a file",
-"info": "read Vim or Ex commands from a file",
+"info": "read Vim or Ex commands from a file"
 },
 {"word": "spelldump",
 "menu": "split window and fill with all correct words",
-"info": "split window and fill with all correct words",
+"info": "split window and fill with all correct words"
 },
 {"word": "spellgood",
 "menu": "add good word for spelling",
-"info": "add good word for spelling",
+"info": "add good word for spelling"
 },
 {"word": "spellinfo",
 "menu": "show info about loaded spell files",
-"info": "show info about loaded spell files",
+"info": "show info about loaded spell files"
 },
 {"word": "spellrepall",
 "menu": "replace all bad words like last |z=|",
-"info": "replace all bad words like last |z=|",
+"info": "replace all bad words like last |z=|"
 },
 {"word": "spellundo",
 "menu": "remove good or bad word",
-"info": "remove good or bad word",
+"info": "remove good or bad word"
 },
 {"word": "spellwrong",
 "menu": "add spelling mistake",
-"info": "add spelling mistake",
+"info": "add spelling mistake"
 },
 {"word": "split",
 "menu": "split current window",
-"info": "split current window",
+"info": "split current window"
 },
 {"word": "sprevious",
 "menu": "split window and go to previous file in theargument list",
-"info": "split window and go to previous file in theargument list",
+"info": "split window and go to previous file in theargument list"
 },
 {"word": "srewind",
 "menu": "split window and go to first file in theargument list",
-"info": "split window and go to first file in theargument list",
+"info": "split window and go to first file in theargument list"
 },
 {"word": "stop",
 "menu": "suspend the editor or escape to a shell",
-"info": "suspend the editor or escape to a shell",
+"info": "suspend the editor or escape to a shell"
 },
 {"word": "stag",
 "menu": "split window and jump to a tag",
-"info": "split window and jump to a tag",
+"info": "split window and jump to a tag"
 },
 {"word": "startinsert",
 "menu": "start Insert mode",
-"info": "start Insert mode",
+"info": "start Insert mode"
 },
 {"word": "startgreplace",
 "menu": "start Virtual Replace mode",
-"info": "start Virtual Replace mode",
+"info": "start Virtual Replace mode"
 },
 {"word": "startreplace",
 "menu": "start Replace mode",
-"info": "start Replace mode",
+"info": "start Replace mode"
 },
 {"word": "stopinsert",
 "menu": "stop Insert mode",
-"info": "stop Insert mode",
+"info": "stop Insert mode"
 },
 {"word": "stjump",
 "menu": "do \":tjump\" and split window",
-"info": "do \":tjump\" and split window",
+"info": "do \":tjump\" and split window"
 },
 {"word": "stselect",
 "menu": "do \":tselect\" and split window",
-"info": "do \":tselect\" and split window",
+"info": "do \":tselect\" and split window"
 },
 {"word": "sunhide",
 "menu": "same as \":unhide\"",
-"info": "same as \":unhide\"",
+"info": "same as \":unhide\""
 },
 {"word": "sunmap",
 "menu": "like \":unmap\" but for Select mode",
-"info": "like \":unmap\" but for Select mode",
+"info": "like \":unmap\" but for Select mode"
 },
 {"word": "sunmenu",
 "menu": "remove menu for Select mode",
-"info": "remove menu for Select mode",
+"info": "remove menu for Select mode"
 },
 {"word": "suspend",
 "menu": "same as \":stop\"",
-"info": "same as \":stop\"",
+"info": "same as \":stop\""
 },
 {"word": "sview",
 "menu": "split window and edit file read-only",
-"info": "split window and edit file read-only",
+"info": "split window and edit file read-only"
 },
 {"word": "swapname",
 "menu": "show the name of the current swap file",
-"info": "show the name of the current swap file",
+"info": "show the name of the current swap file"
 },
 {"word": "syntax",
 "menu": "syntax highlighting",
-"info": "syntax highlighting",
+"info": "syntax highlighting"
 },
 {"word": "syntime",
 "menu": "measure syntax highlighting speed",
-"info": "measure syntax highlighting speed",
+"info": "measure syntax highlighting speed"
 },
 {"word": "syncbind",
 "menu": "sync scroll binding",
-"info": "sync scroll binding",
+"info": "sync scroll binding"
 },
 {"word": "t",
 "menu": "same as \":copy\"",
-"info": "same as \":copy\"",
+"info": "same as \":copy\""
 },
 {"word": "tNext",
 "menu": "jump to previous matching tag",
-"info": "jump to previous matching tag",
+"info": "jump to previous matching tag"
 },
 {"word": "tabNext",
 "menu": "go to previous tab page",
-"info": "go to previous tab page",
+"info": "go to previous tab page"
 },
 {"word": "tabclose",
 "menu": "close current tab page",
-"info": "close current tab page",
+"info": "close current tab page"
 },
 {"word": "tabdo",
 "menu": "execute command in each tab page",
-"info": "execute command in each tab page",
+"info": "execute command in each tab page"
 },
 {"word": "tabedit",
 "menu": "edit a file in a new tab page",
-"info": "edit a file in a new tab page",
+"info": "edit a file in a new tab page"
 },
 {"word": "tabfind",
 "menu": "find file in 'path', edit it in a new tab page",
-"info": "find file in 'path', edit it in a new tab page",
+"info": "find file in 'path', edit it in a new tab page"
 },
 {"word": "tabfirst",
 "menu": "go to first tab page",
-"info": "go to first tab page",
+"info": "go to first tab page"
 },
 {"word": "tablast",
 "menu": "go to last tab page",
-"info": "go to last tab page",
+"info": "go to last tab page"
 },
 {"word": "tabmove",
 "menu": "move tab page to other position",
-"info": "move tab page to other position",
+"info": "move tab page to other position"
 },
 {"word": "tabnew",
 "menu": "edit a file in a new tab page",
-"info": "edit a file in a new tab page",
+"info": "edit a file in a new tab page"
 },
 {"word": "tabnext",
 "menu": "go to next tab page",
-"info": "go to next tab page",
+"info": "go to next tab page"
 },
 {"word": "tabonly",
 "menu": "close all tab pages except the current one",
-"info": "close all tab pages except the current one",
+"info": "close all tab pages except the current one"
 },
 {"word": "tabprevious",
 "menu": "go to previous tab page",
-"info": "go to previous tab page",
+"info": "go to previous tab page"
 },
 {"word": "tabrewind",
 "menu": "go to first tab page",
-"info": "go to first tab page",
+"info": "go to first tab page"
 },
 {"word": "tabs",
 "menu": "list the tab pages and what they contain",
-"info": "list the tab pages and what they contain",
+"info": "list the tab pages and what they contain"
 },
 {"word": "tab",
 "menu": "create new tab when opening new window",
-"info": "create new tab when opening new window",
+"info": "create new tab when opening new window"
 },
 {"word": "tag",
 "menu": "jump to tag",
-"info": "jump to tag",
+"info": "jump to tag"
 },
 {"word": "tags",
 "menu": "show the contents of the tag stack",
-"info": "show the contents of the tag stack",
+"info": "show the contents of the tag stack"
 },
 {"word": "tcl",
 "menu": "execute Tcl command",
-"info": "execute Tcl command",
+"info": "execute Tcl command"
 },
 {"word": "tcldo",
 "menu": "execute Tcl command for each line",
-"info": "execute Tcl command for each line",
+"info": "execute Tcl command for each line"
 },
 {"word": "tclfile",
 "menu": "execute Tcl script file",
-"info": "execute Tcl script file",
+"info": "execute Tcl script file"
 },
 {"word": "tearoff",
 "menu": "tear-off a menu",
-"info": "tear-off a menu",
+"info": "tear-off a menu"
 },
 {"word": "terminal",
 "menu": "open a terminal window",
-"info": "open a terminal window",
+"info": "open a terminal window"
 },
 {"word": "tfirst",
 "menu": "jump to first matching tag",
-"info": "jump to first matching tag",
+"info": "jump to first matching tag"
 },
 {"word": "throw",
 "menu": "throw an exception",
-"info": "throw an exception",
+"info": "throw an exception"
 },
 {"word": "tjump",
 "menu": "like \":tselect\", but jump directly when thereis only one match",
-"info": "like \":tselect\", but jump directly when thereis only one match",
+"info": "like \":tselect\", but jump directly when thereis only one match"
 },
 {"word": "tlast",
 "menu": "jump to last matching tag",
-"info": "jump to last matching tag",
+"info": "jump to last matching tag"
 },
 {"word": "tmapclear",
 "menu": "remove all mappings for Terminal-Job mode",
-"info": "remove all mappings for Terminal-Job mode",
+"info": "remove all mappings for Terminal-Job mode"
 },
 {"word": "tmap",
 "menu": "like \":map\" but for Terminal-Job mode",
-"info": "like \":map\" but for Terminal-Job mode",
+"info": "like \":map\" but for Terminal-Job mode"
 },
 {"word": "tmenu",
 "menu": "define menu tooltip",
-"info": "define menu tooltip",
+"info": "define menu tooltip"
 },
 {"word": "tnext",
 "menu": "jump to next matching tag",
-"info": "jump to next matching tag",
+"info": "jump to next matching tag"
 },
 {"word": "tnoremap",
 "menu": "like \":noremap\" but for Terminal-Job mode",
-"info": "like \":noremap\" but for Terminal-Job mode",
+"info": "like \":noremap\" but for Terminal-Job mode"
 },
 {"word": "topleft",
 "menu": "make split window appear at top or far left",
-"info": "make split window appear at top or far left",
+"info": "make split window appear at top or far left"
 },
 {"word": "tprevious",
 "menu": "jump to previous matching tag",
-"info": "jump to previous matching tag",
+"info": "jump to previous matching tag"
 },
 {"word": "trewind",
 "menu": "jump to first matching tag",
-"info": "jump to first matching tag",
+"info": "jump to first matching tag"
 },
 {"word": "try",
 "menu": "execute commands, abort on error or exception",
-"info": "execute commands, abort on error or exception",
+"info": "execute commands, abort on error or exception"
 },
 {"word": "tselect",
 "menu": "list matching tags and select one",
-"info": "list matching tags and select one",
+"info": "list matching tags and select one"
 },
 {"word": "tunmap",
 "menu": "like \":unmap\" but for Terminal-Job mode",
-"info": "like \":unmap\" but for Terminal-Job mode",
+"info": "like \":unmap\" but for Terminal-Job mode"
 },
 {"word": "tunmenu",
 "menu": "remove menu tooltip",
-"info": "remove menu tooltip",
+"info": "remove menu tooltip"
 },
 {"word": "undo",
 "menu": "undo last change(s)",
-"info": "undo last change(s)",
+"info": "undo last change(s)"
 },
 {"word": "undojoin",
 "menu": "join next change with previous undo block",
-"info": "join next change with previous undo block",
+"info": "join next change with previous undo block"
 },
 {"word": "undolist",
 "menu": "list leafs of the undo tree",
-"info": "list leafs of the undo tree",
+"info": "list leafs of the undo tree"
 },
 {"word": "unabbreviate",
 "menu": "remove abbreviation",
-"info": "remove abbreviation",
+"info": "remove abbreviation"
 },
 {"word": "unhide",
 "menu": "open a window for each loaded file in thebuffer list",
-"info": "open a window for each loaded file in thebuffer list",
+"info": "open a window for each loaded file in thebuffer list"
 },
 {"word": "unlet",
 "menu": "delete variable",
-"info": "delete variable",
+"info": "delete variable"
 },
 {"word": "unlockvar",
 "menu": "unlock variables",
-"info": "unlock variables",
+"info": "unlock variables"
 },
 {"word": "unmap",
 "menu": "remove mapping",
-"info": "remove mapping",
+"info": "remove mapping"
 },
 {"word": "unmenu",
 "menu": "remove menu",
-"info": "remove menu",
+"info": "remove menu"
 },
 {"word": "unsilent",
 "menu": "run a command not silently",
-"info": "run a command not silently",
+"info": "run a command not silently"
 },
 {"word": "update",
 "menu": "write buffer if modified",
-"info": "write buffer if modified",
+"info": "write buffer if modified"
 },
 {"word": "vglobal",
 "menu": "execute commands for not matching lines",
-"info": "execute commands for not matching lines",
+"info": "execute commands for not matching lines"
 },
 {"word": "version",
 "menu": "print version number and other info",
-"info": "print version number and other info",
+"info": "print version number and other info"
 },
 {"word": "verbose",
 "menu": "execute command with 'verbose' set",
-"info": "execute command with 'verbose' set",
+"info": "execute command with 'verbose' set"
 },
 {"word": "vertical",
 "menu": "make following command split vertically",
-"info": "make following command split vertically",
+"info": "make following command split vertically"
 },
 {"word": "vimgrep",
 "menu": "search for pattern in files",
-"info": "search for pattern in files",
+"info": "search for pattern in files"
 },
 {"word": "vimgrepadd",
 "menu": "like :vimgrep, but append to current list",
-"info": "like :vimgrep, but append to current list",
+"info": "like :vimgrep, but append to current list"
 },
 {"word": "visual",
 "menu": "same as \":edit\", but turns off \"Ex\" mode",
-"info": "same as \":edit\", but turns off \"Ex\" mode",
+"info": "same as \":edit\", but turns off \"Ex\" mode"
 },
 {"word": "viusage",
 "menu": "overview of Normal mode commands",
-"info": "overview of Normal mode commands",
+"info": "overview of Normal mode commands"
 },
 {"word": "view",
 "menu": "edit a file read-only",
-"info": "edit a file read-only",
+"info": "edit a file read-only"
 },
 {"word": "vmap",
 "menu": "like \":map\" but for Visual+Select mode",
-"info": "like \":map\" but for Visual+Select mode",
+"info": "like \":map\" but for Visual+Select mode"
 },
 {"word": "vmapclear",
 "menu": "remove all mappings for Visual+Select mode",
-"info": "remove all mappings for Visual+Select mode",
+"info": "remove all mappings for Visual+Select mode"
 },
 {"word": "vmenu",
 "menu": "add menu for Visual+Select mode",
-"info": "add menu for Visual+Select mode",
+"info": "add menu for Visual+Select mode"
 },
 {"word": "vnew",
 "menu": "create a new empty window, vertically split",
-"info": "create a new empty window, vertically split",
+"info": "create a new empty window, vertically split"
 },
 {"word": "vnoremap",
 "menu": "like \":noremap\" but for Visual+Select mode",
-"info": "like \":noremap\" but for Visual+Select mode",
+"info": "like \":noremap\" but for Visual+Select mode"
 },
 {"word": "vnoremenu",
 "menu": "like \":noremenu\" but for Visual+Select mode",
-"info": "like \":noremenu\" but for Visual+Select mode",
+"info": "like \":noremenu\" but for Visual+Select mode"
 },
 {"word": "vsplit",
 "menu": "split current window vertically",
-"info": "split current window vertically",
+"info": "split current window vertically"
 },
 {"word": "vunmap",
 "menu": "like \":unmap\" but for Visual+Select mode",
-"info": "like \":unmap\" but for Visual+Select mode",
+"info": "like \":unmap\" but for Visual+Select mode"
 },
 {"word": "vunmenu",
 "menu": "remove menu for Visual+Select mode",
-"info": "remove menu for Visual+Select mode",
+"info": "remove menu for Visual+Select mode"
 },
 {"word": "windo",
 "menu": "execute command in each window",
-"info": "execute command in each window",
+"info": "execute command in each window"
 },
 {"word": "write",
 "menu": "write to a file",
-"info": "write to a file",
+"info": "write to a file"
 },
 {"word": "wNext",
 "menu": "write to a file and go to previous file inargument list",
-"info": "write to a file and go to previous file inargument list",
+"info": "write to a file and go to previous file inargument list"
 },
 {"word": "wall",
 "menu": "write all (changed) buffers",
-"info": "write all (changed) buffers",
+"info": "write all (changed) buffers"
 },
 {"word": "while",
 "menu": "execute loop for as long as condition met",
-"info": "execute loop for as long as condition met",
+"info": "execute loop for as long as condition met"
 },
 {"word": "winsize",
 "menu": "get or set window size (obsolete)",
-"info": "get or set window size (obsolete)",
+"info": "get or set window size (obsolete)"
 },
 {"word": "wincmd",
 "menu": "execute a Window (CTRL-W) command",
-"info": "execute a Window (CTRL-W) command",
+"info": "execute a Window (CTRL-W) command"
 },
 {"word": "winpos",
 "menu": "get or set window position",
-"info": "get or set window position",
+"info": "get or set window position"
 },
 {"word": "wnext",
 "menu": "write to a file and go to next file inargument list",
-"info": "write to a file and go to next file inargument list",
+"info": "write to a file and go to next file inargument list"
 },
 {"word": "wprevious",
 "menu": "write to a file and go to previous file inargument list",
-"info": "write to a file and go to previous file inargument list",
+"info": "write to a file and go to previous file inargument list"
 },
 {"word": "wq",
 "menu": "write to a file and quit window or Vim",
-"info": "write to a file and quit window or Vim",
+"info": "write to a file and quit window or Vim"
 },
 {"word": "wqall",
 "menu": "write all changed buffers and quit Vim",
-"info": "write all changed buffers and quit Vim",
+"info": "write all changed buffers and quit Vim"
 },
 {"word": "wsverb",
 "menu": "pass the verb to workshop over IPC",
-"info": "pass the verb to workshop over IPC",
+"info": "pass the verb to workshop over IPC"
 },
 {"word": "wundo",
 "menu": "write undo information to a file",
-"info": "write undo information to a file",
+"info": "write undo information to a file"
 },
 {"word": "wviminfo",
 "menu": "write to viminfo file",
-"info": "write to viminfo file",
+"info": "write to viminfo file"
 },
 {"word": "xit",
 "menu": "write if buffer changed and quit window or Vim",
-"info": "write if buffer changed and quit window or Vim",
+"info": "write if buffer changed and quit window or Vim"
 },
 {"word": "xall",
 "menu": "same as \":wqall\"",
-"info": "same as \":wqall\"",
+"info": "same as \":wqall\""
 },
 {"word": "xmapclear",
 "menu": "remove all mappings for Visual mode",
-"info": "remove all mappings for Visual mode",
+"info": "remove all mappings for Visual mode"
 },
 {"word": "xmap",
 "menu": "like \":map\" but for Visual mode",
-"info": "like \":map\" but for Visual mode",
+"info": "like \":map\" but for Visual mode"
 },
 {"word": "xmenu",
 "menu": "add menu for Visual mode",
-"info": "add menu for Visual mode",
+"info": "add menu for Visual mode"
 },
 {"word": "xnoremap",
 "menu": "like \":noremap\" but for Visual mode",
-"info": "like \":noremap\" but for Visual mode",
+"info": "like \":noremap\" but for Visual mode"
 },
 {"word": "xnoremenu",
 "menu": "like \":noremenu\" but for Visual mode",
-"info": "like \":noremenu\" but for Visual mode",
+"info": "like \":noremenu\" but for Visual mode"
 },
 {"word": "xunmap",
 "menu": "like \":unmap\" but for Visual mode",
-"info": "like \":unmap\" but for Visual mode",
+"info": "like \":unmap\" but for Visual mode"
 },
 {"word": "xunmenu",
 "menu": "remove menu for Visual mode",
-"info": "remove menu for Visual mode",
+"info": "remove menu for Visual mode"
 },
 {"word": "yank",
 "menu": "yank lines into a register",
-"info": "yank lines into a register",
+"info": "yank lines into a register"
 },
 {"word": "z",
 "menu": "print some lines",
-"info": "print some lines",
+"info": "print some lines"
 },
 {"word": "~",
 "menu": "repeat last \":substitute\"",
-"info": "repeat last \":substitute\"",
+"info": "repeat last \":substitute\""
 }]
