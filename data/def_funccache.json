@@ -54,10 +54,20 @@
 "menu": "the argument list",
 "info": "argv() List\n\nthe argument list"
 },
+{"word": "assert_beeps(",
+"kind": "f",
+"menu": "assert {cmd} causes a beep",
+"info": "assert_beeps({cmd}) none\n\nassert {cmd} causes a beep"
+},
 {"word": "assert_equal(",
 "kind": "f",
 "menu": "assert {exp} is equal to {act}",
 "info": "assert_equal({exp}, {act} [, {msg}]) none\n\nassert {exp} is equal to {act}"
+},
+{"word": "assert_equalfile(",
+"kind": "f",
+"menu": "assert file contents is equal",
+"info": "assert_equalfile({fname-one}, {fname-two}) none\n\nassert file contents is equal"
 },
 {"word": "assert_exception(",
 "kind": "f",
@@ -121,8 +131,13 @@
 },
 {"word": "balloon_show(",
 "kind": "f",
-"menu": "show {msg} inside the balloon",
-"info": "balloon_show({msg}) none\n\nshow {msg} inside the balloon"
+"menu": "show {expr} inside the balloon",
+"info": "balloon_show({expr}) none\n\nshow {expr} inside the balloon"
+},
+{"word": "balloon_split(",
+"kind": "f",
+"menu": "split {msg} as used for a balloon",
+"info": "balloon_split({msg}) List\n\nsplit {msg} as used for a balloon"
 },
 {"word": "browse(",
 "kind": "f",
@@ -287,7 +302,7 @@
 {"word": "char2nr(",
 "kind": "f",
 "menu": "ASCII/UTF8 value of first char in {expr}",
-"info": "char2nr({expr}[, {utf8}]) Number\n\nASCII/UTF8 value of first char in {expr}"
+"info": "char2nr({expr} [, {utf8}]) Number\n\nASCII/UTF8 value of first char in {expr}"
 },
 {"word": "cindent(",
 "kind": "f",
@@ -462,12 +477,12 @@
 {"word": "finddir(",
 "kind": "f",
 "menu": "find directory {name} in {path}",
-"info": "finddir({name}[, {path}[, {count}]]) String\n\nfind directory {name} in {path}"
+"info": "finddir({name} [, {path} [, {count}]]) String\n\nfind directory {name} in {path}"
 },
 {"word": "findfile(",
 "kind": "f",
 "menu": "find file {name} in {path}",
-"info": "findfile({name}[, {path}[, {count}]]) String\n\nfind file {name} in {path}"
+"info": "findfile({name} [, {path} [, {count}]]) String\n\nfind file {name} in {path}"
 },
 {"word": "float2nr(",
 "kind": "f",
@@ -569,6 +584,11 @@
 "menu": "variable {varname} in buffer {expr}",
 "info": "getbufvar({expr}, {varname} [, {def}]) any\n\nvariable {varname} in buffer {expr}"
 },
+{"word": "getchangelist(",
+"kind": "f",
+"menu": "list of change list items",
+"info": "getchangelist({expr}) List\n\nlist of change list items"
+},
 {"word": "getchar(",
 "kind": "f",
 "menu": "get one character from the user",
@@ -644,6 +664,11 @@
 "menu": "description of type of file {fname}",
 "info": "getftype({fname}) String\n\ndescription of type of file {fname}"
 },
+{"word": "getjumplist(",
+"kind": "f",
+"menu": "list of jump list items",
+"info": "getjumplist([{winnr} [, {tabnr}]]) List\n\nlist of jump list items"
+},
 {"word": "getline(",
 "kind": "f",
 "menu": "line {lnum} of current buffer",
@@ -657,7 +682,7 @@
 {"word": "getloclist(",
 "kind": "f",
 "menu": "list of location list items",
-"info": "getloclist({nr}[, {what}]) List\n\nlist of location list items"
+"info": "getloclist({nr} [, {what}]) List\n\nlist of location list items"
 },
 {"word": "getmatches()",
 "kind": "f",
@@ -709,15 +734,20 @@
 "menu": "list of windows",
 "info": "getwininfo([{winid}]) List\n\nlist of windows"
 },
+{"word": "getwinpos(",
+"kind": "f",
+"menu": "X and Y coord in pixels of the Vim window",
+"info": "getwinpos([{tmeout}]) List\n\nX and Y coord in pixels of the Vim window"
+},
 {"word": "getwinposx()",
 "kind": "f",
-"menu": "X coord in pixels of GUI Vim window",
-"info": "getwinposx() Number\n\nX coord in pixels of GUI Vim window"
+"menu": "X coord in pixels of the Vim window",
+"info": "getwinposx() Number\n\nX coord in pixels of the Vim window"
 },
 {"word": "getwinposy()",
 "kind": "f",
-"menu": "Y coord in pixels of GUI Vim window",
-"info": "getwinposy() Number\n\nY coord in pixels of GUI Vim window"
+"menu": "Y coord in pixels of the Vim window",
+"info": "getwinposy() Number\n\nY coord in pixels of the Vim window"
 },
 {"word": "getwinvar(",
 "kind": "f",
@@ -977,7 +1007,7 @@
 {"word": "luaeval(",
 "kind": "f",
 "menu": "evaluate |Lua| expression",
-"info": "luaeval({expr}[, {expr}]) any\n\nevaluate |Lua| expression"
+"info": "luaeval({expr} [, {expr}]) any\n\nevaluate |Lua| expression"
 },
 {"word": "map(",
 "kind": "f",
@@ -987,27 +1017,27 @@
 {"word": "maparg(",
 "kind": "f",
 "menu": "rhs of mapping {name} in mode {mode}",
-"info": "maparg({name}[, {mode} [, {abbr} [, {dict}]]]) String or Dict\n\nrhs of mapping {name} in mode {mode}"
+"info": "maparg({name} [, {mode} [, {abbr} [, {dict}]]]) String or Dict\n\nrhs of mapping {name} in mode {mode}"
 },
 {"word": "mapcheck(",
 "kind": "f",
 "menu": "check for mappings matching {name}",
-"info": "mapcheck({name}[, {mode} [, {abbr}]]) String\n\ncheck for mappings matching {name}"
+"info": "mapcheck({name} [, {mode} [, {abbr}]]) String\n\ncheck for mappings matching {name}"
 },
 {"word": "match(",
 "kind": "f",
 "menu": "position where {pat} matches in {expr}",
-"info": "match({expr}, {pat}[, {start}[, {count}]]) Number\n\nposition where {pat} matches in {expr}"
+"info": "match({expr}, {pat} [, {start} [, {count}]]) Number\n\nposition where {pat} matches in {expr}"
 },
 {"word": "matchadd(",
 "kind": "f",
 "menu": "highlight {pattern} with {group}",
-"info": "matchadd({group}, {pattern}[, {priority}[, {id} [, {dict}]]]) Number\n\nhighlight {pattern} with {group}"
+"info": "matchadd({group}, {pattern} [, {priority} [, {id} [, {dict}]]]) Number\n\nhighlight {pattern} with {group}"
 },
 {"word": "matchaddpos(",
 "kind": "f",
 "menu": "highlight positions with {group}",
-"info": "matchaddpos({group}, {pos}[, {priority}[, {id}[, {dict}]]]) Number\n\nhighlight positions with {group}"
+"info": "matchaddpos({group}, {pos} [, {priority} [, {id} [, {dict}]]]) Number\n\nhighlight positions with {group}"
 },
 {"word": "matcharg(",
 "kind": "f",
@@ -1022,22 +1052,22 @@
 {"word": "matchend(",
 "kind": "f",
 "menu": "position where {pat} ends in {expr}",
-"info": "matchend({expr}, {pat}[, {start}[, {count}]]) Number\n\nposition where {pat} ends in {expr}"
+"info": "matchend({expr}, {pat} [, {start} [, {count}]]) Number\n\nposition where {pat} ends in {expr}"
 },
 {"word": "matchlist(",
 "kind": "f",
 "menu": "match and submatches of {pat} in {expr}",
-"info": "matchlist({expr}, {pat}[, {start}[, {count}]]) List\n\nmatch and submatches of {pat} in {expr}"
+"info": "matchlist({expr}, {pat} [, {start} [, {count}]]) List\n\nmatch and submatches of {pat} in {expr}"
 },
 {"word": "matchstr(",
 "kind": "f",
 "menu": "{count}'th match of {pat} in {expr}",
-"info": "matchstr({expr}, {pat}[, {start}[, {count}]]) String\n\n{count}'th match of {pat} in {expr}"
+"info": "matchstr({expr}, {pat} [, {start} [, {count}]]) String\n\n{count}'th match of {pat} in {expr}"
 },
 {"word": "matchstrpos(",
 "kind": "f",
 "menu": "{count}'th match of {pat} in {expr}",
-"info": "matchstrpos({expr}, {pat}[, {start}[, {count}]]) List\n\n{count}'th match of {pat} in {expr}"
+"info": "matchstrpos({expr}, {pat} [, {start} [, {count}]]) List\n\n{count}'th match of {pat} in {expr}"
 },
 {"word": "max(",
 "kind": "f",
@@ -1072,7 +1102,17 @@
 {"word": "nr2char(",
 "kind": "f",
 "menu": "single char with ASCII/UTF8 value {expr}",
-"info": "nr2char({expr}[, {utf8}]) String\n\nsingle char with ASCII/UTF8 value {expr}"
+"info": "nr2char({expr} [, {utf8}]) String\n\nsingle char with ASCII/UTF8 value {expr}"
+},
+{"word": "option_restore(",
+"kind": "f",
+"menu": "restore options saved by option_save()",
+"info": "option_restore({list}) none\n\nrestore options saved by option_save()"
+},
+{"word": "option_save(",
+"kind": "f",
+"menu": "save options values",
+"info": "option_save({list}) List\n\nsave options values"
 },
 {"word": "or(",
 "kind": "f",
@@ -1176,8 +1216,8 @@
 },
 {"word": "remote_startserver(",
 "kind": "f",
-"menu": "become server {name}String	send key sequence",
-"info": "remote_startserver({name}) none\n\nbecome server {name}String	send key sequence"
+"menu": "become server {name} / String => send key sequence",
+"info": "remote_startserver({name}) none\n\nbecome server {name} / String => send key sequence"
 },
 {"word": "remove(",
 "kind": "f",
@@ -1272,7 +1312,7 @@
 {"word": "setbufline(",
 "kind": "f",
 "menu": "set line {lnum} to {line} in buffer{expr}",
-"info": "setbufline( {expr}, {lnum}, {line}) Number\n\nset line {lnum} to {line} in buffer{expr}"
+"info": "setbufline({expr}, {lnum}, {line}) Number\n\nset line {lnum} to {line} in buffer{expr}"
 },
 {"word": "setbufvar(",
 "kind": "f",
@@ -1302,7 +1342,7 @@
 {"word": "setloclist(",
 "kind": "f",
 "menu": "modify location list using {list}",
-"info": "setloclist({nr}, {list}[, {action}[, {what}]]) Number\n\nmodify location list using {list}"
+"info": "setloclist({nr}, {list} [, {action} [, {what}]]) Number\n\nmodify location list using {list}"
 },
 {"word": "setmatches(",
 "kind": "f",
@@ -1317,12 +1357,12 @@
 {"word": "setqflist(",
 "kind": "f",
 "menu": "modify quickfix list using {list}",
-"info": "setqflist({list}[, {action}[, {what}]]) Number\n\nmodify quickfix list using {list}"
+"info": "setqflist({list} [, {action} [, {what}]]) Number\n\nmodify quickfix list using {list}"
 },
 {"word": "setreg(",
 "kind": "f",
 "menu": "set register to value and type",
-"info": "setreg({n}, {v}[, {opt}]) Number\n\nset register to value and type"
+"info": "setreg({n}, {v} [, {opt}]) Number\n\nset register to value and type"
 },
 {"word": "settabvar(",
 "kind": "f",
@@ -1417,7 +1457,7 @@
 {"word": "strcharpart(",
 "kind": "f",
 "menu": "{len} characters of {str} at {start}",
-"info": "strcharpart({str}, {start}[, {len}]) String\n\n{len} characters of {str} at {start}"
+"info": "strcharpart({str}, {start} [, {len}]) String\n\n{len} characters of {str} at {start}"
 },
 {"word": "strdisplaywidth(",
 "kind": "f",
@@ -1427,7 +1467,7 @@
 {"word": "strftime(",
 "kind": "f",
 "menu": "time in specified format",
-"info": "strftime({format}[, {time}]) String\n\ntime in specified format"
+"info": "strftime({format} [, {time}]) String\n\ntime in specified format"
 },
 {"word": "strgetchar(",
 "kind": "f",
@@ -1437,7 +1477,7 @@
 {"word": "stridx(",
 "kind": "f",
 "menu": "index of {needle} in {haystack}",
-"info": "stridx({haystack}, {needle}[, {start}]) Number\n\nindex of {needle} in {haystack}"
+"info": "stridx({haystack}, {needle} [, {start}]) Number\n\nindex of {needle} in {haystack}"
 },
 {"word": "string(",
 "kind": "f",
@@ -1452,7 +1492,7 @@
 {"word": "strpart(",
 "kind": "f",
 "menu": "{len} characters of {str} at {start}",
-"info": "strpart({str}, {start}[, {len}]) String\n\n{len} characters of {str} at {start}"
+"info": "strpart({str}, {start} [, {len}]) String\n\n{len} characters of {str} at {start}"
 },
 {"word": "strridx(",
 "kind": "f",
@@ -1472,7 +1512,7 @@
 {"word": "submatch(",
 "kind": "f",
 "menu": "specific match in \":s\" or substitute()",
-"info": "submatch({nr}[, {list}]) String or List\n\nspecific match in \":s\" or substitute()"
+"info": "submatch({nr} [, {list}]) String or List\n\nspecific match in \":s\" or substitute()"
 },
 {"word": "substitute(",
 "kind": "f",
@@ -1527,12 +1567,12 @@
 {"word": "tabpagewinnr(",
 "kind": "f",
 "menu": "number of current window in tab page",
-"info": "tabpagewinnr({tabarg}[, {arg}]) Number\n\nnumber of current window in tab page"
+"info": "tabpagewinnr({tabarg} [, {arg}]) Number\n\nnumber of current window in tab page"
 },
 {"word": "taglist(",
 "kind": "f",
 "menu": "list of tags matching {expr}",
-"info": "taglist({expr}[, {filename}]) List\n\nlist of tags matching {expr}"
+"info": "taglist({expr} [, {filename}]) List\n\nlist of tags matching {expr}"
 },
 {"word": "tagfiles()",
 "kind": "f",
@@ -1553,6 +1593,21 @@
 "kind": "f",
 "menu": "name for a temporary file",
 "info": "tempname() String\n\nname for a temporary file"
+},
+{"word": "term_dumpdiff(",
+"kind": "f",
+"menu": "display difference between two dumps",
+"info": "term_dumpdiff({filename}, {filename} [, {options}]) Number\n\ndisplay difference between two dumps"
+},
+{"word": "term_dumpload(",
+"kind": "f",
+"menu": "displaying a screen dump",
+"info": "term_dumpload({filename} [, {options}]) Number\n\ndisplaying a screen dump"
+},
+{"word": "term_dumpwrite(",
+"kind": "f",
+"menu": "dump terminal window contents",
+"info": "term_dumpwrite({buf}, {filename} [, {options}]) none\n\ndump terminal window contents"
 },
 {"word": "term_getaltscreen(",
 "kind": "f",
@@ -1599,10 +1654,10 @@
 "menu": "get the title of a terminal",
 "info": "term_gettitle({buf}) String\n\nget the title of a terminal"
 },
-{"word": "term_getttty(",
+{"word": "term_gettty(",
 "kind": "f",
 "menu": "get the tty name of a terminal",
-"info": "term_getttty({buf}, [{input}]) String\n\nget the tty name of a terminal"
+"info": "term_gettty({buf}, [{input}]) String\n\nget the tty name of a terminal"
 },
 {"word": "term_list()",
 "kind": "f",
@@ -1803,6 +1858,11 @@
 "kind": "f",
 "menu": "get window nr from window ID",
 "info": "win_id2win({expr}) Number\n\nget window nr from window ID"
+},
+{"word": "win_screenpos(",
+"kind": "f",
+"menu": "get screen position of window {nr}",
+"info": "win_screenpos({nr}) List\n\nget screen position of window {nr}"
 },
 {"word": "winbufnr(",
 "kind": "f",

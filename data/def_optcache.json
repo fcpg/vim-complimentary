@@ -80,8 +80,12 @@
 "info": "'bdlay'   delay in mS before a balloon may pop up"
 },
 {"word": "ballooneval",
-"menu": "'beval'   switch on balloon evaluation",
-"info": "'beval'   switch on balloon evaluation"
+"menu": "'beval'     switch on balloon evaluation in the GUI",
+"info": "'beval'     switch on balloon evaluation in the GUI"
+},
+{"word": "balloonevalterm",
+"menu": "'bevalterm' switch on balloon evaluation in the terminal",
+"info": "'bevalterm' switch on balloon evaluation in the terminal"
 },
 {"word": "balloonexpr",
 "menu": "'bexpr'   expression to show in balloon",
@@ -727,6 +731,14 @@
 "menu": "name of the Lua dynamic library",
 "info": "name of the Lua dynamic library"
 },
+{"word": "mzschemedll",
+"menu": "name of the MzScheme dynamic library",
+"info": "name of the MzScheme dynamic library"
+},
+{"word": "mzschemegcdll",
+"menu": "name of the MzScheme dynamic library for GC",
+"info": "name of the MzScheme dynamic library for GC"
+},
 {"word": "macatsui",
 "menu": "Mac GUI: use ATSUI text drawing",
 "info": "Mac GUI: use ATSUI text drawing"
@@ -947,13 +959,25 @@
 "menu": "'ph'      maximum height of the popup menu",
 "info": "'ph'      maximum height of the popup menu"
 },
+{"word": "pumwidth",
+"menu": "'pw'      minimum width of the popup menu",
+"info": "'pw'      minimum width of the popup menu"
+},
 {"word": "pythondll",
 "menu": "name of the Python 2 dynamic library",
 "info": "name of the Python 2 dynamic library"
 },
+{"word": "pythonhome",
+"menu": "name of the Python 2 home directory",
+"info": "name of the Python 2 home directory"
+},
 {"word": "pythonthreedll",
 "menu": "name of the Python 3 dynamic library",
 "info": "name of the Python 3 dynamic library"
+},
+{"word": "pythonthreehome",
+"menu": "name of the Python 3 home directory",
+"info": "name of the Python 3 home directory"
 },
 {"word": "pyxversion",
 "menu": "'pyx'      Python version used for pyx* commands",

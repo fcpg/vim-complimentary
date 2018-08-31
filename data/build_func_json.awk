@@ -46,7 +46,13 @@ inprogress && /^\s+\S/ {
     data=a[4];
     next;
   }
-  data=data $0
+  if (index($0, "\t")) {
+    gsub(/\t/, " => ")
+    data=data " / " $0
+  }
+  else {
+    data=data $0
+  }
 }
 
 END {

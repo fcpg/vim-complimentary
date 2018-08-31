@@ -89,6 +89,11 @@
 "menu": "Errors found by assert functions, such as |assert_true()|.",
 "info": "Errors found by assert functions, such as |assert_true()|. This is a list of strings. The assert functions append an item when an assert fails. To remove old results make it empty: > :let v:errors = [] < If v:errors is set to anything but a list it is made an empty list by the assert function. "
 },
+{"word": "v:event",
+"kind": "v",
+"menu": "Dictionary containing information about the current",
+"info": "Dictionary containing information about the current |autocommand|. The dictionary is emptied when the |autocommand| finishes, please refer to |dict-identity| for how to get an independent copy of it. "
+},
 {"word": "v:exception",
 "kind": "v",
 "menu": "The value of the exception most recently caught and not",
