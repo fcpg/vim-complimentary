@@ -88,7 +88,7 @@ OPTIONS                                                 *complimentary-options*
 
 g:cpty_cache_dir                                             *g:cpty_cache_dir*
   Full path to the location where cached data will be stored.
-  Default: 'plugin/' subdir of this plugin
+  Default: 'data/' subdir of this plugin
 
 g:cpty_use_default_cache                             *g:cpty_use_default_cache*
   Set to 1 to use only the cached data provided with the plugin.
