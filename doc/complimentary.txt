@@ -113,11 +113,19 @@ g:cpty_no_set_cmd                                           *g:cpty_no_set_cmd*
   Set to 1 to disable all `:Set` commands.
   Default: 0
 
+g:cpty_always_menu                                         *g:cpty_always_menu*
+  Set to 1 to always show the "menu" info in the menu completion, even
+  if it is also displayed in a popup (when 'completeopt' contains "popup").
+  Default: 0
+
 =============================================================================
 CHANGELOG                                             *complimentary-changelog*
 
 [1.0] - 2017-11-21
   - Initial release
+[1.1] - 2019-09-26
+  - Deal with new "popup" from 'completeopt'
+  - Add option to disable ":Set" commands
 
 =============================================================================
 CONTRIBUTE                                           *complimentary-contribute*

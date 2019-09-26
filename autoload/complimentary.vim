@@ -138,7 +138,7 @@ endfun
 
 
 " s:GetCmdInfo() {{{2
-" Get built-in vim function signatures
+" Get built-in command signatures
 " Arg: pfx  the prefix to complete
 function! s:GetCmdInfo(pfx) abort
   if !exists('g:cpty_cmd_cache')
@@ -183,7 +183,7 @@ endfun
 
 
 " s:GetOptInfo() {{{2
-" Get builtin vim optiable
+" Get builtin vim option description
 " Arg: pfx  the prefix to complete
 function! s:GetOptInfo(pfx) abort
   if !exists('g:cpty_opt_cache')
@@ -267,6 +267,20 @@ function! complimentary#CompleteCpty(findstart, base) abort
         call add(res, c)
       endif
     endfor
+    " exclude menu info if 'cot contains popup
+    if has('patch-8.1.1880')
+          \ && &completeopt =~ 'popup'
+          \ && !get(g:, 'cpty_always_menu', 0)
+      let i = len(res) - 1
+      while i>=0
+        let e = res[i]
+        if has_key(e, 'menu')
+          let res[i] = deepcopy(e)
+          call remove(res[i], 'menu')
+        endif
+        let i -= 1
+      endwhile
+    endif
     return res
   endif
 endfun
