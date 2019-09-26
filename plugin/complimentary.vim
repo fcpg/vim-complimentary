@@ -14,14 +14,16 @@ set cpo&vim
 " Commands {{{1
 "---------------
 
-command! -nargs=+ -bar -complete=customlist,complimentary#CompleteOpt Set
-      \ set <args>
+if !get(g:, 'cpty_no_set_cmd', 0)
+  command! -nargs=+ -bar -complete=customlist,complimentary#CompleteOpt Set
+        \ set <args>
 
-command! -nargs=+ -bar -complete=customlist,complimentary#CompleteOpt Setl
-      \ setl <args>
+  command! -nargs=+ -bar -complete=customlist,complimentary#CompleteOpt Setl
+        \ setl <args>
 
-command! -nargs=+ -bar -complete=customlist,complimentary#CompleteOpt Setg
-      \ setg <args>
+  command! -nargs=+ -bar -complete=customlist,complimentary#CompleteOpt Setg
+        \ setg <args>
+endif
 
 command! -bar ComplimentaryRebuild
       \ call complimentary#RebuildCaches()

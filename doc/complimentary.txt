@@ -109,6 +109,10 @@ g:cpty_awk_cmd                                                 *g:cpty_awk_cmd*
   Shell command used to run GNU Awk scripts.
   Default: `gawk -f`
 
+g:cpty_no_set_cmd                                           *g:cpty_no_set_cmd*
+  Set to 1 to disable all `:Set` commands.
+  Default: 0
+
 =============================================================================
 CHANGELOG                                             *complimentary-changelog*
 
