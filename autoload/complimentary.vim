@@ -274,7 +274,7 @@ function! complimentary#CompleteCpty(findstart, base) abort
       let i = len(res) - 1
       while i>=0
         let e = res[i]
-        if has_key(e, 'menu')
+        if type(e) == type({}) && has_key(e, 'menu')
           let res[i] = deepcopy(e)
           call remove(res[i], 'menu')
         endif
