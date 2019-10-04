@@ -203,10 +203,12 @@ function! s:BuildShortoptCache() abort
   let g:cpty_shortopt_cache = <Sid>BuildCache(exestr, 'sopt')
 endfun
 
+
 " CompleteCpty() {{{2
 " Main completion function
 function! complimentary#CompleteCpty(findstart, base) abort
   let line = getline('.')
+  let col  = col('.')
   if a:findstart
     let start = col('.') - 1
     while start > 0 && line[start - 1] =~ '\k\|:'
@@ -217,16 +219,17 @@ function! complimentary#CompleteCpty(findstart, base) abort
     endif
     return start
   else
-    if get(g:, 'cpty_sigil', 0) && a:base[0] == '*'
+    let process_sigil = get(g:, 'cpty_sigil', 0)
+    if process_sigil && a:base[0] == '*'
       let word = strpart(a:base,1)
       let type = 'function'
-    elseif get(g:, 'cpty_sigil', 0) && a:base[0] == '+'
+    elseif process_sigil && a:base[0] == '+'
       let word = strpart(a:base,1)
       let type = 'option'
-    elseif get(g:, 'cpty_sigil', 0) && a:base[0] == ':'
+    elseif process_sigil && a:base[0] == ':'
       let word = strpart(a:base,1)
       let type = 'command'
-    elseif get(g:, 'cpty_sigil', 0) && a:base[0] == '#'
+    elseif process_sigil && a:base[0] == '#'
       let word = strpart(a:base,1)
       let type = 'event'
     elseif a:base[0] == '&'
@@ -236,17 +239,27 @@ function! complimentary#CompleteCpty(findstart, base) abort
       let word = a:base
       let type = 'expression'
     endif
-    let res = []
     if type == 'expression'
-      if line =~ '\%(^\||\)\s*\(\K\k*\)\?$'
+      if line =~ '\%(^\||\)\s*\(\K\k*\)\=\%'.col.'c'
         let type = 'command'
-      elseif line =~ '\%(^\||\)\s*se\%(t\?\|tl\%[ocal]\|tg\%[lobal]\)\s\+$'
+      elseif line =~ '\%(^\||\)\s*se\%(t\=\|tl\%[ocal]\|tg\%[lobal]\)\s\+\%(\K\k*\)\=\%'.col.'c'
         let type = 'option'
-      elseif line =~ '\%(^\||\)\s*au\%[tocmd]\%(\s\+\S\+\)\?\s\+\%(\S\+,\)\?$'
+      elseif line =~ '\%(^\||\)\s*au\%[tocmd]\%(\s\+\S\+\)\?\s\+\%(\S\+,\)\=%(\I\i*\)\=\%'.col.'c'
         let type = 'event'
       endif
     endif
-    let comp = getcompletion(word, type)
+    return complimentary#GetCompletions(a:base, type)
+  endif
+endfun
+
+
+" GetCompletions() {{{2
+" Return list of completions for given type
+function! complimentary#GetCompletions(base, type) abort
+    call <Sid>Dbg('Entering complimentary#GetCompletions', a:base, a:type)
+    let res = []
+    let type = a:type
+    let comp = getcompletion(a:base, type)
     for c in comp
       if c =~ '()\?$' || type == 'function'
         call extend(res, <Sid>GetFuncInfo(c))
