@@ -13,9 +13,9 @@ let g:cpty_debug = 1
 if 0
 append
   " comment out all dbg calls
-  :g,\c^\s*call <Sid>Dbg(,s/call/"call/
+  :g,\c^\s*call <Sid>Dbg,s/call/"call/
   " uncomment
-  :g,\c^\s*"call <Sid>Dbg(,s/"call/call/
+  :g,\c^\s*"call <Sid>Dbg,s/"call/call/
 .
 endif
 
@@ -280,6 +280,9 @@ function! complimentary#GetCompletions(base, type) abort
         call add(res, c)
       endif
     endfor
+
+    call <Sid>DbgLog('res', res)
+
     " exclude menu info if 'cot contains popup
     if has('patch-8.1.1880')
           \ && &completeopt =~ 'popup'
@@ -294,6 +297,8 @@ function! complimentary#GetCompletions(base, type) abort
         let i -= 1
       endwhile
     endif
+    call <Sid>DbgLog('res(modified)', res)
+
     return res
   endif
 endfun
@@ -307,6 +312,17 @@ function! s:Dbg(msg, ...) abort
       let m .= " [".join(a:000, "] [")."]"
     endif
     echom m
+  endif
+endfun
+
+" s:DbgLog {{{2
+function! s:DbgLog(msg, ...) abort
+  if g:cpty_debug
+    let m = a:msg
+    if a:0
+      let m .= " [".join(a:000, "] [")."]"
+    endif
+    call writefile([strftime("[%Y-%m-%d %H:%M:%S] ").m], "/tmp/cpty.log", "a")
   endif
 endfun
 
