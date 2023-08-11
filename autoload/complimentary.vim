@@ -24,12 +24,13 @@ endif
 " Options {{{1
 "--------------
 
-let s:datadir    = expand('<sfile>:p:h:h').'/data'
-let s:funcscript = s:datadir."/build_func_json.awk"
-let s:cmdscript  = s:datadir."/build_cmd_json.awk"
-let s:varscript  = s:datadir."/build_var_json.awk"
-let s:optscript  = s:datadir."/build_opt_json.awk"
-let s:soptscript = s:datadir."/build_shortopt_json.awk"
+let s:datadir      = expand('<sfile>:p:h:h').'/data'
+let s:funcscript   = s:datadir."/build_func_json.awk"
+let s:funcscript82 = s:datadir."/build_func_json_82.awk"
+let s:cmdscript    = s:datadir."/build_cmd_json.awk"
+let s:varscript    = s:datadir."/build_var_json.awk"
+let s:optscript    = s:datadir."/build_opt_json.awk"
+let s:soptscript   = s:datadir."/build_shortopt_json.awk"
 
 let s:cpty_cache_dir = get(g:, 'cpty_cache_dir', s:datadir)
 
@@ -106,10 +107,17 @@ endfun
 " s:BuildFuncCache() {{{2
 " Build signature cache
 function! s:BuildFuncCache() abort
-  let exestr = printf('%s "%s" "%s"',
-        \ s:cpty_awk_cmd,
-        \ s:funcscript,
-        \ $VIMRUNTIME.'/doc/eval.txt')
+  if has('patch-8.2.3917')
+    let exestr = printf('%s "%s" "%s"',
+          \ s:cpty_awk_cmd,
+          \ s:funcscript82,
+          \ $VIMRUNTIME.'/doc/builtin.txt')
+  else
+    let exestr = printf('%s "%s" "%s"',
+          \ s:cpty_awk_cmd,
+          \ s:funcscript,
+          \ $VIMRUNTIME.'/doc/eval.txt')
+  endif
   let g:cpty_func_cache = <Sid>BuildCache(exestr, 'func')
 endfun
 

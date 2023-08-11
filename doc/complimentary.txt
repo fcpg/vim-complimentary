@@ -126,6 +126,8 @@ CHANGELOG                                             *complimentary-changelog*
 [1.1] - 2019-09-26
   - Deal with new "popup" from 'completeopt'
   - Add option to disable ":Set" commands
+[1.1.1] - 2023-08-11
+  - Update vim doc location for builtin functions since v8.2.3917
 
 =============================================================================
 CONTRIBUTE                                           *complimentary-contribute*
